@@ -10,9 +10,12 @@ import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import org.apache.logging.log4j.Logger;
 
+
+import static com.raden93.veganlife.VeganLifeConstants.*;
+
 import com.raden93.veganlife.proxy.CommonProxy;
 
-@Mod(modid = VeganLifeConstants.MODID, name = VeganLifeConstants.NAME, version = VeganLifeConstants.VERSION)
+@Mod(modid = MODID, name = NAME, version = VERSION)
 public class VeganLifeMod
 {
 	@Instance
