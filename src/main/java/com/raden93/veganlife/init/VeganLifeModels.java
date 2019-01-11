@@ -13,6 +13,7 @@ public class VeganLifeModels {
 		register(VeganLifeItems.jute_fibre_item);
 		register(VeganLifeItems.jute_seeds_item);
 		register(VeganLifeItems.burlap_item);
+		register(Item.getItemFromBlock(VeganLifeBlocks.bale_of_jute_block));
 	}
 	
 	private static void register(Item item) {
