@@ -1,6 +1,7 @@
 package com.raden93.veganlife.init;
 
 import com.raden93.veganlife.VeganLifeConstants;
+import com.raden93.veganlife.item.JuteFibreItem;
 import com.raden93.veganlife.item.JuteStalkItem;
 
 import net.minecraft.item.Item;
@@ -12,15 +13,19 @@ import net.minecraftforge.registries.IForgeRegistryEntry;
 
 public class VeganLifeItems {
 public static final JuteStalkItem jute_stalk_item = new JuteStalkItem();
+public static final JuteFibreItem jute_fibre_item = new JuteFibreItem();
 	
 	public static void init() {
 		setName(jute_stalk_item, "jutestalk");
+		setName(jute_fibre_item, "jutefibre");
+		
 	}
 	
 	@SubscribeEvent
 	public static void register(RegistryEvent.Register<Item> event) {
 		IForgeRegistry<Item> registry = event.getRegistry();
 		registry.register(jute_stalk_item);
+		registry.register(jute_fibre_item);
 	}
 	
 	public static void setName(Item item, String name) {
