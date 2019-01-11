@@ -1,8 +1,9 @@
 # Creative Tab
 itemGroup.veganlifetab=Vegan Life Tab
 
-#Items
+#Jute
 item.jutestalk.name=Jute Stalk
 item.jutefibre.name=Jute Fibre
 item.juteseeds.name=Jute Seeds
 item.burlap.name=Burlap
+tile.baleofjute.name=Bale of Jute
