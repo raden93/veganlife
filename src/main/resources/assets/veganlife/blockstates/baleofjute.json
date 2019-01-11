@@ -1,5 +1,7 @@
 {
     "variants": {
-        "normal": { "model": "veganlife:baleofjute" }
+        "axis=y": { "model": "veganlife:baleofjute" },
+        "axis=z": { "model": "veganlife:baleofjute", "x": 90 },
+        "axis=x": { "model": "veganlife:baleofjute", "x": 90, "y": 90 }
     }
 }
