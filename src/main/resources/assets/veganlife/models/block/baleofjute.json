@@ -1,7 +1,3 @@
 {
-    "parent": "block/cube_column",
-    "textures": {
-        "end": "veganlife:blocks/baleofjute_top",
-        "side": "veganlife:blocks/baleofjute_side"
-    }
+    "parent": "block/cube_column"
 }
