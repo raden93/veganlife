@@ -11,6 +11,7 @@ public class VeganLifeModels {
 	public static void register(ModelRegistryEvent event) {
 		register(VeganLifeItems.jute_stalk_item);
 		register(VeganLifeItems.jute_fibre_item);
+		register(VeganLifeItems.jute_seeds_item);
 	}
 	
 	private static void register(Item item) {
