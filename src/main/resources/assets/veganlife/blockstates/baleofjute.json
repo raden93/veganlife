@@ -1,7 +1,25 @@
 {
+    "forge_marker": 1,
+    "defaults": {
+        "textures": {
+            "end": "veganlife:blocks/baleofjute_top",
+            "side": "veganlife:blocks/baleofjute_side"
+        },
+        "model": "veganlife:baleofjute"
+    },
     "variants": {
-        "axis=y": { "model": "veganlife:baleofjute" },
-        "axis=z": { "model": "veganlife:baleofjute", "x": 90 },
-        "axis=x": { "model": "veganlife:baleofjute", "x": 90, "y": 90 }
+        "axis": {
+            "y": {},
+            "z": {"x": 90 },
+            "x": {"x": 90, "y": 90 }
+        },
+        "retting": {
+            "0": {},
+            "1": {},
+            "2": {},
+            "3": {},
+            "4": {}
+        },
+        "inventory": [{}]
     }
 }
