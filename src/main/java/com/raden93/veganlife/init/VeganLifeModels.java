@@ -10,6 +10,7 @@ public class VeganLifeModels {
 	@SubscribeEvent
 	public static void register(ModelRegistryEvent event) {
 		register(VeganLifeItems.jute_stalk_item);
+		register(VeganLifeItems.jute_fibre_item);
 	}
 	
 	private static void register(Item item) {
