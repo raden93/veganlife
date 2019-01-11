@@ -1,9 +1,10 @@
 package com.raden93.veganlife.init;
 
 import com.raden93.veganlife.VeganLifeConstants;
-import com.raden93.veganlife.item.JuteFibreItem;
-import com.raden93.veganlife.item.JuteSeedsItem;
-import com.raden93.veganlife.item.JuteStalkItem;
+import com.raden93.veganlife.item.jute.BurlapItem;
+import com.raden93.veganlife.item.jute.JuteFibreItem;
+import com.raden93.veganlife.item.jute.JuteSeedsItem;
+import com.raden93.veganlife.item.jute.JuteStalkItem;
 
 import net.minecraft.item.Item;
 import net.minecraft.util.ResourceLocation;
@@ -17,11 +18,13 @@ public class VeganLifeItems {
 public static final JuteStalkItem jute_stalk_item = new JuteStalkItem();
 public static final JuteFibreItem jute_fibre_item = new JuteFibreItem();
 public static final JuteSeedsItem jute_seeds_item = new JuteSeedsItem();
+public static final BurlapItem burlap_item = new BurlapItem();
 	
 	public static void init() {
 		setName(jute_stalk_item, "jutestalk");
 		setName(jute_fibre_item, "jutefibre");
 		setName(jute_seeds_item, "juteseeds");
+		setName(burlap_item, "burlap");
 	}
 	
 	@SubscribeEvent
@@ -30,6 +33,7 @@ public static final JuteSeedsItem jute_seeds_item = new JuteSeedsItem();
 		registry.register(jute_stalk_item);
 		registry.register(jute_fibre_item);
 		registry.register(jute_seeds_item);
+		registry.register(burlap_item);
 	}
 	
 	public static void setName(Item item, String name) {
