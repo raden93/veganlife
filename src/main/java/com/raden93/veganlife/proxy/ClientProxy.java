@@ -4,6 +4,7 @@ package com.raden93.veganlife.proxy;
 import com.raden93.veganlife.VeganLifeMod;
 import com.raden93.veganlife.block.jute.BaleOfJuteColorHandler;
 import com.raden93.veganlife.init.VeganLifeBlocks;
+import com.raden93.veganlife.init.VeganLifeColorHandlers;
 import com.raden93.veganlife.init.VeganLifeModels;
 
 import net.minecraft.client.Minecraft;
@@ -22,8 +23,8 @@ public class ClientProxy extends CommonProxy {
 
 	public void init(FMLInitializationEvent event) {
 		super.init(event);
-		Minecraft.getMinecraft().getBlockColors().registerBlockColorHandler(new BaleOfJuteColorHandler(), VeganLifeBlocks.bale_of_jute_block);
-		Minecraft.getMinecraft().getItemColors().registerItemColorHandler(new BaleOfJuteColorHandler(), VeganLifeBlocks.bale_of_jute_block);
+		
+		VeganLifeColorHandlers.init();
 	}
 
 	public void postinit(FMLPostInitializationEvent event) {

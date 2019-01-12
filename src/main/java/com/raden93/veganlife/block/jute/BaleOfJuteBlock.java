@@ -67,6 +67,15 @@ public class BaleOfJuteBlock extends BlockRotatedPillar {
 	}
 	
 	@Override
+	public int quantityDropped(IBlockState state, int fortune, Random random)
+	{
+		if (state.getValue(RETTING) >= MAX_RETTING_VALUE )
+			// return 8 - 15 drops
+			return random.nextInt(8) + 8;
+		return 1;
+	}
+	
+	@Override
 	public Item getItemDropped(IBlockState state, Random random, int fortune){
 		if (state.getValue(RETTING) >= MAX_RETTING_VALUE )
 			return VeganLifeItems.jute_fibre_item;
