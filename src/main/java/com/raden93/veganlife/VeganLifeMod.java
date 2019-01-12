@@ -1,5 +1,6 @@
 package com.raden93.veganlife;
 
+import net.minecraft.client.Minecraft;
 import net.minecraft.init.Blocks;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
@@ -13,6 +14,8 @@ import org.apache.logging.log4j.Logger;
 
 import static com.raden93.veganlife.VeganLifeConstants.*;
 
+import com.raden93.veganlife.block.jute.BaleOfJuteColorHandler;
+import com.raden93.veganlife.init.VeganLifeBlocks;
 import com.raden93.veganlife.proxy.CommonProxy;
 
 @Mod(modid = MODID, name = NAME, version = VERSION)
@@ -27,10 +30,12 @@ public class VeganLifeMod
 	
 	@SidedProxy(serverSide = "com.raden93.veganlife.proxy.CommonProxy", clientSide = "com.raden93.veganlife.proxy.ClientProxy")
 	private static CommonProxy proxy;
+	public static Logger logger;
 	
 	@EventHandler
 	public void preinit(FMLPreInitializationEvent event) {
 		proxy.preinit(event);
+		logger = event.getModLog();
 	}
 	
 	@EventHandler
