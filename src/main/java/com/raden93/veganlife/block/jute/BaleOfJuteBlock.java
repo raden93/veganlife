@@ -52,7 +52,6 @@ public class BaleOfJuteBlock extends BlockRotatedPillar {
 	@Override
 	public int getMetaFromState(IBlockState state) {
 		int stage = state.getValue(RETTING);
-		VeganLifeMod.logger.info("BitValue >> {}, {}, {}", super.getMetaFromState(state), super.getMetaFromState(state) & 12, (super.getMetaFromState(state) & 12) + stage);
 		return (super.getMetaFromState(state) & 12) + stage;
 	}
 	
@@ -61,7 +60,6 @@ public class BaleOfJuteBlock extends BlockRotatedPillar {
 		super.updateTick(world, pos, state, random);
 		int rettingValue = this.getRettedValue(world, pos);
 		if (rettingValue < MAX_RETTING_VALUE && BlockUtil.isBlockInOrAdjacentMaterial(world, pos, Material.WATER)) {
-			VeganLifeMod.logger.info("Retting Value >> {}", rettingValue );
 			IBlockState newState = world.getBlockState(pos).withProperty(RETTING, rettingValue + 1);
 			world.setBlockState(pos, newState);
 		}
