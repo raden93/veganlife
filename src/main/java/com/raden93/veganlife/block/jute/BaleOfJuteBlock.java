@@ -24,7 +24,7 @@ import net.minecraft.world.World;
 
 public class BaleOfJuteBlock extends BlockRotatedPillar {
 	
-	public static final int MAX_RETTING_VALUE = 4;
+	public static final int MAX_RETTING_VALUE = 3;
 	public static final int MIN_RETTING_VALUE = 0;
 	public static final PropertyInteger RETTING = PropertyInteger.create("retting", MIN_RETTING_VALUE, MAX_RETTING_VALUE);
 	
@@ -52,6 +52,7 @@ public class BaleOfJuteBlock extends BlockRotatedPillar {
 	@Override
 	public int getMetaFromState(IBlockState state) {
 		int stage = state.getValue(RETTING);
+		VeganLifeMod.logger.info("BitValue >> {}, {}, {}", super.getMetaFromState(state), super.getMetaFromState(state) & 12, (super.getMetaFromState(state) & 12) + stage);
 		return (super.getMetaFromState(state) & 12) + stage;
 	}
 	
