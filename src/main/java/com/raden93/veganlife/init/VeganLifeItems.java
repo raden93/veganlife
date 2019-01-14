@@ -1,6 +1,7 @@
 package com.raden93.veganlife.init;
 
 import com.raden93.veganlife.VeganLifeConstants;
+import com.raden93.veganlife.item.bioplastic.PotatoStarchItem;
 import com.raden93.veganlife.item.jute.BurlapItem;
 import com.raden93.veganlife.item.jute.JuteFibreItem;
 import com.raden93.veganlife.item.jute.JuteSeedsItem;
@@ -14,17 +15,22 @@ import net.minecraftforge.registries.IForgeRegistry;
 import net.minecraftforge.registries.IForgeRegistryEntry;
 
 public class VeganLifeItems {
-	
-public static final JuteStalkItem jute_stalk_item = new JuteStalkItem();
-public static final JuteFibreItem jute_fibre_item = new JuteFibreItem();
-public static final JuteSeedsItem jute_seeds_item = new JuteSeedsItem();
-public static final BurlapItem burlap_item = new BurlapItem();
+
+	//Jute
+	public static final JuteStalkItem jute_stalk_item = new JuteStalkItem();
+	public static final JuteFibreItem jute_fibre_item = new JuteFibreItem();
+	public static final JuteSeedsItem jute_seeds_item = new JuteSeedsItem();
+	public static final BurlapItem burlap_item = new BurlapItem();
+
+	// Bioplastic
+	public static final PotatoStarchItem potato_starch_item = new PotatoStarchItem();
 	
 	public static void init() {
 		setName(jute_stalk_item, "jutestalk");
 		setName(jute_fibre_item, "jutefibre");
 		setName(jute_seeds_item, "juteseeds");
 		setName(burlap_item, "burlap");
+		setName(potato_starch_item, "potatostarch");
 	}
 	
 	@SubscribeEvent
@@ -34,6 +40,7 @@ public static final BurlapItem burlap_item = new BurlapItem();
 		registry.register(jute_fibre_item);
 		registry.register(jute_seeds_item);
 		registry.register(burlap_item);
+		registry.register(potato_starch_item);
 	}
 	
 	public static void setName(Item item, String name) {
