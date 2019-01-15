@@ -1,5 +1,11 @@
 package com.raden93.veganlife.item.bioplastic;
 
-public class BioplasticItem {
+import com.raden93.veganlife.init.VeganLifeTabs;
+import net.minecraft.item.Item;
+
+public class BioplasticItem extends Item {
+	public BioplasticItem() {
+		setCreativeTab(VeganLifeTabs.veganLifeTab);
+	}
 
 }
