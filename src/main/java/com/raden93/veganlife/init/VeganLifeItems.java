@@ -1,6 +1,7 @@
 package com.raden93.veganlife.init;
 
 import com.raden93.veganlife.VeganLifeConstants;
+import com.raden93.veganlife.item.bioplastic.PlasticRodItem;
 import com.raden93.veganlife.item.bioplastic.PotatoStarchItem;
 import com.raden93.veganlife.item.jute.BurlapItem;
 import com.raden93.veganlife.item.jute.JuteFibreItem;
@@ -24,6 +25,7 @@ public class VeganLifeItems {
 
 	// Bioplastic
 	public static final PotatoStarchItem potato_starch_item = new PotatoStarchItem();
+	public static final PlasticRodItem plastic_rod_item = new PlasticRodItem();
 	
 	public static void init() {
 		setName(jute_stalk_item, "jutestalk");
@@ -31,6 +33,7 @@ public class VeganLifeItems {
 		setName(jute_seeds_item, "juteseeds");
 		setName(burlap_item, "burlap");
 		setName(potato_starch_item, "potatostarch");
+		setName(plastic_rod_item, "plasticrod");
 	}
 	
 	@SubscribeEvent
@@ -41,6 +44,7 @@ public class VeganLifeItems {
 		registry.register(jute_seeds_item);
 		registry.register(burlap_item);
 		registry.register(potato_starch_item);
+		registry.register(plastic_rod_item);
 	}
 	
 	public static void setName(Item item, String name) {

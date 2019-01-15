@@ -18,6 +18,7 @@ public class VeganLifeModels {
 		
 		//bioplastic
 		register(VeganLifeItems.potato_starch_item);
+		register(VeganLifeItems.plastic_rod_item);
 	}
 	
 	private static void register(Item item) {
