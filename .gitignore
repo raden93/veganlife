@@ -20,3 +20,7 @@ build
 # other
 eclipse
 run
+
+crash-reports/
+eula.txt
+logs/

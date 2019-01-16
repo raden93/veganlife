@@ -48,7 +48,7 @@ public class VeganLifeItems {
 		registry.register(burlap_item);
 		registry.register(potato_starch_item);
 		registry.register(plastic_rod_item);
-		register.register(bioplastic_item);
+		registry.register(bioplastic_item);
 	}
 	
 	public static void setName(Item item, String name) {
