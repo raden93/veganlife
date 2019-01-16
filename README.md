@@ -53,7 +53,7 @@ This should be an remastered version of [vegan option](https://github.com/backup
  
 ### Bioplatic
 
- - [ ] create items ( potato stach, bioplastic, plastic rod )
- - [ ] added recipes
+ - [x] create items ( potato stach, bioplastic, plastic rod )
+ - [x] added recipes
  
  
