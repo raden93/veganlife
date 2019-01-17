@@ -15,6 +15,7 @@ public class VeganLifeModels {
 		register(VeganLifeItems.jute_seeds_item);
 		register(VeganLifeItems.burlap_item);
 		register(Item.getItemFromBlock(VeganLifeBlocks.bale_of_jute_block));
+		register(Item.getItemFromBlock(VeganLifeBlocks.jute_crop_block));
 		
 		//bioplastic
 		register(VeganLifeItems.potato_starch_item);
