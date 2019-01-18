@@ -22,7 +22,7 @@ public class JuteCropBlock extends BlockBush {
 	public JuteCropBlock() {
 		super();
 		this.setTickRandomly(true);
-		this.setDefaultState(this.blockState.getBaseState().withProperty(CROP_AGE, Integer.valueOf(0)));
+		this.setDefaultState(this.blockState.getBaseState().withProperty(CROP_AGE, Integer.valueOf(11)));
 	}
 	
 	@Override
