@@ -1,22 +1,22 @@
 {
     "forge_marker": 1,
-    "default": {
+    "defaults": {
     	"model": "veganlife:jutecrop"
     },
     "variants": {
         "age": {
-            "0": {"textures": {"cross": "veganlife:blocks/jutecrop_stage0"}},
-            "1": {"textures": {"cross": "veganlife:blocks/jutecrop_stage1"}},
-            "2": {"textures": {"cross": "veganlife:blocks/jutecrop_stage2"}},
-            "3": {"textures": {"cross": "veganlife:blocks/jutecrop_stage3"}},
-            "4": {"textures": {"cross": "veganlife:blocks/jutecrop_stage4"}},
-            "5": {"textures": {"cross": "veganlife:blocks/jutecrop_stage5"}},
-            "6": {"textures": {"cross": "veganlife:blocks/jutecrop_stage0"}},
-            "7": {"textures": {"cross": "veganlife:blocks/jutecrop_stage1"}},
-            "8": {"textures": {"cross": "veganlife:blocks/jutecrop_stage2"}},
-            "9": {"textures": {"cross": "veganlife:blocks/jutecrop_stage3"}},
-            "10": {"textures": {"cross": "veganlife:blocks/jutecrop_stage4"}},
-            "11": {"textures": {"cross": "veganlife:blocks/jutecrop_stage6"}}
+            "0": {"textures": {"crop": "veganlife:blocks/jutecrop_stage0"}},
+            "1": {"textures": {"crop": "veganlife:blocks/jutecrop_stage1"}},
+            "2": {"textures": {"crop": "veganlife:blocks/jutecrop_stage2"}},
+            "3": {"textures": {"crop": "veganlife:blocks/jutecrop_stage3"}},
+            "4": {"textures": {"crop": "veganlife:blocks/jutecrop_stage4"}},
+            "5": {"textures": {"crop": "veganlife:blocks/jutecrop_stage5"}},
+            "6": {"textures": {"crop": "veganlife:blocks/jutecrop_stage0"}},
+            "7": {"textures": {"crop": "veganlife:blocks/jutecrop_stage1"}},
+            "8": {"textures": {"crop": "veganlife:blocks/jutecrop_stage2"}},
+            "9": {"textures": {"crop": "veganlife:blocks/jutecrop_stage3"}},
+            "10": {"textures": {"crop": "veganlife:blocks/jutecrop_stage4"}},
+            "11": {"textures": {"crop": "veganlife:blocks/jutecrop_stage6"}}
         }
     }
 }
