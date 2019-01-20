@@ -2,11 +2,9 @@ package com.raden93.veganlife.init;
 
 import java.util.List;
 import java.util.Random;
-import com.raden93.veganlife.VeganLifeMod;
-import com.raden93.veganlife.item.wool.KapokTuftItem;
+
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockDoublePlant;
-import net.minecraft.block.BlockLeaves;
 import net.minecraft.block.BlockOldLeaf;
 import net.minecraft.block.BlockPlanks;
 import net.minecraft.block.state.IBlockState;
@@ -17,6 +15,8 @@ import net.minecraftforge.event.world.BlockEvent.HarvestDropsEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
 public class VeganLifeDropChanger {
+	
+	public static final float KAPOK_TUFT_DROP_RATE = 0.07f;
 	
 	@SubscribeEvent
 	public void onHarvestBlock(HarvestDropsEvent event)
@@ -34,7 +34,6 @@ public class VeganLifeDropChanger {
 	
 	/**
 	 * Fern now drops 1-3 Jute Stalks
-	 * @param event
 	 */
 	private void dropJuteFromFerns(Block block, IBlockState state, Random random, List<ItemStack> drops) {
 		if(block == Blocks.DOUBLE_PLANT && state.getValue(BlockDoublePlant.VARIANT) == BlockDoublePlant.EnumPlantType.FERN) {
@@ -42,9 +41,12 @@ public class VeganLifeDropChanger {
 		}
 	}
 	
+	/**
+	 * Jungle leaves drops now kapok tuft
+	 */
 	private void dropKapokFromJungle(Block block, IBlockState state, Random random, List<ItemStack> drops) {
 		if(block == Blocks.LEAVES && state.getValue(BlockOldLeaf.VARIANT) == BlockPlanks.EnumType.JUNGLE) {
-			if(random.nextFloat() < 0.07) {
+			if(random.nextFloat() < KAPOK_TUFT_DROP_RATE) {
 				drops.add(new ItemStack(VeganLifeItems.kapok_tuft_item, 1));
 			}
 		}

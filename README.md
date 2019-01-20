@@ -22,7 +22,7 @@ This should be an remastered version of [vegan option](https://github.com/backup
 ### Wool alternative - Kapok
  
  - [ ] create items and blocks ( kapok tuft, blockofkapok )
- - [ ] let drop kapok tufts from jungle leaves
+ - [x] let drop kapok tufts from jungle leaves
  - [ ] recipes to crafting kapok tuft blocks
  
 ### String alternative

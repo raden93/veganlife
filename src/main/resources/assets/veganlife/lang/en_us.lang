@@ -15,3 +15,20 @@ item.bioplastic.name=Bioplastic
 
 #kapoktuft
 item.kapoktuft.name=Kapok Tuft
+tile.kapok.name=Kapok Block
+tile.kapok.white.name=White Kapok Block
+tile.kapok.orange.name=Orange Kapok Block
+tile.kapok.magenta.name=Magenta Kapok Block
+tile.kapok.lightBlue.name=Light Blue Kapok Block
+tile.kapok.yellow.name=Yellow Kapok Block
+tile.kapok.lime.name=Lime Kapok Block
+tile.kapok.pink.name=Pink Kapok Block
+tile.kapok.gray.name=Gray Kapok Block
+tile.kapok.silver.name=Light Gray Kapok Block
+tile.kapok.cyan.name=Cyan Kapok Block
+tile.kapok.purple.name=Purple Kapok Block
+tile.kapok.blue.name=Blue Kapok Block
+tile.kapok.brown.name=Brown Kapok Block
+tile.kapok.green.name=Green Kapok Block
+tile.kapok.red.name=Red Kapok Block
+tile.kapok.black.name=Black Kapok Block
