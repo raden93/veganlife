@@ -1,6 +1,8 @@
 package com.raden93.veganlife.init;
 
+import net.minecraft.block.Block;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
+import net.minecraft.item.EnumDyeColor;
 import net.minecraft.item.Item;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.client.model.ModelLoader;
@@ -24,9 +26,17 @@ public class VeganLifeModels {
 		
 		// Kapok Tuft
 		register(VeganLifeItems.kapok_tuft_item);
+		register(Item.getItemFromBlock(VeganLifeBlocks.kapok_block));
+		registerColorizedItems(Item.getItemFromBlock(VeganLifeBlocks.kapok_block), VeganLifeBlocks.kapok_block);
 	}
 	
 	private static void register(Item item) {
 		ModelLoader.setCustomModelResourceLocation(item, 0, new ModelResourceLocation(item.getRegistryName(), "inventory"));
+	}
+	
+	private static void registerColorizedItems(Item item, Block block) {
+		for (EnumDyeColor color : EnumDyeColor.values()) {
+			ModelLoader.setCustomModelResourceLocation(item, color.getMetadata(), new ModelResourceLocation(block.getRegistryName(), "color=" + color.getName()));
+		}
 	}
 }

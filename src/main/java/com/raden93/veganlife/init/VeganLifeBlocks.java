@@ -3,10 +3,13 @@ package com.raden93.veganlife.init;
 import com.raden93.veganlife.VeganLifeConstants;
 import com.raden93.veganlife.block.jute.BaleOfJuteBlock;
 import com.raden93.veganlife.block.jute.JuteCropBlock;
+import com.raden93.veganlife.block.wool.KapokBlock;
 
 import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
+import net.minecraft.item.ItemCloth;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
@@ -16,10 +19,12 @@ public class VeganLifeBlocks {
 
 	public static final BaleOfJuteBlock bale_of_jute_block = new BaleOfJuteBlock();
 	public static final JuteCropBlock jute_crop_block = new JuteCropBlock();
+	public static final KapokBlock kapok_block = new KapokBlock(Material.CLOTH);
 	
 	public static void init() {
 		setName(bale_of_jute_block, "baleofjute");
 		setName(jute_crop_block, "jutecrop");
+		setName(kapok_block, "kapok");
 	}
 	
 	private static void setName(Block block, String name) {
@@ -32,6 +37,7 @@ public class VeganLifeBlocks {
 		IForgeRegistry<Block> registry = event.getRegistry();
 		registry.register(bale_of_jute_block);
 		registry.register(jute_crop_block);
+		registry.register(kapok_block);
 	}
 	
 	@SubscribeEvent
@@ -39,6 +45,7 @@ public class VeganLifeBlocks {
 		IForgeRegistry<Item> registry = event.getRegistry();
 		registry.register(new ItemBlock(bale_of_jute_block).setRegistryName(bale_of_jute_block.getRegistryName()));
 		registry.register(new ItemBlock(jute_crop_block).setRegistryName(jute_crop_block.getRegistryName()));
+		registry.register(new ItemCloth(kapok_block).setRegistryName(kapok_block.getRegistryName()));
 	}
 	
 }
