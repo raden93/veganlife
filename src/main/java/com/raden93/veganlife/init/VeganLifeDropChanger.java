@@ -38,7 +38,8 @@ public class VeganLifeDropChanger {
 	}
 	
 	private boolean userUseShears(HarvestDropsEvent event) { 
-		return event.getHarvester().getHeldItemMainhand() != null
+		return event.getHarvester() != null
+				&& event.getHarvester().getHeldItemMainhand() != null
 				&& event.getHarvester().getHeldItemMainhand().getItem() instanceof ItemShears;
 	}
 }

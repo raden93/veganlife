@@ -10,9 +10,6 @@ import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.biome.BiomeColorHelper;
 
 public class JuteCropColorHandler implements IBlockColor, IItemColor {
-	
-	private static final int baseColor = 0x67ce0c;
-	private static final int rettedColor = 0xbfb57e;
 
 	@Override
 	public int colorMultiplier(IBlockState state, IBlockAccess worldIn, BlockPos pos, int tintIndex) {
