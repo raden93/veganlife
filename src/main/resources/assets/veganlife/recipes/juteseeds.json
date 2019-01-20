@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "pattern": [
+    "#"
+  ],
+  "ingredients":[
+    {
+      "item": "veganlife:jutestalk",
+      "data": 0
+    }
+  ],
+  "result": {
+    "item": "veganlife:juteseeds"
+  }
+}

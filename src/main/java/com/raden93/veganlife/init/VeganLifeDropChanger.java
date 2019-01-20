@@ -8,6 +8,7 @@ import net.minecraft.block.Block;
 import net.minecraft.block.BlockDoublePlant;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.init.Blocks;
+import net.minecraft.item.ItemShears;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.event.world.BlockEvent.HarvestDropsEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
@@ -17,7 +18,9 @@ public class VeganLifeDropChanger {
 	@SubscribeEvent
 	public void onHarvestBlock(HarvestDropsEvent event)
 	{
-		this.dropJuteFromFerns(event);
+		if(!this.userUseShears(event)) {
+			this.dropJuteFromFerns(event);
+		}
 	}
 	
 	/**
@@ -32,5 +35,10 @@ public class VeganLifeDropChanger {
 		if(block == Blocks.DOUBLE_PLANT && state.getValue(BlockDoublePlant.VARIANT) == BlockDoublePlant.EnumPlantType.FERN) {
 			event.getDrops().add(new ItemStack(VeganLifeItems.jute_stalk_item, rnd.nextInt(2)+1));
 		}
+	}
+	
+	private boolean userUseShears(HarvestDropsEvent event) { 
+		return event.getHarvester().getHeldItemMainhand() != null
+				&& event.getHarvester().getHeldItemMainhand().getItem() instanceof ItemShears;
 	}
 }
