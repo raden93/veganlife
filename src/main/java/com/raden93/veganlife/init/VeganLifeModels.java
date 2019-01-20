@@ -9,7 +9,7 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 public class VeganLifeModels {
 	@SubscribeEvent
 	public static void register(ModelRegistryEvent event) {
-		//Jute
+		// Jute
 		register(VeganLifeItems.jute_stalk_item);
 		register(VeganLifeItems.jute_fibre_item);
 		register(VeganLifeItems.jute_seeds_item);
@@ -17,10 +17,13 @@ public class VeganLifeModels {
 		register(Item.getItemFromBlock(VeganLifeBlocks.bale_of_jute_block));
 		register(Item.getItemFromBlock(VeganLifeBlocks.jute_crop_block));
 		
-		//bioplastic
+		// Bioplastic
 		register(VeganLifeItems.potato_starch_item);
 		register(VeganLifeItems.plastic_rod_item);
 		register(VeganLifeItems.bioplastic_item);
+		
+		// Kapok Tuft
+		register(VeganLifeItems.kapok_tuft_item);
 	}
 	
 	private static void register(Item item) {

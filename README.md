@@ -10,8 +10,8 @@ This should be an remastered version of [vegan option](https://github.com/backup
  - [x] BlockOfJute rett in water, incl. color change
  - [x] added all recipes
  - [x] burlap can use for leather crafting recipes
- - [ ] Implements seeds as growing crop
- - [ ] added crops to the world generator
+ - [x] Implements seeds as growing crop
+ - [x] Ferns drop now jute stalk
  
 ### Vegetable oil
  
