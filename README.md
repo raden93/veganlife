@@ -4,56 +4,72 @@ This should be an remastered version of [vegan option](https://github.com/backup
 
 ## Current State
 
-### Leather alternative - Jute
+### Already implements:
 
- - [x] create all items and blocks
- - [x] BlockOfJute rett in water, incl. color change
- - [x] added all recipes
- - [x] burlap can use for leather crafting recipes
- - [x] Implements seeds as growing crop
- - [x] Ferns drop now jute stalk
+#### Jute
+
+- [x] Create all Items and Blocks.
+    - [x] Jute Seeds
+    - [x] Jute Stalk
+    - [x] Jute Fibre
+    - [x] Burlap
+    - [x] Bale of Jute
+- [x] Create all recipes.
+    - [x] Jute Stalk -> Jute Seeds
+    - [x] Jute Stalk -> Bale of Jute
+    - [x] Jute Fibre -> Burlap
+    - [x] Jute Fibre -> String
+- [x] Jute Stalk drops from Ferns.
+- [x] Jute Plants growing up to Ferns.
+- [x] Bales of Jute retting and drops jute fibers.
+- [x] Burlap can be use instead of leather.
+
+#### Kapok
+
+- [x] Create all Items and Blocks.
+    - [x] Kapok Tuft
+    - [x] Kapok
+- [x] Create all recipes.
+    - [x] Kapok Tuft -> Kapok
+    - [x] Kapok Tuft -> String
+- [x] Kapok tufts drop from jungle leaves.
+- [ ] Kapok can be use instead of wool.
+
+#### Bioplastic
+
+- [x] Create all Items and Blocks.
+    - [x] Potato Starch
+    - [x] Plastic Rod
+    - [x] Bioplastic
+- [x] Create all recipes.
+    - [x] Potato Starch -> Bioplastic
+    - [x] Bioplastic -> Plastic Rod
  
-### Vegetable oil
+#### Vegetable oil
  
- - [ ] create items ( sunflower seeds, vegetable oil ) 
+ - [ ] Create all Items and Blocks. ( sunflower seeds, vegetable oil ) 
  - [ ] sunflower drops sunflower seeds
  - [ ] add crafting recipe for vegetable oil
  
-### Wool alternative - Kapok
- 
- - [ ] create items and blocks ( kapok tuft, blockofkapok )
- - [x] let drop kapok tufts from jungle leaves
- - [ ] recipes to crafting kapok tuft blocks
- 
-### String alternative
- 
- - [x] jute fibre recipes for strings
- - [ ] kapok tufts recipes for strings
- 
-### Slimeball alternative - Resin
+#### Slimeball alternative - Resin
  
  - [ ] create items ( resin / rosin)
  - [ ] let drop resin from spruce wood
  - [ ] furnace create rosin from resin
  
-### Ender Perl crafting alternative - frozen bubble + raw ender
+#### Ender Perl crafting alternative - frozen bubble + raw ender
  
  - [ ] create recipes for ender perl
  
-#### frozen bubble
+##### frozen bubble
  
  - [ ] create items ( soap, soap solution, frozen bubble)
  - [ ] create recipes
  
-#### Raw Ender
+##### Raw Ender
  
  - [ ] create blocks and items ( encrusted obsidian, ender rift, raw ender)
  - [ ] mechanic between this blocks finish
  - [ ] encrusted obsidian destroy when run on day
- 
-### Bioplatic
-
- - [x] create items ( potato stach, bioplastic, plastic rod )
- - [x] added recipes
  
  
