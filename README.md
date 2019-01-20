@@ -4,7 +4,6 @@ This should be an remastered version of [vegan option](https://github.com/backup
 
 ## Current State
 
-### Already implements:
 
 #### Jute
 
