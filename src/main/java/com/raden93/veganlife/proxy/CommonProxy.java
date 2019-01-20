@@ -1,6 +1,7 @@
 package com.raden93.veganlife.proxy;
 
 import com.raden93.veganlife.init.VeganLifeBlocks;
+import com.raden93.veganlife.init.VeganLifeDropChanger;
 import com.raden93.veganlife.init.VeganLifeItems;
 import com.raden93.veganlife.init.VeganLifeOreDicts;
 import com.raden93.veganlife.init.VeganLifeRecipes;
@@ -19,13 +20,13 @@ public class CommonProxy {
 		
 		MinecraftForge.EVENT_BUS.register(VeganLifeItems.class);
 		MinecraftForge.EVENT_BUS.register(VeganLifeBlocks.class);
+		MinecraftForge.EVENT_BUS.register(new VeganLifeDropChanger());
 		
-		VeganLifeOreDicts.init();
 		VeganLifeRecipes.registerSmelting();
 	}
 
 	public void init(FMLInitializationEvent event) {
-	
+		VeganLifeOreDicts.init();
 	}
 
 	public void postinit(FMLPostInitializationEvent event) {
