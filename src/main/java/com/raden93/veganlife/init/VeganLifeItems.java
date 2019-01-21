@@ -8,6 +8,7 @@ import com.raden93.veganlife.item.jute.BurlapItem;
 import com.raden93.veganlife.item.jute.JuteFibreItem;
 import com.raden93.veganlife.item.jute.JuteSeedsItem;
 import com.raden93.veganlife.item.jute.JuteStalkItem;
+import com.raden93.veganlife.item.slimeballs.ResinItem;
 import com.raden93.veganlife.item.wool.KapokTuftItem;
 
 import net.minecraft.item.Item;
@@ -33,6 +34,9 @@ public class VeganLifeItems {
 	// Wool
 	public static final KapokTuftItem kapok_tuft_item = new KapokTuftItem();
 	
+	// Slimeballs
+	public static final ResinItem resin_item = new ResinItem();
+	
 	public static void init() {
 		setName(jute_stalk_item, "jutestalk");
 		setName(jute_fibre_item, "jutefibre");
@@ -42,6 +46,7 @@ public class VeganLifeItems {
 		setName(plastic_rod_item, "plasticrod");
 		setName(bioplastic_item, "bioplastic");
 		setName(kapok_tuft_item, "kapoktuft");
+		setName(resin_item, "resin");
 	}
 	
 	@SubscribeEvent
@@ -55,6 +60,7 @@ public class VeganLifeItems {
 		registry.register(plastic_rod_item);
 		registry.register(bioplastic_item);
 		registry.register(kapok_tuft_item);
+		registry.register(resin_item);
 	}
 	
 	public static void setName(Item item, String name) {

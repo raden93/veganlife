@@ -32,3 +32,7 @@ tile.kapok.brown.name=Brown Kapok Block
 tile.kapok.green.name=Green Kapok Block
 tile.kapok.red.name=Red Kapok Block
 tile.kapok.black.name=Black Kapok Block
+
+#slimeballs
+
+item.resin.name=Resin
