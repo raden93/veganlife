@@ -31,6 +31,7 @@ public class VeganLifeModels {
 		
 		// Slimeballs
 		register(VeganLifeItems.resin_item);
+		register(VeganLifeItems.rosin_item);
 	}
 	
 	private static void register(Item item) {
