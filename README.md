@@ -20,8 +20,8 @@ This should be an remastered version of [vegan option](https://github.com/backup
     - [x] Jute Fibre -> String
 - [x] Jute Stalk drops from Ferns.
 - [x] Jute Plants growing up to Ferns.
-- [x] Bales of Jute retting and drops jute fibers.
-- [x] Burlap can be use instead of leather.
+- [x] Bales of Jute retting and drops Jute Fibers.
+- [x] Burlap can be use instead of Leather.
 
 #### Kapok
 
@@ -29,10 +29,10 @@ This should be an remastered version of [vegan option](https://github.com/backup
     - [x] Kapok Tuft
     - [x] Kapok
 - [x] Create all recipes.
-    - [x] Kapok Tuft -> Kapok
-    - [x] Kapok Tuft -> String
-- [x] Kapok tufts drop from jungle leaves.
-- [ ] Kapok can be use instead of wool.
+    - [x] 4 Kapok Tuft -> Kapok
+    - [x] 3 Kapok Tuft -> String
+- [x] Kapok tufts drop from Jungle Leaves.
+- [ ] Kapok can be use instead of Wool.
 
 #### Bioplastic
 
@@ -44,31 +44,99 @@ This should be an remastered version of [vegan option](https://github.com/backup
     - [x] Potato Starch -> Bioplastic
     - [x] Bioplastic -> Plastic Rod
  
-#### Vegetable oil
+#### Vegetable oil + Ink
  
- - [ ] Create all Items and Blocks. ( sunflower seeds, vegetable oil ) 
- - [ ] sunflower drops sunflower seeds
- - [ ] add crafting recipe for vegetable oil
+ - [ ] Create all Items.
+ 	- [ ] Sunflower Seeds
+ 	- [ ] Vegetable Oil
+ 	- [ ] Vegetable Wax
+ 	- [ ] Vegetable Oil Ink ( Black + White ) 
+ - [ ] Create all recipes.
+ 	- [ ] Sunflower Seeds + Weighted Pressure Plate + Bottle -> Vegetable Oil
+ 	- [ ] Vegetable Oil -> Vegetable Wax
+ 	- [ ] Vegetable Oil + Vegetable Wax + Rosin + Charcoal -> Black Vegetable Oil Ink
+ 	- [ ] Vegetable Oil + Vegetable Wax + Rosin + Nether Quarz -> White Vegetable Oil Ink
+ - [ ] Sunflowers drops Sunflower Seeds
  
-#### Slimeball alternative - Resin
+#### Resin
  
- - [ ] create items ( resin / rosin)
- - [ ] let drop resin from spruce wood
- - [ ] furnace create rosin from resin
+ - [ ] Create all Items.
+ 	- [ ] Resin
+ 	- [ ] Rosin
+ - [ ] Create all recipes.
+ 	- [ ] Resin -> Rosin
+ - [ ] Resin drop from Spruce Wood
+ - [ ] Resin can be use instead of Slimeballs
  
-#### Ender Perl crafting alternative - frozen bubble + raw ender
+#### Frozen Bubble + Raw Ender ( Ender Pearl alternative )
  
- - [ ] create recipes for ender perl
+ - [ ] Create all recipes.
+ 	- [ ] Frozen Bubble + Bucket of Raw Ender -> Ender Perl
+ - [ ] A Frozen Bubble placed in Raw Ender, create an Ender Pearl
  
-##### frozen bubble
+##### Frozen Bubble
  
- - [ ] create items ( soap, soap solution, frozen bubble)
- - [ ] create recipes
+ - [ ] Create all Items.
+ 	- [ ] Soap
+ 	- [ ] Soap Solution
+ 	- [ ] Bubble
+ 	- [ ] Frozen Bubble
+ - [ ] Create all recipes.
+ 	- [ ] Water + 3 Charcoal -> Wood Ash Lye
+ 	- [ ] Wood Ash Lye + Vegetable Oil + Rosin -> Soap
+ 	- [ ] Soap + Water + Sugar + Bottle -> Soap Solution
+ 	- [ ] Soap Solution + 8 Ice -> Frozen Bubble
+ - [ ] Soap Solution in a dispenser create a Bubble. 
+ - [ ] Bubble can froze to Frozen Bubble if it is surrounded by Ice
+ - [ ] Frozen Bubble can be use instead of Pufferfish
  
 ##### Raw Ender
  
- - [ ] create blocks and items ( encrusted obsidian, ender rift, raw ender)
- - [ ] mechanic between this blocks finish
- - [ ] encrusted obsidian destroy when run on day
+ - [ ]  Create all Items and Blocks.
+ 	- [ ] Encrusted Obsidian
+ 	- [ ] Ender Rift
+ 	- [ ] Raw Ender
+ - [ ] Create all recipes.
+ 	- [ ] 2 Obsidian + Diamond + Emerald -> Encrusted Obsidian
+ - [ ] 4 Encrusted Obsidain create an Ender Rift on the center.
+ - [ ] Ender Rift create Raw Ender with Water on night.
+ - [ ] Encrusted Obsidian destroy when run on day.
  
+#### Faux Feather
+
+ - [ ] Create all recipes.
+ 	- [ ] Plastic Rod + Kapok Tuft -> Faux Feather
+ - [ ] Faux Feather can be use instead of Feather.
+ 
+#### Fossils
+
+ - [ ] Bones drops when mining stone.
+ 
+#### Saltpeter
+
+ - [ ] Create all Items.
+ 	- [ ] Saltpeter
+ - [ ] Saltpeter drops when mining Sandstone.
+ 
+#### Sulfur
+
+ - [ ] Create all Items.
+ 	- [ ] Sulfur
+ - [ ] Sulfur drops when mining Netherrack.
+ 
+#### Doll's Eye
+
+ - [ ] Create all Items.
+ 	- [ ] Doll's Eye
+ - [ ] Doll's Eye Drops from grass in temperate forest biome.
+ - [ ] Doll's Eye can be use instead of Spider Eye.
+
+#### Proof of Suffering
+
+ - [ ] Create all Items.
+ 	- [ ] Fragments of Suffering
+ 	- [ ] Proof of Suffering
+ - [ ] Create all recipes.
+ 	- [ ] 8 Fragments of Suffering + Gold Nugget -> Proof of Suffering
+ - [ ] Proof of Suffering can be use instead of Ghast Tear
  
