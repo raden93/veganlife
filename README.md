@@ -60,11 +60,11 @@ This should be an remastered version of [vegan option](https://github.com/backup
  
 #### Resin
  
- - [ ] Create all Items.
+ - [x] Create all Items.
  	- [x] Resin
  	- [x] Rosin
- - [ ] Create all recipes.
- 	- [ ] Resin -> Rosin
+ - [x] Create all recipes.
+ 	- [x] Resin -> Rosin
  - [ ] Resin drop from Spruce Wood
  - [ ] Resin can be use instead of Slimeballs
  
