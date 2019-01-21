@@ -6,7 +6,9 @@ import java.util.Random;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockDoublePlant;
 import net.minecraft.block.BlockOldLeaf;
+import net.minecraft.block.BlockOldLog;
 import net.minecraft.block.BlockPlanks;
+import net.minecraft.block.state.BlockFaceShape;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.init.Blocks;
 import net.minecraft.item.ItemShears;
@@ -17,19 +19,21 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 public class VeganLifeDropChanger {
 	
 	public static final float KAPOK_TUFT_DROP_RATE = 0.07f;
+	public static final float RESIN_DROP_RATE = 0.1f;
 	
 	@SubscribeEvent
 	public void onHarvestBlock(HarvestDropsEvent event)
 	{
+		IBlockState state = event.getState();
+		Block block = state.getBlock();
+		Random random = new Random();
+		List<ItemStack> drops = event.getDrops();
+		
 		if(!this.userUseShears(event)) {
-			IBlockState state = event.getState();
-			Block block = state.getBlock();
-			Random random = new Random();
-			List<ItemStack> drops = event.getDrops();
-			
 			this.dropJuteFromFerns(block, state, random, drops);
 			this.dropKapokFromJungle(block, state, random, drops);
 		}
+		this.dropsResinFromSpruceWood(block, state, random, drops);
 	}
 	
 	/**
@@ -42,12 +46,23 @@ public class VeganLifeDropChanger {
 	}
 	
 	/**
-	 * Jungle leaves drops now kapok tuft
+	 * Jungle leaves drops kapok tuft now 
 	 */
 	private void dropKapokFromJungle(Block block, IBlockState state, Random random, List<ItemStack> drops) {
 		if(block == Blocks.LEAVES && state.getValue(BlockOldLeaf.VARIANT) == BlockPlanks.EnumType.JUNGLE) {
 			if(random.nextFloat() < KAPOK_TUFT_DROP_RATE) {
 				drops.add(new ItemStack(VeganLifeItems.kapok_tuft_item, 1));
+			}
+		}
+	}
+	
+	/**
+	 * Spruce Wood drops Resin now
+	 */
+	private void dropsResinFromSpruceWood(Block block, IBlockState state, Random random, List<ItemStack> drops) {
+		if(block == Blocks.LOG && state.getValue(BlockOldLog.VARIANT) == BlockPlanks.EnumType.SPRUCE) {
+			if(random.nextFloat() < RESIN_DROP_RATE) {
+				drops.add(new ItemStack(VeganLifeItems.resin_item));
 			}
 		}
 	}
