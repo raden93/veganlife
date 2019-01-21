@@ -62,7 +62,7 @@ This should be an remastered version of [vegan option](https://github.com/backup
  
  - [ ] Create all Items.
  	- [x] Resin
- 	- [ ] Rosin
+ 	- [x] Rosin
  - [ ] Create all recipes.
  	- [ ] Resin -> Rosin
  - [ ] Resin drop from Spruce Wood
