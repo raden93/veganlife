@@ -61,7 +61,7 @@ This should be an remastered version of [vegan option](https://github.com/backup
 #### Resin
  
  - [ ] Create all Items.
- 	- [ ] Resin
+ 	- [x] Resin
  	- [ ] Rosin
  - [ ] Create all recipes.
  	- [ ] Resin -> Rosin

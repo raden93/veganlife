@@ -28,6 +28,9 @@ public class VeganLifeModels {
 		register(VeganLifeItems.kapok_tuft_item);
 		register(Item.getItemFromBlock(VeganLifeBlocks.kapok_block));
 		registerColorizedItems(Item.getItemFromBlock(VeganLifeBlocks.kapok_block), VeganLifeBlocks.kapok_block);
+		
+		// Slimeballs
+		register(VeganLifeItems.resin_item);
 	}
 	
 	private static void register(Item item) {
