@@ -1,13 +1,9 @@
 package com.raden93.veganlife.proxy;
 
 
-import com.raden93.veganlife.VeganLifeMod;
-import com.raden93.veganlife.block.jute.BaleOfJuteColorHandler;
-import com.raden93.veganlife.init.VeganLifeBlocks;
 import com.raden93.veganlife.init.VeganLifeColorHandlers;
 import com.raden93.veganlife.init.VeganLifeModels;
 
-import net.minecraft.client.Minecraft;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
