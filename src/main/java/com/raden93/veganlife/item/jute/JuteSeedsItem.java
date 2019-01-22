@@ -3,7 +3,6 @@ package com.raden93.veganlife.item.jute;
 import com.raden93.veganlife.init.VeganLifeBlocks;
 import com.raden93.veganlife.init.VeganLifeTabs;
 
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemSeeds;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;

@@ -1,6 +1,5 @@
 package com.raden93.veganlife.block.wool;
 
-import com.raden93.veganlife.VeganLifeTab;
 import com.raden93.veganlife.init.VeganLifeTabs;
 
 import net.minecraft.block.BlockColored;

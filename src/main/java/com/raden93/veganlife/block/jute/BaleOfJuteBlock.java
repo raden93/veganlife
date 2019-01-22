@@ -2,24 +2,19 @@ package com.raden93.veganlife.block.jute;
 
 import java.util.Random;
 
-import com.raden93.veganlife.VeganLifeMod;
 import com.raden93.veganlife.init.VeganLifeItems;
 import com.raden93.veganlife.init.VeganLifeTabs;
 import com.raden93.veganlife.util.BlockUtil;
 
-import net.minecraft.block.Block;
 import net.minecraft.block.BlockRotatedPillar;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.properties.IProperty;
-import net.minecraft.block.properties.PropertyEnum;
 import net.minecraft.block.properties.PropertyInteger;
 import net.minecraft.block.state.BlockStateContainer;
 import net.minecraft.block.state.IBlockState;
-import net.minecraft.client.renderer.color.IBlockColor;
 import net.minecraft.item.Item;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 
 public class BaleOfJuteBlock extends BlockRotatedPillar {

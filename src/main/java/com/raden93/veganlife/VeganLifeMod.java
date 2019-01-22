@@ -1,7 +1,13 @@
 package com.raden93.veganlife;
 
-import net.minecraft.client.Minecraft;
-import net.minecraft.init.Blocks;
+import static com.raden93.veganlife.VeganLifeConstants.MODID;
+import static com.raden93.veganlife.VeganLifeConstants.NAME;
+import static com.raden93.veganlife.VeganLifeConstants.VERSION;
+
+import org.apache.logging.log4j.Logger;
+
+import com.raden93.veganlife.proxy.CommonProxy;
+
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.Mod.Instance;
@@ -9,14 +15,6 @@ import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
-import org.apache.logging.log4j.Logger;
-
-
-import static com.raden93.veganlife.VeganLifeConstants.*;
-
-import com.raden93.veganlife.block.jute.BaleOfJuteColorHandler;
-import com.raden93.veganlife.init.VeganLifeBlocks;
-import com.raden93.veganlife.proxy.CommonProxy;
 
 @Mod(modid = MODID, name = NAME, version = VERSION)
 public class VeganLifeMod
