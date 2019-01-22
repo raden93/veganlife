@@ -66,7 +66,7 @@ This should be an remastered version of [vegan option](https://github.com/backup
  - [x] Create all recipes.
  	- [x] Resin -> Rosin
  - [x] Resin drop from Spruce Wood
- - [ ] Resin can be use instead of Slimeballs
+ - [x] Resin can be use instead of Slimeballs
  
 #### Frozen Bubble + Raw Ender ( Ender Pearl alternative )
  
