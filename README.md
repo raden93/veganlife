@@ -125,17 +125,18 @@ This should be an remastered version of [vegan option](https://github.com/backup
  
 #### Doll's Eye
 
- - [ ] Create all Items.
- 	- [ ] Doll's Eye
+ - [x] Create all Items.
+ 	- [x] Doll's Eye
  - [ ] Doll's Eye Drops from grass in temperate forest biome.
  - [ ] Doll's Eye can be use instead of Spider Eye.
 
 #### Proof of Suffering
 
- - [ ] Create all Items.
- 	- [ ] Fragments of Suffering
- 	- [ ] Proof of Suffering
- - [ ] Create all recipes.
- 	- [ ] 8 Fragments of Suffering + Gold Nugget -> Proof of Suffering
+ - [x] Create all Items.
+ 	- [x] Fragments of Suffering
+ 	- [x] Proof of Suffering
+ - [x] Create all recipes.
+ 	- [x] 8 Fragments of Suffering + Gold Nugget -> Proof of Suffering
  - [ ] Proof of Suffering can be use instead of Ghast Tear
+ - [ ] Fragment of Suffering drops from Soul Sand
  
