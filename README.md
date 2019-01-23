@@ -46,11 +46,11 @@ This should be an remastered version of [vegan option](https://github.com/backup
  
 #### Vegetable oil + Ink
  
- - [ ] Create all Items.
- 	- [ ] Sunflower Seeds
- 	- [ ] Vegetable Oil
- 	- [ ] Vegetable Wax
- 	- [ ] Vegetable Oil Ink ( Black + White ) 
+ - [x] Create all Items.
+ 	- [x] Sunflower Seeds
+ 	- [x] Vegetable Oil
+ 	- [x] Vegetable Wax
+ 	- [x] Vegetable Oil Ink ( Black + White ) 
  - [ ] Create all recipes.
  	- [ ] Sunflower Seeds + Weighted Pressure Plate + Bottle -> Vegetable Oil
  	- [ ] Vegetable Oil -> Vegetable Wax
