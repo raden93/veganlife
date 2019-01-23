@@ -8,6 +8,8 @@ import com.raden93.veganlife.item.jute.BurlapItem;
 import com.raden93.veganlife.item.jute.JuteFibreItem;
 import com.raden93.veganlife.item.jute.JuteSeedsItem;
 import com.raden93.veganlife.item.jute.JuteStalkItem;
+import com.raden93.veganlife.item.mining.SaltpeterItem;
+import com.raden93.veganlife.item.mining.SulfurItem;
 import com.raden93.veganlife.item.slimeballs.ResinItem;
 import com.raden93.veganlife.item.slimeballs.RosinItem;
 import com.raden93.veganlife.item.wool.KapokTuftItem;
@@ -38,6 +40,10 @@ public class VeganLifeItems {
 	public static final ResinItem resin_item = new ResinItem();
 	public static final RosinItem rosin_item = new RosinItem();
 	
+	// Mining Drops
+	public static final SaltpeterItem saltpeter_item = new SaltpeterItem();
+	public static final SulfurItem sulfur_item = new SulfurItem();
+	
 	public static void init() {
 		setName(jute_stalk_item, "jutestalk");
 		setName(jute_fibre_item, "jutefibre");
@@ -49,6 +55,8 @@ public class VeganLifeItems {
 		setName(kapok_tuft_item, "kapoktuft");
 		setName(resin_item, "resin");
 		setName(rosin_item, "rosin");
+		setName(saltpeter_item, "saltpeter");
+		setName(sulfur_item, "sulfur");
 	}
 	
 	@SubscribeEvent
@@ -64,6 +72,8 @@ public class VeganLifeItems {
 		registry.register(kapok_tuft_item);
 		registry.register(resin_item);
 		registry.register(rosin_item);
+		registry.register(saltpeter_item);
+		registry.register(sulfur_item);
 	}
 	
 	public static void setName(Item item, String name) {
