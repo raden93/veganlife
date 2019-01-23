@@ -8,8 +8,10 @@ import net.minecraft.block.BlockDoublePlant;
 import net.minecraft.block.BlockOldLeaf;
 import net.minecraft.block.BlockOldLog;
 import net.minecraft.block.BlockPlanks;
+import net.minecraft.block.BlockStone;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.init.Blocks;
+import net.minecraft.init.Items;
 import net.minecraft.item.ItemShears;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.event.world.BlockEvent.HarvestDropsEvent;
@@ -19,6 +21,9 @@ public class VeganLifeDropChanger {
 	
 	public static final float KAPOK_TUFT_DROP_RATE = 0.07f;
 	public static final float RESIN_DROP_RATE = 0.1f;
+	public static final float SULFUR_DROP_RATE = 0.02f;
+	public static final float SALTPETER_DROP_RATE = 0.02f;
+	public static final float BONES_DROP_RATE = 0.01f;
 	
 	@SubscribeEvent
 	public void onHarvestBlock(HarvestDropsEvent event)
@@ -33,6 +38,9 @@ public class VeganLifeDropChanger {
 			this.dropKapokFromJungle(block, state, random, drops);
 		}
 		this.dropsResinFromSpruceWood(block, state, random, drops);
+		this.dropsSulfurFromNetherrack(block, random, drops);
+		this.dropsSaltpeterFromSandstone(block, random, drops);
+		this.dropsBonesFromStone(block, state, random, drops);
 	}
 	
 	/**
@@ -62,6 +70,33 @@ public class VeganLifeDropChanger {
 		if(block == Blocks.LOG && state.getValue(BlockOldLog.VARIANT) == BlockPlanks.EnumType.SPRUCE) {
 			if(random.nextFloat() < RESIN_DROP_RATE) {
 				drops.add(new ItemStack(VeganLifeItems.resin_item));
+			}
+		}
+	}
+	
+	/**
+	 * Netherrack drops Sulfur now
+	 */
+	private void dropsSulfurFromNetherrack(Block block, Random random, List<ItemStack> drops) {
+		if(block == Blocks.NETHERRACK) {
+			if(random.nextFloat() < SULFUR_DROP_RATE) {
+				drops.add(new ItemStack(VeganLifeItems.sulfur_item));
+			}
+		}
+	}
+	
+	private void dropsSaltpeterFromSandstone(Block block, Random random, List<ItemStack> drops) {
+		if(block == Blocks.SANDSTONE) {
+			if(random.nextFloat() < SALTPETER_DROP_RATE) {
+				drops.add(new ItemStack(VeganLifeItems.saltpeter_item));
+			}
+		}
+	}
+	
+	private void dropsBonesFromStone(Block block, IBlockState state, Random random, List<ItemStack> drops) {
+		if(block == Blocks.STONE && state.getValue(BlockStone.VARIANT) == BlockStone.EnumType.STONE) {
+			if(random.nextFloat() < BONES_DROP_RATE) {
+				drops.add(new ItemStack(Items.BONE));
 			}
 		}
 	}

@@ -36,3 +36,7 @@ tile.kapok.black.name=Black Kapok Block
 #slimeballs
 item.resin.name=Resin
 item.rosin.name=Rosin
+
+#mining drops
+item.sulfur.name=Sulfur
+item.saltpeter.name=Saltpeter

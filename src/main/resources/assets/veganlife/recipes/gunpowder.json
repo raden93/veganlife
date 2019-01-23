@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients":[
+    {
+      "item": "minecraft:coal",
+      "data": 1
+    },
+    {
+      "item": "veganlife:sulfur"
+    },
+    {
+      "item": "veganlife:saltpeter"
+    }
+  ],
+  "result": {
+    "item": "minecraft:gunpowder"
+  }
+}

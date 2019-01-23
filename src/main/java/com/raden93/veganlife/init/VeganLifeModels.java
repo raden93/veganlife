@@ -32,6 +32,10 @@ public class VeganLifeModels {
 		// Slimeballs
 		register(VeganLifeItems.resin_item);
 		register(VeganLifeItems.rosin_item);
+		
+		// Mining drops
+		register(VeganLifeItems.saltpeter_item);
+		register(VeganLifeItems.sulfur_item);
 	}
 	
 	private static void register(Item item) {
