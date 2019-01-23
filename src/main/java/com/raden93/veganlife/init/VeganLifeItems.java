@@ -10,6 +10,9 @@ import com.raden93.veganlife.item.jute.JuteSeedsItem;
 import com.raden93.veganlife.item.jute.JuteStalkItem;
 import com.raden93.veganlife.item.mining.SaltpeterItem;
 import com.raden93.veganlife.item.mining.SulfurItem;
+import com.raden93.veganlife.item.mobitems.DollsEyeItem;
+import com.raden93.veganlife.item.mobitems.FragmentOfSufferingItem;
+import com.raden93.veganlife.item.mobitems.ProofOfSufferinggItem;
 import com.raden93.veganlife.item.slimeballs.ResinItem;
 import com.raden93.veganlife.item.slimeballs.RosinItem;
 import com.raden93.veganlife.item.wool.KapokTuftItem;
@@ -44,6 +47,11 @@ public class VeganLifeItems {
 	public static final SaltpeterItem saltpeter_item = new SaltpeterItem();
 	public static final SulfurItem sulfur_item = new SulfurItem();
 	
+	// mob items
+	public static final DollsEyeItem dolls_eye_item = new DollsEyeItem();
+	public static final FragmentOfSufferingItem fragment_of_suffering_item = new FragmentOfSufferingItem();
+	public static final ProofOfSufferinggItem proof_of_suffering_item = new ProofOfSufferinggItem();
+	
 	public static void init() {
 		setName(jute_stalk_item, "jutestalk");
 		setName(jute_fibre_item, "jutefibre");
@@ -57,6 +65,9 @@ public class VeganLifeItems {
 		setName(rosin_item, "rosin");
 		setName(saltpeter_item, "saltpeter");
 		setName(sulfur_item, "sulfur");
+		setName(dolls_eye_item, "dollseye");
+		setName(fragment_of_suffering_item, "fragmentofsuffering");
+		setName(proof_of_suffering_item, "proofofsuffering");
 	}
 	
 	@SubscribeEvent
@@ -74,6 +85,9 @@ public class VeganLifeItems {
 		registry.register(rosin_item);
 		registry.register(saltpeter_item);
 		registry.register(sulfur_item);
+		registry.register(dolls_eye_item);
+		registry.register(fragment_of_suffering_item);
+		registry.register(proof_of_suffering_item);
 	}
 	
 	public static void setName(Item item, String name) {

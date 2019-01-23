@@ -40,3 +40,8 @@ item.rosin.name=Rosin
 #mining drops
 item.sulfur.name=Sulfur
 item.saltpeter.name=Saltpeter
+
+#mob drops
+item.dollseye.name=Doll's Eye
+item.fragmentofsuffering.name=Fragment of Suffering
+item.proofofsuffering.name=Proof of Suffering

@@ -36,6 +36,11 @@ public class VeganLifeModels {
 		// Mining drops
 		register(VeganLifeItems.saltpeter_item);
 		register(VeganLifeItems.sulfur_item);
+		
+		// Mob Items
+		register(VeganLifeItems.dolls_eye_item);
+		register(VeganLifeItems.fragment_of_suffering_item);
+		register(VeganLifeItems.proof_of_suffering_item);
 	}
 	
 	private static void register(Item item) {
