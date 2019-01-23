@@ -13,5 +13,8 @@ public class VeganLifeOreDicts {
 		
 		OreDictionary.registerOre("slimeball", new ItemStack(Items.SLIME_BALL));
 		OreDictionary.registerOre("slimeball", new ItemStack(VeganLifeItems.resin_item));
+		
+		
+		OreDictionary.registerOre("feather", VeganLifeItems.faux_feather_item);
 	}
 }

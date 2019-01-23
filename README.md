@@ -104,9 +104,11 @@ This should be an remastered version of [vegan option](https://github.com/backup
  
 #### Faux Feather
 
- - [ ] Create all recipes.
- 	- [ ] Plastic Rod + Kapok Tuft -> Faux Feather
- - [ ] Faux Feather can be use instead of Feather.
+ - [x] Create all Items
+    - [x] Faux Feather
+ - [x] Create all recipes.
+ 	- [x] Plastic Rod + Kapok Tuft -> Faux Feather
+ - [x] Faux Feather can be use instead of Feather.
  
 #### Fossils
 
