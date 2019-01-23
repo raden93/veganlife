@@ -117,8 +117,8 @@ This should be an remastered version of [vegan option](https://github.com/backup
  - [x] Create all Items.
  	- [x] Saltpeter
  	- [x] Sulfur
- - [ ] Create all recipes.
- 	- [ ] Saltpeter + Sulfur + Charcoal -> Gunpowder
+ - [x] Create all recipes.
+ 	- [x] Saltpeter + Sulfur + Charcoal -> Gunpowder
  - [x] Saltpeter drops when mining Sandstone.
  - [x] Sulfur drops when mining Netherrack.
  
@@ -137,6 +137,7 @@ This should be an remastered version of [vegan option](https://github.com/backup
  	- [x] Proof of Suffering
  - [x] Create all recipes.
  	- [x] 8 Fragments of Suffering + Gold Nugget -> Proof of Suffering
+ 	- [x] Fragment of Suffering drops from Soul Sand
  - [ ] Proof of Suffering can be use instead of Ghast Tear
- - [ ] Fragment of Suffering drops from Soul Sand
+
  

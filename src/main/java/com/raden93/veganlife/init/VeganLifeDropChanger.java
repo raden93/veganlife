@@ -24,6 +24,7 @@ public class VeganLifeDropChanger {
 	public static final float SULFUR_DROP_RATE = 0.02f;
 	public static final float SALTPETER_DROP_RATE = 0.02f;
 	public static final float BONES_DROP_RATE = 0.01f;
+	public static final float FRAGMENT_OF_SUFFERING_DROP_RATE = 0.05f;
 	
 	@SubscribeEvent
 	public void onHarvestBlock(HarvestDropsEvent event)
@@ -41,6 +42,7 @@ public class VeganLifeDropChanger {
 		this.dropsSulfurFromNetherrack(block, random, drops);
 		this.dropsSaltpeterFromSandstone(block, random, drops);
 		this.dropsBonesFromStone(block, state, random, drops);
+		this.dropsFragmentOfSufferingFromSoulSand(block, random, drops);
 	}
 	
 	/**
@@ -85,6 +87,9 @@ public class VeganLifeDropChanger {
 		}
 	}
 	
+	/**
+	 * Sandstone drops Saltpeter now
+	 */
 	private void dropsSaltpeterFromSandstone(Block block, Random random, List<ItemStack> drops) {
 		if(block == Blocks.SANDSTONE) {
 			if(random.nextFloat() < SALTPETER_DROP_RATE) {
@@ -93,12 +98,30 @@ public class VeganLifeDropChanger {
 		}
 	}
 	
+	/**
+	 * Strone drops Bones now
+	 */
 	private void dropsBonesFromStone(Block block, IBlockState state, Random random, List<ItemStack> drops) {
 		if(block == Blocks.STONE && state.getValue(BlockStone.VARIANT) == BlockStone.EnumType.STONE) {
 			if(random.nextFloat() < BONES_DROP_RATE) {
 				drops.add(new ItemStack(Items.BONE));
 			}
 		}
+	}
+	
+	/**
+	 * Soul Sand drops Fragment of Suffering
+	 */
+	private void dropsFragmentOfSufferingFromSoulSand(Block block, Random random, List<ItemStack> drops) {
+		if(block == Blocks.SOUL_SAND) {
+			if(random.nextFloat() < FRAGMENT_OF_SUFFERING_DROP_RATE) {
+				drops.add(new ItemStack(VeganLifeItems.fragment_of_suffering_item, random.nextInt(2) + 1));
+			}
+		}
+	}
+	
+	private void dropsDollsEyeFromGras(Block block, IBlockState state, Random random, List<ItemStack> drops) {
+		
 	}
 	
 	private boolean userUseShears(HarvestDropsEvent event) { 
