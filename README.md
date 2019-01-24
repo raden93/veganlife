@@ -54,9 +54,11 @@ This should be an remastered version of [vegan option](https://github.com/backup
  - [ ] Create all recipes.
  	- [ ] Sunflower Seeds + Weighted Pressure Plate + Bottle -> Vegetable Oil
  	- [ ] Vegetable Oil -> Vegetable Wax
- 	- [ ] Vegetable Oil + Vegetable Wax + Rosin + Charcoal -> Black Vegetable Oil Ink
- 	- [ ] Vegetable Oil + Vegetable Wax + Rosin + Nether Quarz -> White Vegetable Oil Ink
+ 	- [x] Vegetable Oil + Vegetable Wax + Rosin + Charcoal -> Black Vegetable Oil Ink
+ 	- [x] Vegetable Oil + Vegetable Wax + Rosin + Nether Quarz -> White Vegetable Oil Ink
  - [ ] Sunflowers drops Sunflower Seeds
+ - [ ] Black Vegetable Oil Ink can be use instead of Ink Sac
+ - [ ] White Vegetable Oil Ink can be use instead of Bone Meal ( white dye )
  
 #### Resin
  

@@ -4,6 +4,7 @@ import com.raden93.veganlife.init.VeganLifeBlocks;
 import com.raden93.veganlife.init.VeganLifeDropChanger;
 import com.raden93.veganlife.init.VeganLifeItems;
 import com.raden93.veganlife.init.VeganLifeOreDicts;
+import com.raden93.veganlife.init.VeganLifeRecipeEvents;
 import com.raden93.veganlife.init.VeganLifeRecipes;
 
 import net.minecraftforge.common.MinecraftForge;
@@ -20,6 +21,7 @@ public class CommonProxy {
 		MinecraftForge.EVENT_BUS.register(VeganLifeItems.class);
 		MinecraftForge.EVENT_BUS.register(VeganLifeBlocks.class);
 		MinecraftForge.EVENT_BUS.register(new VeganLifeDropChanger());
+		MinecraftForge.EVENT_BUS.register(new VeganLifeRecipeEvents());
 		
 		VeganLifeRecipes.registerSmelting();
 	}
