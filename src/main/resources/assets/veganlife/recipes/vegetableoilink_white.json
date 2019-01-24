@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients":[
+    {
+      "item": "veganlife:vegetableoil"
+    },
+    {
+      "item": "veganlife:vegetablewax"
+    },
+    {
+      "item": "veganlife:rosin"
+    },
+    {
+      "item": "minecraft:quartz",
+      "data": 1
+    }
+  ],
+  "result": {
+    "item": "veganlife:vegetableoilink",
+    "data":1
+  }
+}
