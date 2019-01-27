@@ -115,7 +115,6 @@ public class VeganLifeDropChanger {
 	
 	private void addDropForItem(Block block, Random random, List<ItemStack> drops) {
 		ItemStack dropedItem = newDropsPerBlock.get(new ItemStack(block).getItem());
-		System.out.println(dropedItem);
 		if(dropedItem != null && random.nextFloat() < dropRatePerItem.get(dropedItem)) {
 			dropedItem.setCount(random.nextInt(dropsPerItem.get(dropedItem)) + 1);
 			drops.add(dropedItem);
