@@ -47,24 +47,32 @@ This should be an remastered version of [vegan option](https://github.com/backup
 #### Vegetable oil + Ink
  
 <<<<<<< HEAD
+<<<<<<< HEAD
  - [ ] Create all Items.
  	- [ ] Sunflower Seeds
  	- [ ] Vegetable Oil
  	- [ ] Vegetable Wax
  	- [ ] Vegetable Oil Ink ( Black + White ) 
 =======
+=======
+>>>>>>> dev
  - [x] Create all Items.
  	- [x] Sunflower Seeds
  	- [x] Vegetable Oil
  	- [x] Vegetable Wax
  	- [x] Vegetable Oil Ink ( Black + White ) 
+<<<<<<< HEAD
 >>>>>>> ce0a349bc22ceaf7b80c6c5db61800f1acce98cc
+=======
+>>>>>>> dev
  - [ ] Create all recipes.
  	- [ ] Sunflower Seeds + Weighted Pressure Plate + Bottle -> Vegetable Oil
  	- [ ] Vegetable Oil -> Vegetable Wax
- 	- [ ] Vegetable Oil + Vegetable Wax + Rosin + Charcoal -> Black Vegetable Oil Ink
- 	- [ ] Vegetable Oil + Vegetable Wax + Rosin + Nether Quarz -> White Vegetable Oil Ink
+ 	- [x] Vegetable Oil + Vegetable Wax + Rosin + Charcoal -> Black Vegetable Oil Ink
+ 	- [x] Vegetable Oil + Vegetable Wax + Rosin + Nether Quarz -> White Vegetable Oil Ink
  - [ ] Sunflowers drops Sunflower Seeds
+ - [ ] Black Vegetable Oil Ink can be use instead of Ink Sac
+ - [ ] White Vegetable Oil Ink can be use instead of Bone Meal ( white dye )
  
 #### Resin
  
@@ -113,16 +121,22 @@ This should be an remastered version of [vegan option](https://github.com/backup
 #### Faux Feather
 
 <<<<<<< HEAD
+<<<<<<< HEAD
  - [ ] Create all recipes.
  	- [ ] Plastic Rod + Kapok Tuft -> Faux Feather
  - [ ] Faux Feather can be use instead of Feather.
 =======
+=======
+>>>>>>> dev
  - [x] Create all Items
     - [x] Faux Feather
  - [x] Create all recipes.
  	- [x] Plastic Rod + Kapok Tuft -> Faux Feather
  - [x] Faux Feather can be use instead of Feather.
+<<<<<<< HEAD
 >>>>>>> ce0a349bc22ceaf7b80c6c5db61800f1acce98cc
+=======
+>>>>>>> dev
  
 #### Fossils
 
@@ -134,12 +148,17 @@ This should be an remastered version of [vegan option](https://github.com/backup
  	- [x] Saltpeter
  	- [x] Sulfur
 <<<<<<< HEAD
+<<<<<<< HEAD
  - [ ] Create all recipes.
  	- [ ] Saltpeter + Sulfur + Charcoal -> Gunpowder
 =======
  - [x] Create all recipes.
  	- [x] Saltpeter + Sulfur + Charcoal -> Gunpowder
 >>>>>>> ce0a349bc22ceaf7b80c6c5db61800f1acce98cc
+=======
+ - [x] Create all recipes.
+ 	- [x] Saltpeter + Sulfur + Charcoal -> Gunpowder
+>>>>>>> dev
  - [x] Saltpeter drops when mining Sandstone.
  - [x] Sulfur drops when mining Netherrack.
  
@@ -159,6 +178,7 @@ This should be an remastered version of [vegan option](https://github.com/backup
  - [x] Create all recipes.
  	- [x] 8 Fragments of Suffering + Gold Nugget -> Proof of Suffering
 <<<<<<< HEAD
+<<<<<<< HEAD
  - [ ] Proof of Suffering can be use instead of Ghast Tear
  - [ ] Fragment of Suffering drops from Soul Sand
 =======
@@ -166,4 +186,9 @@ This should be an remastered version of [vegan option](https://github.com/backup
  - [ ] Proof of Suffering can be use instead of Ghast Tear
 
 >>>>>>> ce0a349bc22ceaf7b80c6c5db61800f1acce98cc
+=======
+ 	- [x] Fragment of Suffering drops from Soul Sand
+ - [ ] Proof of Suffering can be use instead of Ghast Tear
+
+>>>>>>> dev
  

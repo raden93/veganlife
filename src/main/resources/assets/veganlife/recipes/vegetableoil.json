@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "pattern": [
+    "p",
+    "#"
+  ],
+  "ingredients":[
+    {
+      "item": "veganlife:sunflowerseeds",
+      "data": 0
+    },
+    {
+      "item": "minecraft:piston",
+      "data": 0
+    },
+    {
+   	  "item":"minecraft:glass_bottle"
+    }
+  ],
+  "result": {
+    "item": "veganlife:vegetableoil"
+  }
+}

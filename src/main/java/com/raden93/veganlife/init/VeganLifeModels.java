@@ -1,6 +1,9 @@
 package com.raden93.veganlife.init;
 
+<<<<<<< HEAD
 import net.minecraft.block.Block;
+=======
+>>>>>>> dev
 import com.raden93.veganlife.item.oil.VegetableOilInkItem;
 import net.minecraft.block.Block;
 import net.minecraft.client.renderer.block.model.ModelBakery;
@@ -52,7 +55,6 @@ public class VeganLifeModels {
 		register(VeganLifeItems.vegetable_wax_item);
 		register(VeganLifeItems.vegetable_oil_ink_item, 0, "_black");
 		register(VeganLifeItems.vegetable_oil_ink_item, 1, "_white");
-		
 	}
 	
 	private static void register(Item item) {
