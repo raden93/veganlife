@@ -1,6 +1,9 @@
 package com.raden93.veganlife.init;
 
 import net.minecraft.block.Block;
+import com.raden93.veganlife.item.oil.VegetableOilInkItem;
+import net.minecraft.block.Block;
+import net.minecraft.client.renderer.block.model.ModelBakery;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.EnumDyeColor;
 import net.minecraft.item.Item;
@@ -41,10 +44,23 @@ public class VeganLifeModels {
 		register(VeganLifeItems.dolls_eye_item);
 		register(VeganLifeItems.fragment_of_suffering_item);
 		register(VeganLifeItems.proof_of_suffering_item);
+		register(VeganLifeItems.faux_feather_item);
+		
+		// Vegetable oil
+		register(VeganLifeItems.sunflower_seeds_item);
+		register(VeganLifeItems.vegetable_oil_item);
+		register(VeganLifeItems.vegetable_wax_item);
+		register(VeganLifeItems.vegetable_oil_ink_item, 0, "_black");
+		register(VeganLifeItems.vegetable_oil_ink_item, 1, "_white");
+		
 	}
 	
 	private static void register(Item item) {
 		ModelLoader.setCustomModelResourceLocation(item, 0, new ModelResourceLocation(item.getRegistryName(), "inventory"));
+	}
+	
+	private static void register(Item item, int metadata, String variantName) {
+		ModelLoader.setCustomModelResourceLocation(item, metadata, new ModelResourceLocation(item.getRegistryName() + variantName, "inventory"));
 	}
 	
 	private static void registerColorizedItems(Item item, Block block) {

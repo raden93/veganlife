@@ -13,6 +13,13 @@ import com.raden93.veganlife.item.mining.SulfurItem;
 import com.raden93.veganlife.item.mobitems.DollsEyeItem;
 import com.raden93.veganlife.item.mobitems.FragmentOfSufferingItem;
 import com.raden93.veganlife.item.mobitems.ProofOfSufferinggItem;
+import com.raden93.veganlife.item.mobitems.FauxFeatherItem;
+import com.raden93.veganlife.item.mobitems.FragmentOfSufferingItem;
+import com.raden93.veganlife.item.mobitems.ProofOfSufferinggItem;
+import com.raden93.veganlife.item.oil.SunflowerSeedsItem;
+import com.raden93.veganlife.item.oil.VegetableOilInkItem;
+import com.raden93.veganlife.item.oil.VegetableOilItem;
+import com.raden93.veganlife.item.oil.VegetableWaxItem;
 import com.raden93.veganlife.item.slimeballs.ResinItem;
 import com.raden93.veganlife.item.slimeballs.RosinItem;
 import com.raden93.veganlife.item.wool.KapokTuftItem;
@@ -51,6 +58,13 @@ public class VeganLifeItems {
 	public static final DollsEyeItem dolls_eye_item = new DollsEyeItem();
 	public static final FragmentOfSufferingItem fragment_of_suffering_item = new FragmentOfSufferingItem();
 	public static final ProofOfSufferinggItem proof_of_suffering_item = new ProofOfSufferinggItem();
+	public static final FauxFeatherItem faux_feather_item = new FauxFeatherItem();
+	
+	// vegetable oil
+	public static final SunflowerSeedsItem sunflower_seeds_item = new SunflowerSeedsItem();
+	public static final VegetableOilItem vegetable_oil_item = new VegetableOilItem();
+	public static final VegetableWaxItem vegetable_wax_item = new VegetableWaxItem();
+	public static final VegetableOilInkItem vegetable_oil_ink_item = new VegetableOilInkItem();
 	
 	public static void init() {
 		setName(jute_stalk_item, "jutestalk");
@@ -68,6 +82,11 @@ public class VeganLifeItems {
 		setName(dolls_eye_item, "dollseye");
 		setName(fragment_of_suffering_item, "fragmentofsuffering");
 		setName(proof_of_suffering_item, "proofofsuffering");
+		setName(faux_feather_item, "fauxfeather");
+		setName(sunflower_seeds_item, "sunflowerseeds");
+		setName(vegetable_oil_item, "vegetableoil");
+		setName(vegetable_wax_item, "vegetablewax");
+		setName(vegetable_oil_ink_item, "vegetableoilink");
 	}
 	
 	@SubscribeEvent
@@ -88,6 +107,11 @@ public class VeganLifeItems {
 		registry.register(dolls_eye_item);
 		registry.register(fragment_of_suffering_item);
 		registry.register(proof_of_suffering_item);
+		registry.register(faux_feather_item);
+		registry.register(sunflower_seeds_item);
+		registry.register(vegetable_oil_item);
+		registry.register(vegetable_wax_item);
+		registry.register(vegetable_oil_ink_item);
 	}
 	
 	public static void setName(Item item, String name) {

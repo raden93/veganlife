@@ -45,3 +45,11 @@ item.saltpeter.name=Saltpeter
 item.dollseye.name=Doll's Eye
 item.fragmentofsuffering.name=Fragment of Suffering
 item.proofofsuffering.name=Proof of Suffering
+item.fauxfeather.name=Faux Feather
+
+#vegetable oil
+item.sunflowerseeds.name=Sunflower Seeds
+item.vegetableoil.name=Vegetable Oil
+item.vegetablewax.name=Vegetable Wax
+item.vegetableoilink_black.name=Black Vegetable Ink
+item.vegetableoilink_white.name=White Vegetable Ink
