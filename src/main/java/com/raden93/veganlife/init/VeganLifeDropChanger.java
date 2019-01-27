@@ -64,6 +64,7 @@ public class VeganLifeDropChanger {
 		if(!this.userUseShears(event)) {
 			this.dropJuteFromFerns(block, state, random, drops);
 			this.dropKapokFromJungle(block, state, random, drops);
+			this.dropsSunflowerSeedsFromSunflowsers(block, state, random, drops);
 		}
 		this.dropsResinFromSpruceWood(block, state, random, drops);
 		this.dropsBonesFromStone(block, state, random, drops);
@@ -123,6 +124,12 @@ public class VeganLifeDropChanger {
 	
 	private void dropsDollsEyeFromGras(Block block, IBlockState state, Random random, List<ItemStack> drops) {
 		
+	}
+	
+	private void dropsSunflowerSeedsFromSunflowsers(Block block, IBlockState state, Random random, List<ItemStack> drops) {
+		if(block == Blocks.DOUBLE_PLANT && state.getValue(BlockDoublePlant.VARIANT) == BlockDoublePlant.EnumPlantType.SUNFLOWER) {
+			drops.add(new ItemStack(VeganLifeItems.sunflower_seeds_item, 1));
+		}
 	}
 	
 	private boolean userUseShears(HarvestDropsEvent event) { 
