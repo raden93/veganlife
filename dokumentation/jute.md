@@ -10,5 +10,10 @@ Jute Seeds can be grown on farmland or grass.
 
 ## Recipes 
 
----
-|(../src/main/resources/assets.veganlife.textures.itemsjutestock.png?raw=true)|
+--
+||
+
+|--|--|--|
+|  |  |  |
+|  |![Jute Stalk](./../src/main/resources/assets/veganlife/textures/items/jutestalk.png?raw=true)  |  |
+|  |  |  |
