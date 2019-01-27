@@ -2,8 +2,23 @@
 
 This should be an remastered version of [vegan option](https://github.com/backuporg/VeganOption) for the Minecraft Version 1.12.2
 
-## Current State
+## Dokumentation
 
+Short descriptions for all VeganLife Items:
+
+ - [Jute](dokumentation/jute.md)
+ - Kapok (TODO)
+ - Bioplastik (TODO)
+ - Vegetable oil and Ink (TODO)
+ - Resin (TODO)
+ - Enderperl (TODO)
+ - Faux Feather (TODO)
+ - Fossils (TODO)
+ - Gunpowder (TODO)
+ - Doll's Eye (TODO)
+ - Proof of Suffering (TODO)
+
+## Current State
 
 #### Jute
 
