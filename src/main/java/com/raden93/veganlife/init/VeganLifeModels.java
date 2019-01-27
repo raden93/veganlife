@@ -52,6 +52,11 @@ public class VeganLifeModels {
 		register(VeganLifeItems.vegetable_wax_item);
 		register(VeganLifeItems.vegetable_oil_ink_item, 0, "_black");
 		register(VeganLifeItems.vegetable_oil_ink_item, 1, "_white");
+		
+		// Enderperl
+		register(VeganLifeItems.soap_item);
+		register(VeganLifeItems.soap_solution_item);
+		register(VeganLifeItems.frozen_bubble_item);
 	}
 	
 	private static void register(Item item) {

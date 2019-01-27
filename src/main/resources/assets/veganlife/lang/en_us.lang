@@ -53,3 +53,8 @@ item.vegetableoil.name=Vegetable Oil
 item.vegetablewax.name=Vegetable Wax
 item.vegetableoilink_black.name=Black Vegetable Ink
 item.vegetableoilink_white.name=White Vegetable Ink
+
+#enderperl
+item.frozenbubble.name=Frozen Bubble
+item.soap.name=Soap
+item.soapsolution.name=Soap Solution

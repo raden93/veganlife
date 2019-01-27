@@ -4,6 +4,9 @@ import com.raden93.veganlife.VeganLifeConstants;
 import com.raden93.veganlife.item.bioplastic.BioplasticItem;
 import com.raden93.veganlife.item.bioplastic.PlasticRodItem;
 import com.raden93.veganlife.item.bioplastic.PotatoStarchItem;
+import com.raden93.veganlife.item.enderperl.FrozenBubbleItem;
+import com.raden93.veganlife.item.enderperl.SoapItem;
+import com.raden93.veganlife.item.enderperl.SoapSolutionItem;
 import com.raden93.veganlife.item.jute.BurlapItem;
 import com.raden93.veganlife.item.jute.JuteFibreItem;
 import com.raden93.veganlife.item.jute.JuteSeedsItem;
@@ -66,6 +69,11 @@ public class VeganLifeItems {
 	public static final VegetableWaxItem vegetable_wax_item = new VegetableWaxItem();
 	public static final VegetableOilInkItem vegetable_oil_ink_item = new VegetableOilInkItem();
 	
+	//enderperl
+	public static final SoapItem soap_item = new SoapItem();
+	public static final SoapSolutionItem soap_solution_item = new SoapSolutionItem();
+	public static final FrozenBubbleItem frozen_bubble_item = new FrozenBubbleItem();
+	
 	public static void init() {
 		setName(jute_stalk_item, "jutestalk");
 		setName(jute_fibre_item, "jutefibre");
@@ -87,6 +95,9 @@ public class VeganLifeItems {
 		setName(vegetable_oil_item, "vegetableoil");
 		setName(vegetable_wax_item, "vegetablewax");
 		setName(vegetable_oil_ink_item, "vegetableoilink");
+		setName(soap_item, "soap");
+		setName(soap_solution_item, "soapsolution");
+		setName(frozen_bubble_item, "frozenbubble");
 	}
 	
 	@SubscribeEvent
@@ -112,6 +123,9 @@ public class VeganLifeItems {
 		registry.register(vegetable_oil_item);
 		registry.register(vegetable_wax_item);
 		registry.register(vegetable_oil_ink_item);
+		registry.register(soap_item);
+		registry.register(soap_solution_item);
+		registry.register(frozen_bubble_item);
 	}
 	
 	public static void setName(Item item, String name) {
