@@ -1,9 +1,6 @@
 package com.raden93.veganlife.init;
 
-<<<<<<< HEAD
 import net.minecraft.block.Block;
-=======
->>>>>>> dev
 import com.raden93.veganlife.item.oil.VegetableOilInkItem;
 import net.minecraft.block.Block;
 import net.minecraft.client.renderer.block.model.ModelBakery;
