@@ -57,7 +57,7 @@ This should be an remastered version of [vegan option](https://github.com/backup
  	- [x] Vegetable Wax
  	- [x] Vegetable Oil Ink ( Black + White ) 
  - [ ] Create all recipes.
- 	- [ ] Sunflower Seeds + Weighted Pressure Plate + Bottle -> Vegetable Oil
+ 	- [x] Sunflower Seeds + Piston + Bottle -> Vegetable Oil
  	- [ ] Vegetable Oil -> Vegetable Wax
  	- [x] Vegetable Oil + Vegetable Wax + Rosin + Charcoal -> Black Vegetable Oil Ink
  	- [x] Vegetable Oil + Vegetable Wax + Rosin + Nether Quarz -> White Vegetable Oil Ink

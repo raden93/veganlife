@@ -1,5 +1,12 @@
 package com.raden93.veganlife.init;
 
+import com.raden93.veganlife.VeganLifeMod;
+
+import net.minecraft.init.Blocks;
+import net.minecraft.init.Items;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemPiston;
+import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.gameevent.PlayerEvent;
 
@@ -8,10 +15,18 @@ public class VeganLifeRecipeEvents {
 	@SubscribeEvent
 	public void onItemCrafted(PlayerEvent.ItemCraftedEvent event)
 	{
-		
-		if(event.crafting.getItem().equals(VeganLifeItems.vegetable_oil_item)) {
-			System.out.println("crafting vegetableoil");
-			return;
+		this.stayInputForOutput(new ItemStack(Blocks.PISTON), new ItemStack(VeganLifeItems.vegetable_oil_item), event);
+		this.stayInputForOutput(new ItemStack(Blocks.PISTON), new ItemStack(VeganLifeItems.potato_starch_item), event);
+	}
+	
+	private void stayInputForOutput(ItemStack input, ItemStack output, PlayerEvent.ItemCraftedEvent event) {
+		if(event.crafting.getItem().equals(output.getItem())) {
+			for(int i = 0; i < event.craftMatrix.getSizeInventory(); i++) {
+				ItemStack stackInSlot = event.craftMatrix.getStackInSlot(i);
+				if(stackInSlot.getItem() == input.getItem() ) {
+					stackInSlot.grow(1);
+				}
+			}
 		}
 	}
 
