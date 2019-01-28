@@ -102,6 +102,7 @@ Short descriptions for all VeganLife Items:
  	- [x] Soap
  	- [x] Soap Solution
  	- [x] Frozen Bubble
+ 	- [x] Wood Ash Lye
  - [ ] Create all recipes.
  	- [ ] Water + 3 Charcoal -> Wood Ash Lye
  	- [ ] Wood Ash Lye + Vegetable Oil + Rosin -> Soap

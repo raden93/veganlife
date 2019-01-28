@@ -28,6 +28,7 @@ public class CommonProxy {
 
 	public void init(FMLInitializationEvent event) {
 		VeganLifeOreDicts.init();
+		VeganLifeRecipes.registerRecipes();
 	}
 
 	public void postinit(FMLPostInitializationEvent event) {
