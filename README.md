@@ -116,7 +116,7 @@ Short descriptions for all VeganLife Items:
  - [ ]  Create all Items and Blocks.
  	- [ ] Encrusted Obsidian
  	- [ ] Ender Rift
- 	- [ ] Raw Ender
+ 	- [x] Raw Ender
  - [ ] Create all recipes.
  	- [ ] 2 Obsidian + Diamond + Emerald -> Encrusted Obsidian
  - [ ] 4 Encrusted Obsidain create an Ender Rift on the center.

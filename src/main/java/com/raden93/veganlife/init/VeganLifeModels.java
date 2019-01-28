@@ -60,7 +60,9 @@ public class VeganLifeModels {
 		register(VeganLifeItems.soap_solution_item);
 		register(VeganLifeItems.frozen_bubble_item);
 		registerFluidMapperAndMeshDef(VeganLifeBlocks.raw_ender_block, "rawender");
+		registerFluidMapperAndMeshDef(VeganLifeBlocks.wood_ash_lye_block, "woodashlye");
 		register(Item.getItemFromBlock(VeganLifeBlocks.raw_ender_block));
+		register(Item.getItemFromBlock(VeganLifeBlocks.wood_ash_lye_block));
 	}
 	
 	private static void register(Item item) {

@@ -3,6 +3,8 @@ package com.raden93.veganlife.init;
 import com.raden93.veganlife.VeganLifeConstants;
 import com.raden93.veganlife.block.enderperl.RawEnderBlock;
 import com.raden93.veganlife.block.enderperl.RawEnderFluid;
+import com.raden93.veganlife.block.enderperl.WoodAshLyeBlock;
+import com.raden93.veganlife.block.enderperl.WoodAshLyeFluid;
 import com.raden93.veganlife.block.jute.BaleOfJuteBlock;
 import com.raden93.veganlife.block.jute.JuteCropBlock;
 import com.raden93.veganlife.block.wool.KapokBlock;
@@ -23,22 +25,31 @@ public class VeganLifeBlocks {
 	public static final BaleOfJuteBlock bale_of_jute_block = new BaleOfJuteBlock();
 	public static final JuteCropBlock jute_crop_block = new JuteCropBlock();
 	public static final KapokBlock kapok_block = new KapokBlock(Material.CLOTH);
-	public static RawEnderBlock raw_ender_block;
 	
 	//Ender
 	public static final RawEnderFluid raw_ender_fluid = new RawEnderFluid();
+	public static final WoodAshLyeFluid wood_ash_lye_fluid = new WoodAshLyeFluid();
+	public static RawEnderBlock raw_ender_block;
+	public static WoodAshLyeBlock wood_ash_lye_block;
+	
 	
 	public static void init() {
 		FluidRegistry.registerFluid(raw_ender_fluid);
+		FluidRegistry.registerFluid(wood_ash_lye_fluid);
 		
 		raw_ender_block = new RawEnderBlock(raw_ender_fluid);
 		raw_ender_fluid.setBlock(raw_ender_block);
 		FluidRegistry.addBucketForFluid(raw_ender_fluid);
 		
+		wood_ash_lye_block = new WoodAshLyeBlock(wood_ash_lye_fluid);
+		wood_ash_lye_fluid.setBlock(wood_ash_lye_block);
+		FluidRegistry.addBucketForFluid(wood_ash_lye_fluid);
+		
 		setName(bale_of_jute_block, "baleofjute");
 		setName(jute_crop_block, "jutecrop");
 		setName(kapok_block, "kapok");
 		setName(raw_ender_block, "rawender");
+		setName(wood_ash_lye_block, "woodashlye");
 	}
 	
 	private static void setName(Block block, String name) {
@@ -53,6 +64,7 @@ public class VeganLifeBlocks {
 		registry.register(jute_crop_block);
 		registry.register(kapok_block);
 		registry.register(raw_ender_block);
+		registry.register(wood_ash_lye_block);
 	}
 	
 	@SubscribeEvent
@@ -62,6 +74,7 @@ public class VeganLifeBlocks {
 		registry.register(new ItemBlock(jute_crop_block).setRegistryName(jute_crop_block.getRegistryName()));
 		registry.register(new ItemCloth(kapok_block).setRegistryName(kapok_block.getRegistryName()));
 		registry.register(new ItemBlock(raw_ender_block).setRegistryName(raw_ender_block.getRegistryName()));
+		registry.register(new ItemBlock(wood_ash_lye_block).setRegistryName(wood_ash_lye_block.getRegistryName()));
 	}
 	
 	
