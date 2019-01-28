@@ -8,6 +8,7 @@ import org.apache.logging.log4j.Logger;
 
 import com.raden93.veganlife.proxy.CommonProxy;
 
+import net.minecraftforge.fluids.FluidRegistry;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.Mod.Instance;
@@ -25,6 +26,13 @@ public class VeganLifeMod
 	public static VeganLifeMod getInstance() {
 		return instance;
 	}
+	
+
+	// necessary for use buckets with custom fluids
+	static {
+    FluidRegistry.enableUniversalBucket();
+    }
+
 	
 	@SidedProxy(serverSide = "com.raden93.veganlife.proxy.CommonProxy", clientSide = "com.raden93.veganlife.proxy.ClientProxy")
 	private static CommonProxy proxy;

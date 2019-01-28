@@ -58,5 +58,5 @@ item.vegetableoilink_white.name=White Vegetable Ink
 item.frozenbubble.name=Frozen Bubble
 item.soap.name=Soap
 item.soapsolution.name=Soap Solution
-fluid.rawender.name=Raw Ender
+fluid.rawender=Raw Ender
 tile.rawender.name=Raw Ender

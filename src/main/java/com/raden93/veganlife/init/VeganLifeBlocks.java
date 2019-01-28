@@ -33,6 +33,7 @@ public class VeganLifeBlocks {
 		
 		raw_ender_block = new RawEnderBlock(raw_ender_fluid);
 		raw_ender_fluid.setBlock(raw_ender_block);
+		FluidRegistry.addBucketForFluid(raw_ender_fluid);
 		
 		setName(bale_of_jute_block, "baleofjute");
 		setName(jute_crop_block, "jutecrop");
