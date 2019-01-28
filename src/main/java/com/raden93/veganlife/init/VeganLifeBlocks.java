@@ -1,6 +1,7 @@
 package com.raden93.veganlife.init;
 
 import com.raden93.veganlife.VeganLifeConstants;
+import com.raden93.veganlife.block.enderperl.RawEnderFluid;
 import com.raden93.veganlife.block.jute.BaleOfJuteBlock;
 import com.raden93.veganlife.block.jute.JuteCropBlock;
 import com.raden93.veganlife.block.wool.KapokBlock;
@@ -12,6 +13,7 @@ import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemCloth;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.event.RegistryEvent;
+import net.minecraftforge.fluids.FluidRegistry;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.registries.IForgeRegistry;
 
@@ -20,6 +22,8 @@ public class VeganLifeBlocks {
 	public static final BaleOfJuteBlock bale_of_jute_block = new BaleOfJuteBlock();
 	public static final JuteCropBlock jute_crop_block = new JuteCropBlock();
 	public static final KapokBlock kapok_block = new KapokBlock(Material.CLOTH);
+	
+	public static final RawEnderFluid raw_ender_fluid = new RawEnderFluid();
 	
 	public static void init() {
 		setName(bale_of_jute_block, "baleofjute");
@@ -38,6 +42,8 @@ public class VeganLifeBlocks {
 		registry.register(bale_of_jute_block);
 		registry.register(jute_crop_block);
 		registry.register(kapok_block);
+		
+		FluidRegistry.registerFluid(VeganLifeBlocks.raw_ender_fluid);
 	}
 	
 	@SubscribeEvent
