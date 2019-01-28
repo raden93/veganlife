@@ -1,11 +1,6 @@
 package com.raden93.veganlife.init;
 
-import com.raden93.veganlife.VeganLifeMod;
-
 import net.minecraft.init.Blocks;
-import net.minecraft.init.Items;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemPiston;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.gameevent.PlayerEvent;

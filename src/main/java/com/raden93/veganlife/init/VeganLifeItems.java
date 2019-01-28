@@ -14,8 +14,6 @@ import com.raden93.veganlife.item.jute.JuteStalkItem;
 import com.raden93.veganlife.item.mining.SaltpeterItem;
 import com.raden93.veganlife.item.mining.SulfurItem;
 import com.raden93.veganlife.item.mobitems.DollsEyeItem;
-import com.raden93.veganlife.item.mobitems.FragmentOfSufferingItem;
-import com.raden93.veganlife.item.mobitems.ProofOfSufferinggItem;
 import com.raden93.veganlife.item.mobitems.FauxFeatherItem;
 import com.raden93.veganlife.item.mobitems.FragmentOfSufferingItem;
 import com.raden93.veganlife.item.mobitems.ProofOfSufferinggItem;
