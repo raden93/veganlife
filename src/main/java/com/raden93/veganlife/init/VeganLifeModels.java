@@ -1,9 +1,14 @@
 package com.raden93.veganlife.init;
 
 import net.minecraft.block.Block;
+import net.minecraft.block.state.IBlockState;
+import net.minecraft.client.renderer.ItemMeshDefinition;
+import net.minecraft.client.renderer.block.model.ModelBakery;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
+import net.minecraft.client.renderer.block.statemap.StateMapperBase;
 import net.minecraft.item.EnumDyeColor;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
@@ -54,6 +59,8 @@ public class VeganLifeModels {
 		register(VeganLifeItems.soap_item);
 		register(VeganLifeItems.soap_solution_item);
 		register(VeganLifeItems.frozen_bubble_item);
+		registerFluidMapperAndMeshDef(VeganLifeBlocks.raw_ender_block, "rawender");
+		register(Item.getItemFromBlock(VeganLifeBlocks.raw_ender_block));
 	}
 	
 	private static void register(Item item) {
@@ -68,5 +75,26 @@ public class VeganLifeModels {
 		for (EnumDyeColor color : EnumDyeColor.values()) {
 			ModelLoader.setCustomModelResourceLocation(item, color.getMetadata(), new ModelResourceLocation(block.getRegistryName(), "color=" + color.getName()));
 		}
+	}
+	
+	private static void registerFluidMapperAndMeshDef(Block fluid, final String variantName)
+	{
+		final ModelResourceLocation loc = new ModelResourceLocation( "veganlife:" + variantName, "normal");
+		Item itemblock = Item.getItemFromBlock(fluid);
+		ModelBakery.registerItemVariants(itemblock);
+		ModelLoader.setCustomMeshDefinition(itemblock, new ItemMeshDefinition() {
+			
+			@Override
+			public ModelResourceLocation getModelLocation(ItemStack stack) {
+				return loc;
+			}
+		});
+		ModelLoader.setCustomStateMapper(fluid, new StateMapperBase() {
+			
+			@Override
+			protected ModelResourceLocation getModelResourceLocation(IBlockState state) {
+				return loc;
+			}
+		});
 	}
 }

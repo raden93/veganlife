@@ -7,7 +7,7 @@ import net.minecraft.util.ResourceLocation;
 public class RawEnderFluid extends CustomFluid {
 
 	public RawEnderFluid() {
-		super("rawender", new ResourceLocation("blocks/raw_ender_still"), new ResourceLocation("blocks/raw_ender_flow"));
+		super("rawender", new ResourceLocation("veganlife:blocks/rawender_still"), new ResourceLocation("veganlife:blocks/rawender_flow"));
 		setLuminosity(3);
 		setViscosity(3000);
 		setDensity(4000);
