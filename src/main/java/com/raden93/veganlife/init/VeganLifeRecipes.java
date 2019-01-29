@@ -17,7 +17,29 @@ public class VeganLifeRecipes {
 	}
 	
 	public static void registerRecipes() {
-		addRecipe("woodashlye", FluidUtil.getFilledBucket(new FluidStack(VeganLifeBlocks.wood_ash_lye_fluid, 1)), new Ingredient[]{ Ingredient.fromStacks(new ItemStack(Items.COAL, 3,1)), Ingredient.fromStacks(new ItemStack(Items.WATER_BUCKET))});
+		// ------------ recipe: water + charcoal => wood ash lye bucket
+		Ingredient[] ingredients =  new Ingredient[]{ 
+				Ingredient.fromStacks(new ItemStack(Items.COAL, 1,1)),
+				Ingredient.fromStacks(new ItemStack(Items.COAL, 1,1)),
+				Ingredient.fromStacks(new ItemStack(Items.COAL, 1,1)),
+				Ingredient.fromStacks(new ItemStack(Items.WATER_BUCKET))};
+		
+		addRecipe("woodashlye", FluidUtil.getFilledBucket(new FluidStack(VeganLifeBlocks.wood_ash_lye_fluid, 1)), ingredients);
+		
+		// ------------ recipe: Wood Ash Lye + Vegetable Oil + Rosin => Soap
+		Ingredient[] ingredientsSoap =  new Ingredient[]{ 
+				Ingredient.fromStacks(FluidUtil.getFilledBucket(new FluidStack(VeganLifeBlocks.wood_ash_lye_fluid, 1))),
+				Ingredient.fromStacks(new ItemStack(VeganLifeItems.vegetable_oil_item)),
+				Ingredient.fromStacks(new ItemStack(VeganLifeItems.rosin_item))};
+		
+		addRecipe("soap", new ItemStack(VeganLifeItems.soap_item), ingredientsSoap);
+		
+		// ------------ recipe: Raw Ender + FrozenBubble => Enderperl
+		Ingredient[] ingredientsEnderperl =  new Ingredient[]{ 
+				Ingredient.fromStacks(FluidUtil.getFilledBucket(new FluidStack(VeganLifeBlocks.raw_ender_fluid,1))),
+				Ingredient.fromStacks(new ItemStack(VeganLifeItems.frozen_bubble_item))};
+		
+		addRecipe("enderperl", new ItemStack(Items.ENDER_PEARL), ingredientsEnderperl);
 	}
 	
 	private static void addRecipe(String name, ItemStack output, Ingredient[] input)

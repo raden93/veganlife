@@ -9,5 +9,7 @@ public class WoodAshLyeFluid extends CustomFluid {
 	public WoodAshLyeFluid() {
 		super("woodashlye", new ResourceLocation("veganlife:blocks/woodashlye_still"), new ResourceLocation("veganlife:blocks/woodashlye_flow"));
 	}
+	
+
 
 }

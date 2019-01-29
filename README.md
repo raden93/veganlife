@@ -92,8 +92,8 @@ Short descriptions for all VeganLife Items:
  
 #### Frozen Bubble + Raw Ender ( Ender Pearl alternative )
  
- - [ ] Create all recipes.
- 	- [ ] Frozen Bubble + Bucket of Raw Ender -> Ender Perl
+ - [x] Create all recipes.
+ 	- [x] Frozen Bubble + Bucket of Raw Ender -> Ender Perl
  - [ ] A Frozen Bubble placed in Raw Ender, create an Ender Pearl
  
 ##### Frozen Bubble
@@ -103,11 +103,11 @@ Short descriptions for all VeganLife Items:
  	- [x] Soap Solution
  	- [x] Frozen Bubble
  	- [x] Wood Ash Lye
- - [ ] Create all recipes.
- 	- [ ] Water + 3 Charcoal -> Wood Ash Lye
- 	- [ ] Wood Ash Lye + Vegetable Oil + Rosin -> Soap
- 	- [ ] Soap + Water + Sugar + Bottle -> Soap Solution
- 	- [ ] Soap Solution + 8 Ice -> Frozen Bubble
+ - [x] Create all recipes.
+ 	- [x] Water + 3 Charcoal -> Wood Ash Lye
+ 	- [x] Wood Ash Lye + Vegetable Oil + Rosin -> Soap
+ 	- [x] Soap + Water + Sugar + Bottle -> Soap Solution
+ 	- [x] Soap Solution + 8 Ice -> Frozen Bubble
  - [ ] Soap Solution in a dispenser create a Bubble. 
  - [ ] Bubble can froze to Frozen Bubble if it is surrounded by Ice
  - [ ] Frozen Bubble can be use instead of Pufferfish
@@ -163,4 +163,8 @@ Short descriptions for all VeganLife Items:
  	- [x] 8 Fragments of Suffering + Gold Nugget -> Proof of Suffering
  - [x] Fragment of Suffering drops from Soul Sand
  - [ ] Proof of Suffering can be use instead of Ghast Tear
+ 
+## Known Bugs:
+ 
+ - Wood Ash Lye Recipe drop second bucket
  
