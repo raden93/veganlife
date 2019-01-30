@@ -1,19 +1,32 @@
 package com.raden93.veganlife.init;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+
 import net.minecraft.init.Items;
+import net.minecraft.inventory.InventoryCrafting;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.crafting.CraftingManager;
+import net.minecraft.item.crafting.IRecipe;
 import net.minecraft.item.crafting.Ingredient;
+import net.minecraft.item.crafting.ShapedRecipes;
+import net.minecraft.item.crafting.ShapelessRecipes;
+import net.minecraft.util.NonNullList;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.fluids.FluidStack;
 import net.minecraftforge.fluids.FluidUtil;
+import net.minecraftforge.fml.common.registry.ForgeRegistries;
 import net.minecraftforge.fml.common.registry.GameRegistry;
+import net.minecraftforge.registries.IForgeRegistry;
 
 public class VeganLifeRecipes {
 	
 	public static void registerSmelting() {
 		GameRegistry.addSmelting(VeganLifeItems.potato_starch_item, new ItemStack(VeganLifeItems.bioplastic_item, 2), 0.35f);
 		GameRegistry.addSmelting(VeganLifeItems.resin_item, new ItemStack(VeganLifeItems.rosin_item, 1), 0.2f);
-		GameRegistry.addSmelting(VeganLifeItems.vegetable_oil_item, new ItemStack(VeganLifeItems.vegetable_wax_item, 1), 0.2f);
+		GameRegistry.addSmelting(VeganLifeItems.vegetable_oil_item, new ItemStack(VeganLifeItems.vegetable_wax_item, 1), 0.2f);	
 	}
 	
 	public static void registerRecipes() {

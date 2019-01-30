@@ -47,7 +47,7 @@ Short descriptions for all VeganLife Items:
     - [x] 4 Kapok Tuft -> Kapok
     - [x] 3 Kapok Tuft -> String
 - [x] Kapok tufts drop from Jungle Leaves.
-- [ ] Kapok can be use instead of Wool.
+- [x] Kapok can be use instead of Wool.
 
 #### Bioplastic
 
@@ -152,7 +152,7 @@ Short descriptions for all VeganLife Items:
  - [x] Create all Items.
  	- [x] Doll's Eye
  - [ ] Doll's Eye Drops from grass in temperate forest biome.
- - [ ] Doll's Eye can be use instead of Spider Eye.
+ - [x] Doll's Eye can be use instead of Spider Eye.
 
 #### Proof of Suffering
 
@@ -162,7 +162,7 @@ Short descriptions for all VeganLife Items:
  - [x] Create all recipes.
  	- [x] 8 Fragments of Suffering + Gold Nugget -> Proof of Suffering
  - [x] Fragment of Suffering drops from Soul Sand
- - [ ] Proof of Suffering can be use instead of Ghast Tear
+ - [x] Proof of Suffering can be use instead of Ghast Tear
  
 ## Known Bugs:
  
