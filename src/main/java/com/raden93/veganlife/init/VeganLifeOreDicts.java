@@ -27,6 +27,8 @@ public class VeganLifeOreDicts {
 		OreDictionary.registerOre("leather", VeganLifeItems.burlap_item);
 		OreDictionary.registerOre("sheetPlastic", VeganLifeItems.bioplastic_item);
 		OreDictionary.registerOre("stickPlastic", VeganLifeItems.plastic_rod_item);
+		OreDictionary.registerOre("dyeWhite", new ItemStack(VeganLifeItems.vegetable_oil_ink_item,1,1));
+		OreDictionary.registerOre("dyeBlack", new ItemStack(VeganLifeItems.vegetable_oil_ink_item,1,0));
 		
 		OreDictionary.registerOre("slimeball", new ItemStack(VeganLifeItems.resin_item));
 	
@@ -39,7 +41,7 @@ public class VeganLifeOreDicts {
 		OreDictionary.registerOre("ghastTear", new ItemStack(VeganLifeItems.proof_of_suffering_item));
 		
 		OreDictionary.registerOre("wool", new ItemStack(Blocks.WOOL));
-		OreDictionary.registerOre("wool", new ItemStack(VeganLifeBlocks.kapok_block));
+		OreDictionary.registerOre("wool", new ItemStack(VeganLifeBlocks.kapok_block));changeVanillaRecips();
 		
 		changeVanillaRecips();
 	}

@@ -77,8 +77,8 @@ Short descriptions for all VeganLife Items:
  	- [x] Vegetable Oil + Vegetable Wax + Rosin + Charcoal -> Black Vegetable Oil Ink
  	- [x] Vegetable Oil + Vegetable Wax + Rosin + Nether Quarz -> White Vegetable Oil Ink
  - [x] Sunflowers drops Sunflower Seeds
- - [ ] Black Vegetable Oil Ink can be use instead of Ink Sac
- - [ ] White Vegetable Oil Ink can be use instead of Bone Meal ( white dye )
+ - [x] Black Vegetable Oil Ink can be use instead of Ink Sac
+ - [x] White Vegetable Oil Ink can be use instead of Bone Meal ( white dye )
  
 #### Resin
  
