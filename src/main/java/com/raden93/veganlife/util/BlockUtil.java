@@ -2,7 +2,9 @@ package com.raden93.veganlife.util;
 
 import com.raden93.veganlife.block.enderperl.EncrustedObsidianBlock;
 
+import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
+import net.minecraft.block.state.IBlockState;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
@@ -56,8 +58,21 @@ public class BlockUtil {
 	/**
 	 * Compare material of blockPos and given material
 	 */
-	private static boolean isBlockGivenMaterial(World world, BlockPos blockPos, Material material) {
+	public static boolean isBlockGivenMaterial(World world, BlockPos blockPos, Material material) {
+		@SuppressWarnings("unused")
+		Block block = world.getBlockState(blockPos).getBlock();
 		return world.getBlockState(blockPos).getMaterial().equals(material);
+	}
+	
+	public static BlockPos findWaterSource(World world, BlockPos pos) {
+		if(!isBlockGivenMaterial(world, pos, Material.WATER)) {
+			return null;
+		}
+		IBlockState state = world.getBlockState(pos);
+		if(FluidUtil.getFluidLevel(state) == FluidUtil.getStillFluidLevel(state)) {
+			return pos;
+		}
+		return findWaterSource(world, pos.up());
 	}
 
 }

@@ -14,6 +14,7 @@ import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
 public class VeganLifeModels {
+	
 	@SubscribeEvent
 	public static void register(ModelRegistryEvent event) {
 		// Jute
