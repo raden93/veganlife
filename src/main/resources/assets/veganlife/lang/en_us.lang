@@ -7,6 +7,7 @@ item.jutefibre.name=Jute Fibre
 item.juteseeds.name=Jute Seeds
 item.burlap.name=Burlap
 tile.baleofjute.name=Bale of Jute
+tile.jutecrop.name=Jute Crop
 
 #bioplastic
 item.potatostarch.name=Potato Starch
@@ -62,3 +63,5 @@ fluid.rawender=Raw Ender
 tile.rawender.name=Raw Ender
 fluid.woodashlye=Wood Ash Lye
 tile.woodashlye.name= Wood Ash Lye
+tile.encurstedobsidian.name=Encrusted Obsidian
+tile.enderrift.name=Ender Rift

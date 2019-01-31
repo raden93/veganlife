@@ -94,7 +94,6 @@ Short descriptions for all VeganLife Items:
  
  - [x] Create all recipes.
  	- [x] Frozen Bubble + Bucket of Raw Ender -> Ender Perl
- - [ ] A Frozen Bubble placed in Raw Ender, create an Ender Pearl
  
 ##### Frozen Bubble
  
@@ -108,9 +107,6 @@ Short descriptions for all VeganLife Items:
  	- [x] Wood Ash Lye + Vegetable Oil + Rosin -> Soap
  	- [x] Soap + Water + Sugar + Bottle -> Soap Solution
  	- [x] Soap Solution + 8 Ice -> Frozen Bubble
- - [ ] Soap Solution in a dispenser create a Bubble. 
- - [ ] Bubble can froze to Frozen Bubble if it is surrounded by Ice
- - [ ] Frozen Bubble can be use instead of Pufferfish
  
 ##### Raw Ender
  
@@ -154,6 +150,12 @@ Short descriptions for all VeganLife Items:
  - [ ] Doll's Eye Drops from grass in temperate forest biome.
  - [x] Doll's Eye can be use instead of Spider Eye.
 
+#### False Morel
+- [ ] Create all Items.
+    - [ ] False Morel
+- [ ] False Morel drops from Mycelium
+- [ ] False Morel can be use instead of Spider Eye
+
 #### Proof of Suffering
 
  - [x] Create all Items.
@@ -167,4 +169,5 @@ Short descriptions for all VeganLife Items:
 ## Known Bugs:
  
  - Wood Ash Lye Recipe drop second bucket
+ - Ender Rift not render the bottom
  
