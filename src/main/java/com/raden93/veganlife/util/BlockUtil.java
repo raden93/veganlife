@@ -59,8 +59,6 @@ public class BlockUtil {
 	 * Compare material of blockPos and given material
 	 */
 	public static boolean isBlockGivenMaterial(World world, BlockPos blockPos, Material material) {
-		@SuppressWarnings("unused")
-		Block block = world.getBlockState(blockPos).getBlock();
 		return world.getBlockState(blockPos).getMaterial().equals(material);
 	}
 	

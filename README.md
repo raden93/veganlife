@@ -114,14 +114,14 @@ Short descriptions for all VeganLife Items:
  
 ##### Raw Ender
  
- - [ ]  Create all Items and Blocks.
- 	- [ ] Encrusted Obsidian
- 	- [ ] Ender Rift
+ - [x]  Create all Items and Blocks.
+ 	- [x] Encrusted Obsidian
+ 	- [x] Ender Rift
  	- [x] Raw Ender
- - [ ] Create all recipes.
- 	- [ ] 2 Obsidian + Diamond + Emerald -> Encrusted Obsidian
- - [ ] 4 Encrusted Obsidain create an Ender Rift on the center.
- - [ ] Ender Rift create Raw Ender with Water on night.
+ - [x] Create all recipes.
+ 	- [x] 2 Obsidian + Diamond + Emerald -> Encrusted Obsidian
+ - [x] 4 Encrusted Obsidain create an Ender Rift on the center.
+ - [x] Ender Rift create Raw Ender with Water on night.
  - [ ] Encrusted Obsidian destroy when run on day.
  
 #### Faux Feather
