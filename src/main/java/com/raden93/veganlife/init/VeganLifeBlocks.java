@@ -1,6 +1,8 @@
 package com.raden93.veganlife.init;
 
 import com.raden93.veganlife.VeganLifeConstants;
+import com.raden93.veganlife.block.enderperl.EncrustedObsidianBlock;
+import com.raden93.veganlife.block.enderperl.EnderRiftBlock;
 import com.raden93.veganlife.block.enderperl.RawEnderBlock;
 import com.raden93.veganlife.block.enderperl.RawEnderFluid;
 import com.raden93.veganlife.block.enderperl.WoodAshLyeBlock;
@@ -31,6 +33,8 @@ public class VeganLifeBlocks {
 	public static final WoodAshLyeFluid wood_ash_lye_fluid = new WoodAshLyeFluid();
 	public static RawEnderBlock raw_ender_block;
 	public static WoodAshLyeBlock wood_ash_lye_block;
+	public static final EncrustedObsidianBlock encrusted_obsidian_block = new EncrustedObsidianBlock();
+	public static final EnderRiftBlock ender_rift_block = new EnderRiftBlock();
 	
 	
 	public static void init() {
@@ -50,6 +54,8 @@ public class VeganLifeBlocks {
 		setName(kapok_block, "kapok");
 		setName(raw_ender_block, "rawender");
 		setName(wood_ash_lye_block, "woodashlye");
+		setName(encrusted_obsidian_block, "encurstedobsidian");
+		setName(ender_rift_block, "enderrift");
 	}
 	
 	private static void setName(Block block, String name) {
@@ -65,6 +71,8 @@ public class VeganLifeBlocks {
 		registry.register(kapok_block);
 		registry.register(raw_ender_block);
 		registry.register(wood_ash_lye_block);
+		registry.register(encrusted_obsidian_block);
+		registry.register(ender_rift_block);
 	}
 	
 	@SubscribeEvent
@@ -75,6 +83,8 @@ public class VeganLifeBlocks {
 		registry.register(new ItemCloth(kapok_block).setRegistryName(kapok_block.getRegistryName()));
 		registry.register(new ItemBlock(raw_ender_block).setRegistryName(raw_ender_block.getRegistryName()));
 		registry.register(new ItemBlock(wood_ash_lye_block).setRegistryName(wood_ash_lye_block.getRegistryName()));
+		registry.register(new ItemBlock(encrusted_obsidian_block).setRegistryName(encrusted_obsidian_block.getRegistryName()));
+		registry.register(new ItemBlock(ender_rift_block).setRegistryName(ender_rift_block.getRegistryName()));
 	}
 	
 	

@@ -63,6 +63,8 @@ public class VeganLifeModels {
 		registerFluidMapperAndMeshDef(VeganLifeBlocks.wood_ash_lye_block, "woodashlye");
 		register(Item.getItemFromBlock(VeganLifeBlocks.raw_ender_block));
 		register(Item.getItemFromBlock(VeganLifeBlocks.wood_ash_lye_block));
+		register(Item.getItemFromBlock(VeganLifeBlocks.encrusted_obsidian_block));
+		register(Item.getItemFromBlock(VeganLifeBlocks.ender_rift_block));
 	}
 	
 	private static void register(Item item) {

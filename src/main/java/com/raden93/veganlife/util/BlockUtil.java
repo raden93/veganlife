@@ -1,5 +1,7 @@
 package com.raden93.veganlife.util;
 
+import com.raden93.veganlife.block.enderperl.EncrustedObsidianBlock;
+
 import net.minecraft.block.material.Material;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.util.math.BlockPos;
@@ -32,6 +34,24 @@ public class BlockUtil {
 				blockPos.offset(EnumFacing.UP)
 		};
 	}
+	
+	public static BlockPos[] getAdjacentBlocksHorizontally(BlockPos blockPos) {
+		return new BlockPos[]{
+				blockPos.offset(EnumFacing.NORTH), blockPos.offset(EnumFacing.SOUTH),
+				blockPos.offset(EnumFacing.EAST), blockPos.offset(EnumFacing.WEST)
+			};
+	}
+	
+	public static boolean isValidPortalLocation(World world, BlockPos blockPos)
+	{
+		for (BlockPos blockToCheck : getAdjacentBlocksHorizontally(blockPos))
+		{
+			if (!(world.getBlockState(blockToCheck).getBlock() instanceof EncrustedObsidianBlock))
+				return false;
+		}
+		return true;
+	}
+	
 	
 	/**
 	 * Compare material of blockPos and given material
