@@ -2,7 +2,7 @@
 
 This should be an remastered version of [vegan option](https://github.com/backuporg/VeganOption) for the Minecraft Version 1.12.2. It isn't contain every feature from Vegan Option and some recipes have change.
 
-When you have some more ideas, or want to implements some more Features from Vegan Option, make a Pull-Request. I'm happy for improvements! 
+When you have some more ideas, or want to implements some more features from Vegan Option, make a Pull-Request. I'm happy for improvements! 
 
 ## Dokumentation
 
@@ -10,15 +10,20 @@ Short descriptions for all VeganLife Items:
 
  - [Jute](dokumentation/jute.md)
  - [Kapok](dokumentation/kapok.md)
- - Bioplastik (TODO)
+ - [Bioplastik](dokumentation/bioplastic.md)
  - Vegetable oil and Ink (TODO)
  - Resin (TODO)
  - Enderperl (TODO)
  - Faux Feather (TODO)
- - Fossils (TODO)
- - Gunpowder (TODO)
+ - [Fossils](dokumentation/fossils.md)
+ - [Gunpowder](dokumentation/gunpowder.md)
  - Doll's Eye (TODO)
  - Proof of Suffering (TODO)
+
+## Known Bugs:
+ 
+ - Wood Ash Lye Recipe drop second bucket
+ - Ender Rift not render the bottom
 
 ## Current State
 
@@ -168,8 +173,4 @@ Short descriptions for all VeganLife Items:
  - [x] Fragment of Suffering drops from Soul Sand
  - [x] Proof of Suffering can be use instead of Ghast Tear
  
-## Known Bugs:
- 
- - Wood Ash Lye Recipe drop second bucket
- - Ender Rift not render the bottom
  

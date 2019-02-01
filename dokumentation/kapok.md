@@ -1,4 +1,4 @@
-# Dokumentation of Jute
+# Dokumentation of Kapok
 
 ### Usage
 
@@ -10,7 +10,7 @@ Kapok Tuft(![](./../src/main/resources/assets/veganlife/textures/items/kapoktuft
 
 ### Recipes 
 
-##### Kapok Block
+##### Kapok Block (![](img/wool.png?raw=true))
 
 <table style="border:1px solid black; border-collapse: collapse;">
     <tr style="border:1px solid black; border-collapse: collapse;">
