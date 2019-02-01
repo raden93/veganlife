@@ -23,7 +23,6 @@ Short descriptions for all veganL life items:
 ## Known Bugs:
  
  - Wood Ash Lye Recipe drop second bucket
- - Ender Rift not render the bottom
 
 ## Current State
 

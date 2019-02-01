@@ -3,6 +3,7 @@ package com.raden93.veganlife.block.enderperl;
 import java.util.Random;
 
 import com.raden93.veganlife.base.EnderRiftMaterial;
+import com.raden93.veganlife.base.EnderRiftTileEntity;
 import com.raden93.veganlife.init.VeganLifeBlocks;
 import com.raden93.veganlife.util.BlockUtil;
 
@@ -14,6 +15,7 @@ import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.MobEffects;
 import net.minecraft.potion.PotionEffect;
+import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import net.minecraftforge.fluids.BlockFluidBase;
@@ -29,6 +31,12 @@ public class EnderRiftBlock extends BlockEndPortal {
 		setHardness(-1.0F);
 		setResistance(6000000.0F);
 	}
+	
+	@Override
+    public TileEntity createNewTileEntity(World worldIn, int meta)
+    {
+        return new EnderRiftTileEntity();
+    }
 	
 	@Override
 	public void neighborChanged(IBlockState state, World worldIn, BlockPos pos, Block blockIn, BlockPos fromPos)
