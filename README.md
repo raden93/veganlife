@@ -22,7 +22,7 @@ Short descriptions for all veganL life items:
 
 ## Known Bugs:
  
- - Wood Ash Lye Recipe drop second bucket
+ Nothing at the moment :-)
 
 ## Current State
 
@@ -124,7 +124,7 @@ Short descriptions for all veganL life items:
  	- [x] 2 Obsidian + Diamond + Emerald -> Encrusted Obsidian
  - [x] 4 Encrusted Obsidain create an Ender Rift on the center.
  - [x] Ender Rift create Raw Ender with Water on night.
- - [ ] Encrusted Obsidian destroy when run on day.
+ - [x] Encrusted Obsidian destroy when run on day.
  
 #### Faux Feather
 
