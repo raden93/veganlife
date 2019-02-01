@@ -6,19 +6,19 @@ When you have some more ideas, or want to implements some more features from Veg
 
 ## Dokumentation
 
-Short descriptions for all VeganLife Items:
+Short descriptions for all veganL life items:
 
  - [Jute](dokumentation/jute.md)
  - [Kapok](dokumentation/kapok.md)
  - [Bioplastik](dokumentation/bioplastic.md)
- - Vegetable oil and Ink (TODO)
- - Resin (TODO)
+ - [Vegetable oil and Ink](dokumentation/oil.md)
+ - [Resin and Rosin](dokumentation/oil.md)
  - Enderperl (TODO)
- - Faux Feather (TODO)
+ - [Faux Feather](dokumentation/fauxfeather.md)
  - [Fossils](dokumentation/fossils.md)
  - [Gunpowder](dokumentation/gunpowder.md)
- - Doll's Eye (TODO)
- - Proof of Suffering (TODO)
+ - [Spider Eye](dokumentation/spidereye.md)
+ - [Proof of Suffering](dokumentation/suffering.md)
 
 ## Known Bugs:
  
