@@ -1,13 +1,15 @@
-# veganlife
+# Vegan Life
 
-This should be an remastered version of [vegan option](https://github.com/backuporg/VeganOption) for the Minecraft Version 1.12.2
+This should be an remastered version of [vegan option](https://github.com/backuporg/VeganOption) for the Minecraft Version 1.12.2. It isn't contain every feature from Vegan Option and some recipes have change.
+
+When you have some more ideas, or want to implements some more Features from Vegan Option, make a Pull-Request. I'm happy for improvements! 
 
 ## Dokumentation
 
 Short descriptions for all VeganLife Items:
 
  - [Jute](dokumentation/jute.md)
- - Kapok (TODO)
+ - [Kapok](dokumentation/kapok.md)
  - Bioplastik (TODO)
  - Vegetable oil and Ink (TODO)
  - Resin (TODO)
