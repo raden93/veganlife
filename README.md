@@ -147,7 +147,7 @@ Short descriptions for all VeganLife Items:
 
  - [x] Create all Items.
  	- [x] Doll's Eye
- - [ ] Doll's Eye Drops from grass in temperate forest biome.
+ - [x] Doll's Eye Drops from grass in temperate forest biome.
  - [x] Doll's Eye can be use instead of Spider Eye.
 
 #### False Morel

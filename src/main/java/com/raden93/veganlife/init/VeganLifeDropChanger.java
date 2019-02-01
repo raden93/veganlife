@@ -10,12 +10,17 @@ import net.minecraft.block.BlockOldLeaf;
 import net.minecraft.block.BlockOldLog;
 import net.minecraft.block.BlockPlanks;
 import net.minecraft.block.BlockStone;
+import net.minecraft.block.BlockTallGrass;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemShears;
 import net.minecraft.item.ItemStack;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.world.World;
+import net.minecraft.world.biome.Biome;
+import net.minecraftforge.common.BiomeDictionary;
 import net.minecraftforge.event.world.BlockEvent.HarvestDropsEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
@@ -32,6 +37,7 @@ public class VeganLifeDropChanger {
 	public static final float BONES_DROP_RATE = 0.01f;
 	public static final float FRAGMENT_OF_SUFFERING_DROP_RATE = 0.05f;
 	public static final float FALSE_MOREL_DROP_RATE = 0.15f;
+	public static final float DOLLS_EYE_DROP_RATE = 0.01f;
 	
 	public VeganLifeDropChanger() {
 		// Add drop Sulfur from Netherrack
@@ -72,6 +78,7 @@ public class VeganLifeDropChanger {
 		}
 		this.dropsResinFromSpruceWood(block, state, random, drops);
 		this.dropsBonesFromStone(block, state, random, drops);
+		this.dropsDollsEyeFromGras(event.getWorld(), event.getPos(), block, state, random, drops);
 		this.addDropForItem(block, random, drops);
 	}
 	
@@ -126,8 +133,16 @@ public class VeganLifeDropChanger {
 		}
 	}
 	
-	private void dropsDollsEyeFromGras(Block block, IBlockState state, Random random, List<ItemStack> drops) {
-		
+	private void dropsDollsEyeFromGras(World world, BlockPos pos, Block block, IBlockState state, Random random, List<ItemStack> drops) {
+		if(block.equals(Blocks.TALLGRASS) && state.getValue(BlockTallGrass.TYPE) == BlockTallGrass.EnumType.GRASS) {
+			Biome biome = world.getBiome(pos);
+			if(BiomeDictionary.hasType(biome, BiomeDictionary.Type.FOREST) 
+					&& !BiomeDictionary.hasType(biome, BiomeDictionary.Type.CONIFEROUS)
+					&& !BiomeDictionary.hasType(biome, BiomeDictionary.Type.JUNGLE)) {
+				if(random.nextFloat() < DOLLS_EYE_DROP_RATE)
+					drops.add(new ItemStack(VeganLifeItems.dolls_eye_item, 1));
+			}
+		}
 	}
 	
 	private void dropsSunflowerSeedsFromSunflowsers(Block block, IBlockState state, Random random, List<ItemStack> drops) {
