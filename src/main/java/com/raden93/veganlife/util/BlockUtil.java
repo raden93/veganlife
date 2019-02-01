@@ -1,5 +1,7 @@
 package com.raden93.veganlife.util;
 
+import java.util.ArrayList;
+
 import com.raden93.veganlife.block.enderperl.EncrustedObsidianBlock;
 
 import net.minecraft.block.material.Material;
@@ -70,6 +72,22 @@ public class BlockUtil {
 			return pos;
 		}
 		return findWaterSource(world, pos.up());
+	}
+	
+	public static BlockPos[] findAllBlocksAdjust(World world,BlockPos startPos,int distance ) {
+		ArrayList<BlockPos> list = new ArrayList<BlockPos>();
+		for(int x = startPos.getX() - distance; x < startPos.getX() + distance; x++) {
+			for(int y = startPos.getY() - distance; y < startPos.getY() + distance; y++) {
+				for(int z = startPos.getZ() - distance; z < startPos.getZ() + distance; z++) {
+					BlockPos currentPos = new BlockPos(x, y, z);
+					if(!isBlockGivenMaterial(world, currentPos, Material.AIR)){
+						list.add(currentPos);
+					}
+				}
+			}
+		}
+		BlockPos[] results = new BlockPos[list.size()];
+		return list.toArray(results);
 	}
 
 }

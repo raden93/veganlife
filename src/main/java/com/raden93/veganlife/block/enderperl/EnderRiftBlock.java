@@ -58,10 +58,14 @@ public class EnderRiftBlock extends BlockEndPortal {
 					world.setBlockState(pos.down(), VeganLifeBlocks.raw_ender_block.getDefaultState().withProperty(BlockFluidBase.LEVEL, 7));
 				}
 				else {
-					//TODO: Remove random Block when run on daytime
+					BlockPos[] possiblePos = BlockUtil.findAllBlocksAdjust(world, pos, 3);
+					BlockPos blockToDelete;
+					do {
+						blockToDelete = possiblePos[random.nextInt(possiblePos.length)];
+					} while(blockToDelete == pos);
+					world.setBlockToAir(blockToDelete);
 				}
 			}
-			
 		}
 	}
 	
