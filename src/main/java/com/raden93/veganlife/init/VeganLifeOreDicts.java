@@ -1,9 +1,7 @@
 package com.raden93.veganlife.init;
 
 import java.util.HashMap;
-import java.util.HashSet;
 import java.util.Map;
-import java.util.Set;
 import java.util.Map.Entry;
 
 import javax.annotation.Nonnull;
@@ -36,6 +34,7 @@ public class VeganLifeOreDicts {
 		
 		OreDictionary.registerOre("spiderEye", new ItemStack(Items.SPIDER_EYE));
 		OreDictionary.registerOre("spiderEye", new ItemStack(VeganLifeItems.dolls_eye_item));
+		OreDictionary.registerOre("spiderEye", new ItemStack(VeganLifeItems.flase_morel_item));
 		
 		OreDictionary.registerOre("ghastTear", new ItemStack(Items.GHAST_TEAR));
 		OreDictionary.registerOre("ghastTear", new ItemStack(VeganLifeItems.proof_of_suffering_item));
@@ -55,8 +54,6 @@ public class VeganLifeOreDicts {
         replacements.put(new ItemStack(Items.GHAST_TEAR), "ghastTear");
         replacements.put(new ItemStack(Blocks.WOOL), "wool");
 
-        ItemStack[] replaceStacks = replacements.keySet().toArray(new ItemStack[replacements.keySet().size()]);
-
         // Ignore recipes for the following items
         ItemStack[] exclusions = new ItemStack[]
         {
@@ -75,7 +72,6 @@ public class VeganLifeOreDicts {
                     continue;
                 }
 
-                Set<Ingredient> replacedIngs = new HashSet<>();
                 NonNullList<Ingredient> lst = obj.getIngredients();
                 for (int x = 0; x < lst.size(); x++)
                 {

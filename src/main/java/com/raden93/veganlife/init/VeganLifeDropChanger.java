@@ -31,6 +31,7 @@ public class VeganLifeDropChanger {
 	public static final float SALTPETER_DROP_RATE = 0.02f;
 	public static final float BONES_DROP_RATE = 0.01f;
 	public static final float FRAGMENT_OF_SUFFERING_DROP_RATE = 0.05f;
+	public static final float FALSE_MOREL_DROP_RATE = 0.15f;
 	
 	public VeganLifeDropChanger() {
 		// Add drop Sulfur from Netherrack
@@ -44,6 +45,10 @@ public class VeganLifeDropChanger {
 		// Add drop Fragment of Suffering from Soul Sand
 		this.addNewDrops(new ItemStack(VeganLifeItems.fragment_of_suffering_item), new ItemStack(Blocks.SOUL_SAND),
 				FRAGMENT_OF_SUFFERING_DROP_RATE, 2);		
+		
+		// Add drop False Morel from Mycelium
+		this.addNewDrops(new ItemStack(VeganLifeItems.flase_morel_item), new ItemStack(Blocks.MYCELIUM),
+				FALSE_MOREL_DROP_RATE, 1);
 	}
 	
 	private void addNewDrops(ItemStack newDrop, ItemStack dropsFrom, float dropRate, int dropsRange) {

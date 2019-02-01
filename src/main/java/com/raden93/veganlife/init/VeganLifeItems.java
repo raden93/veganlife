@@ -14,6 +14,7 @@ import com.raden93.veganlife.item.jute.JuteStalkItem;
 import com.raden93.veganlife.item.mining.SaltpeterItem;
 import com.raden93.veganlife.item.mining.SulfurItem;
 import com.raden93.veganlife.item.mobitems.DollsEyeItem;
+import com.raden93.veganlife.item.mobitems.FalseMorelItem;
 import com.raden93.veganlife.item.mobitems.FauxFeatherItem;
 import com.raden93.veganlife.item.mobitems.FragmentOfSufferingItem;
 import com.raden93.veganlife.item.mobitems.ProofOfSufferinggItem;
@@ -60,6 +61,7 @@ public class VeganLifeItems {
 	public static final FragmentOfSufferingItem fragment_of_suffering_item = new FragmentOfSufferingItem();
 	public static final ProofOfSufferinggItem proof_of_suffering_item = new ProofOfSufferinggItem();
 	public static final FauxFeatherItem faux_feather_item = new FauxFeatherItem();
+	public static final FalseMorelItem flase_morel_item = new FalseMorelItem();
 	
 	// vegetable oil
 	public static final SunflowerSeedsItem sunflower_seeds_item = new SunflowerSeedsItem();
@@ -96,6 +98,7 @@ public class VeganLifeItems {
 		setName(soap_item, "soap");
 		setName(soap_solution_item, "soapsolution");
 		setName(frozen_bubble_item, "frozenbubble");
+		setName(flase_morel_item, "falsemorel");
 	}
 	
 	@SubscribeEvent
@@ -124,6 +127,7 @@ public class VeganLifeItems {
 		registry.register(soap_item);
 		registry.register(soap_solution_item);
 		registry.register(frozen_bubble_item);
+		registry.register(flase_morel_item);
 	}
 	
 	public static void setName(Item item, String name) {

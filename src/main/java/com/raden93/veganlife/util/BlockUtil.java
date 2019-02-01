@@ -2,7 +2,6 @@ package com.raden93.veganlife.util;
 
 import com.raden93.veganlife.block.enderperl.EncrustedObsidianBlock;
 
-import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.util.EnumFacing;

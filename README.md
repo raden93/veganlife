@@ -151,10 +151,10 @@ Short descriptions for all VeganLife Items:
  - [x] Doll's Eye can be use instead of Spider Eye.
 
 #### False Morel
-- [ ] Create all Items.
-    - [ ] False Morel
-- [ ] False Morel drops from Mycelium
-- [ ] False Morel can be use instead of Spider Eye
+- [x] Create all Items.
+    - [x] False Morel
+- [x] False Morel drops from Mycelium
+- [x] False Morel can be use instead of Spider Eye
 
 #### Proof of Suffering
 
