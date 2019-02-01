@@ -1,6 +1,7 @@
 package com.raden93.veganlife.init;
 
 import com.raden93.veganlife.VeganLifeConstants;
+import com.raden93.veganlife.base.EnderRiftTileEntity;
 import com.raden93.veganlife.block.enderperl.EncrustedObsidianBlock;
 import com.raden93.veganlife.block.enderperl.EnderRiftBlock;
 import com.raden93.veganlife.block.enderperl.RawEnderBlock;
@@ -20,6 +21,7 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fluids.FluidRegistry;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.registries.IForgeRegistry;
 
 public class VeganLifeBlocks {
@@ -63,6 +65,7 @@ public class VeganLifeBlocks {
 		block.setUnlocalizedName(name);
 	}
 	
+	@SuppressWarnings("deprecation")
 	@SubscribeEvent
 	public static void register(RegistryEvent.Register<Block> event) {
 		IForgeRegistry<Block> registry = event.getRegistry();
@@ -73,6 +76,8 @@ public class VeganLifeBlocks {
 		registry.register(wood_ash_lye_block);
 		registry.register(encrusted_obsidian_block);
 		registry.register(ender_rift_block);
+		
+		GameRegistry.registerTileEntity(EnderRiftTileEntity.class, "veganlife:enderrift");
 	}
 	
 	@SubscribeEvent

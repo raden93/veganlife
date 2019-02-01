@@ -1,0 +1,68 @@
+# Creative Tab
+itemGroup.veganlifetab=Vegan Life
+
+#Jute
+item.jutestalk.name=Jutestangen
+item.jutefibre.name=Jutefasern
+item.juteseeds.name=Jutesamen
+item.burlap.name=Naturfaser
+tile.baleofjute.name=Juteballen
+tile.jutecrop.name=Jutepflanze
+
+#bioplastic
+item.potatostarch.name=Kartoffelstärke
+item.plasticrod.name=Plastikstange
+item.bioplastic.name=Bioplastik
+
+#kapoktuft
+item.kapoktuft.name=Kapokfaser
+tile.kapok.name=Kapok Block
+tile.kapok.white.name=Weißer Kapok Block
+tile.kapok.orange.name=Oranger Kapok Block
+tile.kapok.magenta.name=Magenta Kapok Block
+tile.kapok.lightBlue.name=Heller Blue Kapok Block
+tile.kapok.yellow.name=Gelber Kapok Block
+tile.kapok.lime.name=Limegrümer Kapok Block
+tile.kapok.pink.name=Pinker Kapok Block
+tile.kapok.gray.name=Grauer Kapok Block
+tile.kapok.silver.name=Hellgrauer Kapok Block
+tile.kapok.cyan.name=Cyaner Kapok Block
+tile.kapok.purple.name=Purple Kapok Block
+tile.kapok.blue.name=Blauer Kapok Block
+tile.kapok.brown.name=Brauner Kapok Block
+tile.kapok.green.name=Grüner Kapok Block
+tile.kapok.red.name=Roter Kapok Block
+tile.kapok.black.name=Schwarzer Kapok Block
+
+#slimeballs
+item.resin.name=Harz
+item.rosin.name=Rosine
+
+#mining drops
+item.sulfur.name=Schwefel
+item.saltpeter.name=Saltpeter
+
+#mob drops
+item.dollseye.name=Puppenauge
+item.fragmentofsuffering.name=Fragment des Leidens
+item.proofofsuffering.name=Träne des Leidens
+item.fauxfeather.name=Gefälschte Feder
+item.falsemorel.name=Gefälschte Morchel
+
+#vegetable oil
+item.sunflowerseeds.name=Sonnenblumensamen
+item.vegetableoil.name=Veganes Öl
+item.vegetablewax.name=Veganes Wax
+item.vegetableoilink_black.name=Vegane schwarze Farbe
+item.vegetableoilink_white.name=vegane weiße Farbe
+
+#enderperl
+item.frozenbubble.name=Gefrohrene Seifenblase
+item.soap.name=Seife
+item.soapsolution.name=Seifenlösung
+fluid.rawender=Reines Ender
+tile.rawender.name=Reines Ender
+fluid.woodashlye=Holzesche Lauge
+tile.woodashlye.name= Holzesche Lauge
+tile.encurstedobsidian.name=Verkrustetes Obsidian
+tile.enderrift.name=Enderriss
