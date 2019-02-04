@@ -26,7 +26,7 @@ Short descriptions for all veganL life items:
 
 ## Changelog
 
-### 1.0.1
+### 1.1.0
 
 #### Features
 
@@ -40,7 +40,7 @@ Short descriptions for all veganL life items:
 #### Hwyla (waila)
 
 - [x] Added Hwyla support for jute crop
-- [ ] Added Hwyla support for retting bale of jute
+- [x] Added Hwyla support for retting bale of jute
 
 #### Bugs
 

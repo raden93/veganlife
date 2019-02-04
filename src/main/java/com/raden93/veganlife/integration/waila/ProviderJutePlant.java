@@ -16,50 +16,19 @@ import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
-public class ProviderJutePlant implements IWailaDataProvider {
-	
+public class ProviderJutePlant extends WailaProvider  {
+
 	@Override
-	public List<String> getWailaHead(ItemStack itemStack, List<String> toolTip, IWailaDataAccessor accessor, IWailaConfigHandler config)
-	{
-		return toolTip;
-	}
-	
-	@Override
-	public List<String> getWailaTail(ItemStack itemStack, List<String> toolTip, IWailaDataAccessor accessor, IWailaConfigHandler config)
-	{
-		return toolTip;
-	}
-	
-	@Override
-	public List<String> getWailaBody(ItemStack itemStack, List<String> toolTip, IWailaDataAccessor accessor, IWailaConfigHandler config)
-	{
+	public List<String> getWailaBody(ItemStack itemStack, List<String> toolTip, IWailaDataAccessor accessor,
+			IWailaConfigHandler config) {
 		if (config.getConfig("general.showcrop"))
 		{
 			float growthValue = ((JuteCropBlock) accessor.getBlock()).getCurrentStateInProcent(accessor.getWorld(), accessor.getPosition(), accessor.getBlockState());
 			growthValue = Math.round(growthValue * 100.0F);
 			if (growthValue < 100)
 				toolTip.add(I18n.format("veganlife.waila.format", I18n.format("veganlife.waila.context.growth.title"), I18n.format("veganlife.waila.context.growth.value", growthValue)));
-			else
-				toolTip.add(I18n.format("veganlife.waila.format"));
 		}
 
 		return toolTip;
 	}
-	
-	@Override
-	public NBTTagCompound getNBTData(EntityPlayerMP player, TileEntity te, NBTTagCompound tag, World world, BlockPos pos)
-	{
-		return null;
-	}
-	
-	@Override
-	public ItemStack getWailaStack(IWailaDataAccessor accessor, IWailaConfigHandler config)
-	{
-		return null;
-	}
-	
-	public static void callbackRegister(IWailaRegistrar register) {
-		register.registerBodyProvider(new ProviderJutePlant(), JuteCropBlock.class);
-	}
-
 }

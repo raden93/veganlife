@@ -77,7 +77,11 @@ public class BaleOfJuteBlock extends BlockRotatedPillar {
 			return super.getItemDropped(state, random, fortune);
 	}
 	
-	private int getRettedValue(World world, BlockPos pos) {
+	public static float getRettingStatus(World world, BlockPos pos) {
+		return ((float)getRettedValue(world, pos)) / MAX_RETTING_VALUE;
+	}
+	
+	private static int getRettedValue(World world, BlockPos pos) {
 		return world.getBlockState(pos).getValue(RETTING);
 	}
 }

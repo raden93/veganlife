@@ -4,6 +4,10 @@ itemGroup.veganlifetab=Vegan Life
 veganlife.waila.format=%1$s : %2$s
 veganlife.waila.context.growth.title=Growth
 veganlife.waila.context.growth.value=%1$d%%
+veganlife.waila.context.retting.title=Retting
+veganlife.waila.content.retting.value=%1$d%%
+veganlife.waila.info.retting.finish=Retted
+veganlife.waila.info.retting.nowater=You must place this block in water!
 
 #Jute
 item.jutestalk.name=Jute Stalk
