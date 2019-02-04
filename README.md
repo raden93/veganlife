@@ -22,9 +22,7 @@ Short descriptions for all veganL life items:
 
 ## Known Bugs:
  
- Nothing at the moment :-)
-
-
+ - [ ] Vegetable Oil Ink can't be used to colorized Kapok
 
 ## Changelog
 
