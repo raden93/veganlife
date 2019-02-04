@@ -22,18 +22,26 @@ Short descriptions for all veganL life items:
 
 ## Known Bugs:
  
- - [ ] Vegetable Oil Ink can't be used to colorized Kapok
+ 
 
 ## Changelog
 
 ### 1.0.1
 
+#### Features
+
+- [x] All wool recipes working with kapok blocks except painting recipe. You can craft for example red beds with kapok blocks.
+
+##### Pam's Harvestcraft Integration
+
+- [x] HarvestCraft Jute can be use instead of Jute Stalk
+- [x] Vegetable Oil can be used instead of sesam oil
+
 #### Bugs
+
 - [x] Kapok can be colorized with dye correctly
 - [x] Encrusted Obsidian is in the Creation Mode Tab
-
-#### Pam's Harvestcraft Integration
-- [x] HarvestCraft Jute can be use instead of Jute Stalk
+- [x] Vegetable Oil Ink can be used to colorized Kapok
 
 ### 1.0.0
 

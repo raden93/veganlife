@@ -6,8 +6,10 @@ import java.util.Map.Entry;
 
 import javax.annotation.Nonnull;
 
+import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
+import net.minecraft.item.EnumDyeColor;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.crafting.CraftingManager;
 import net.minecraft.item.crafting.IRecipe;
@@ -15,6 +17,7 @@ import net.minecraft.item.crafting.Ingredient;
 import net.minecraft.item.crafting.ShapedRecipes;
 import net.minecraft.item.crafting.ShapelessRecipes;
 import net.minecraft.util.NonNullList;
+import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.fml.common.FMLLog;
 import net.minecraftforge.oredict.OreDictionary;
 import net.minecraftforge.oredict.OreIngredient;
@@ -39,9 +42,43 @@ public class VeganLifeOreDicts {
 		OreDictionary.registerOre("spiderEye", new ItemStack(VeganLifeItems.flase_morel_item));
 		OreDictionary.registerOre("ghastTear", new ItemStack(Items.GHAST_TEAR));
 		OreDictionary.registerOre("ghastTear", new ItemStack(VeganLifeItems.proof_of_suffering_item));
-		OreDictionary.registerOre("wool", new ItemStack(Blocks.WOOL));
-		OreDictionary.registerOre("wool", new ItemStack(VeganLifeBlocks.kapok_block));changeVanillaRecips();
 		
+		// Wool ( work for everything except painting recipe )
+		OreDictionary.registerOre("wool", new ItemStack(Blocks.WOOL));
+		OreDictionary.registerOre("wool", new ItemStack(VeganLifeBlocks.kapok_block,1,0));
+		OreDictionary.registerOre("wool_white", new ItemStack(Blocks.WOOL, 1, 0));
+		OreDictionary.registerOre("wool_white", new ItemStack(VeganLifeBlocks.kapok_block, 1 ,0));
+		OreDictionary.registerOre("wool_orange", new ItemStack(Blocks.WOOL, 1, 1));
+		OreDictionary.registerOre("wool_orange", new ItemStack(VeganLifeBlocks.kapok_block, 1 ,1));
+		OreDictionary.registerOre("wool_magenta", new ItemStack(Blocks.WOOL, 1 ,2));
+		OreDictionary.registerOre("wool_magenta", new ItemStack(VeganLifeBlocks.kapok_block, 1 ,2));
+		OreDictionary.registerOre("wool_light_blue", new ItemStack(Blocks.WOOL, 1 ,3));
+		OreDictionary.registerOre("wool_light_blue", new ItemStack(VeganLifeBlocks.kapok_block, 1 ,3));
+		OreDictionary.registerOre("wool_yellow", new ItemStack(Blocks.WOOL, 1 ,4));
+		OreDictionary.registerOre("wool_yellow", new ItemStack(VeganLifeBlocks.kapok_block, 1 ,4));
+		OreDictionary.registerOre("wool_lime", new ItemStack(Blocks.WOOL, 1 ,5));
+		OreDictionary.registerOre("wool_lime", new ItemStack(VeganLifeBlocks.kapok_block, 1 ,5));
+		OreDictionary.registerOre("wool_pink", new ItemStack(Blocks.WOOL, 1 ,6));
+		OreDictionary.registerOre("wool_pink", new ItemStack(VeganLifeBlocks.kapok_block, 1 ,6));
+		OreDictionary.registerOre("wool_gray", new ItemStack(Blocks.WOOL, 1 ,7));
+		OreDictionary.registerOre("wool_gray", new ItemStack(VeganLifeBlocks.kapok_block, 1 ,7));
+		OreDictionary.registerOre("wool_silver", new ItemStack(Blocks.WOOL, 1 ,8));
+		OreDictionary.registerOre("wool_silver", new ItemStack(VeganLifeBlocks.kapok_block, 1 ,8));
+		OreDictionary.registerOre("wool_cyan", new ItemStack(Blocks.WOOL, 1 ,9));
+		OreDictionary.registerOre("wool_cyan", new ItemStack(VeganLifeBlocks.kapok_block, 1 ,9));
+		OreDictionary.registerOre("wool_purple", new ItemStack(Blocks.WOOL, 1 ,10));
+		OreDictionary.registerOre("wool_purple", new ItemStack(VeganLifeBlocks.kapok_block, 1 ,10));
+		OreDictionary.registerOre("wool_blue", new ItemStack(Blocks.WOOL, 1 ,11));
+		OreDictionary.registerOre("wool_blue", new ItemStack(VeganLifeBlocks.kapok_block, 1 ,11));
+		OreDictionary.registerOre("wool_brown", new ItemStack(Blocks.WOOL, 1 ,12));
+		OreDictionary.registerOre("wool_brown", new ItemStack(VeganLifeBlocks.kapok_block, 1 ,12));
+		OreDictionary.registerOre("wool_green", new ItemStack(Blocks.WOOL, 1 ,13));
+		OreDictionary.registerOre("wool_green", new ItemStack(VeganLifeBlocks.kapok_block, 1 ,13));
+		OreDictionary.registerOre("wool_red", new ItemStack(Blocks.WOOL, 1 ,14));
+		OreDictionary.registerOre("wool_red", new ItemStack(VeganLifeBlocks.kapok_block, 1 ,14));
+		OreDictionary.registerOre("wool_black", new ItemStack(Blocks.WOOL, 1 ,15));
+		OreDictionary.registerOre("wool_black", new ItemStack(VeganLifeBlocks.kapok_block, 1 ,15));
+
 		// Pam's Harvestcraft
 		OreDictionary.registerOre("cropJute", new ItemStack(VeganLifeItems.jute_stalk_item));
 		OreDictionary.registerOre("foodSesameoil", new ItemStack(VeganLifeItems.vegetable_oil_item));
@@ -57,11 +94,12 @@ public class VeganLifeOreDicts {
         replacements.put(new ItemStack(Items.SPIDER_EYE), "spiderEye");
         replacements.put(new ItemStack(Items.GHAST_TEAR), "ghastTear");
         replacements.put(new ItemStack(Blocks.WOOL), "wool");
+        for (EnumDyeColor color : EnumDyeColor.values()) {
+        	replacements.put(new ItemStack(Blocks.WOOL,1,color.getMetadata()), "wool_" + color.getName());
+		}
 
         // Ignore recipes for the following items
-        ItemStack[] exclusions = new ItemStack[]
-        {
-        };
+        ItemStack[] exclusions = new ItemStack[] {};
 
         FMLLog.log.info("Starts to replace vanilla recipe ingredients with ore ingredients.");
         int replaced = 0;
@@ -97,7 +135,7 @@ public class VeganLifeOreDicts {
                                 matches = true;
                                 if (oreName != null && !oreName.equals(ent.getValue()))
                                 {
-                                    FMLLog.log.info("Invalid recipe found with multiple oredict ingredients in the same ingredient..."); //TODO: Write a dumper?
+                                    FMLLog.log.info("Invalid recipe found with multiple oredict ingredients in the same ingredient... "); //TODO: Write a dumper?
                                     skip = true;
                                     break;
                                 }
