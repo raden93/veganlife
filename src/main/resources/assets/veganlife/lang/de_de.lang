@@ -1,7 +1,14 @@
 # Creative Tab
 itemGroup.veganlifetab=Vegan Life
 
+# hwyla
 veganlife.waila.format=%1$s : %2$s
+veganlife.waila.context.growth.title=Status
+veganlife.waila.context.growth.value=%1$d%%
+veganlife.waila.context.retting.title=Am Vermodert
+veganlife.waila.content.retting.value=%1$d%%
+veganlife.waila.info.retting.finish=Vermodert
+veganlife.waila.info.retting.nowater=Du musst diesen Block im Wasser platzieren!
 
 #Jute
 item.jutestalk.name=Jutestangen
