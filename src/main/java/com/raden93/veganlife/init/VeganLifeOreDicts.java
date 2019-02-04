@@ -22,25 +22,29 @@ import net.minecraftforge.oredict.OreIngredient;
 public class VeganLifeOreDicts {
 	
 	public static void init() {
-		OreDictionary.registerOre("leather", VeganLifeItems.burlap_item);
+		
 		OreDictionary.registerOre("sheetPlastic", VeganLifeItems.bioplastic_item);
 		OreDictionary.registerOre("stickPlastic", VeganLifeItems.plastic_rod_item);
+		
+		// Color
 		OreDictionary.registerOre("dyeWhite", new ItemStack(VeganLifeItems.vegetable_oil_ink_item,1,1));
 		OreDictionary.registerOre("dyeBlack", new ItemStack(VeganLifeItems.vegetable_oil_ink_item,1,0));
 		
+		// Mob Items
+		OreDictionary.registerOre("leather", VeganLifeItems.burlap_item);
 		OreDictionary.registerOre("slimeball", new ItemStack(VeganLifeItems.resin_item));
-	
 		OreDictionary.registerOre("feather", VeganLifeItems.faux_feather_item);
-		
 		OreDictionary.registerOre("spiderEye", new ItemStack(Items.SPIDER_EYE));
 		OreDictionary.registerOre("spiderEye", new ItemStack(VeganLifeItems.dolls_eye_item));
 		OreDictionary.registerOre("spiderEye", new ItemStack(VeganLifeItems.flase_morel_item));
-		
 		OreDictionary.registerOre("ghastTear", new ItemStack(Items.GHAST_TEAR));
 		OreDictionary.registerOre("ghastTear", new ItemStack(VeganLifeItems.proof_of_suffering_item));
-		
 		OreDictionary.registerOre("wool", new ItemStack(Blocks.WOOL));
 		OreDictionary.registerOre("wool", new ItemStack(VeganLifeBlocks.kapok_block));changeVanillaRecips();
+		
+		// Pam's Harvestcraft
+		OreDictionary.registerOre("cropJute", new ItemStack(VeganLifeItems.jute_stalk_item));
+		OreDictionary.registerOre("foodSesameoil", new ItemStack(VeganLifeItems.vegetable_oil_item));
 		
 		changeVanillaRecips();
 	}

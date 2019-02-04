@@ -3,6 +3,7 @@ package com.raden93.veganlife.block.enderperl;
 import java.util.Random;
 
 import com.raden93.veganlife.init.VeganLifeBlocks;
+import com.raden93.veganlife.init.VeganLifeTabs;
 import com.raden93.veganlife.util.BlockUtil;
 
 import net.minecraft.block.Block;
@@ -19,6 +20,7 @@ public class EncrustedObsidianBlock extends BlockObsidian {
 
 	public EncrustedObsidianBlock() {
 		super();
+		setCreativeTab(VeganLifeTabs.veganLifeTab);
 		setSoundType(SoundType.STONE);
 	}
 	

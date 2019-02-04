@@ -1,5 +1,5 @@
 {
-  "type": "minecraft:crafting_shaped",
+  "type": "forge:ore_shaped",
   "pattern": [
     "###",
     "###",
@@ -7,9 +7,9 @@
   ],
   "key": {
     "#": {
-      "item": "veganlife:jutestalk",
-      "data": 0
-    }
+        "type": "forge:ore_dict",
+        "ore": "cropJute"
+      }
   },
   "result": {
     "item": "veganlife:baleofjute"

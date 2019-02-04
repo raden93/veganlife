@@ -1,7 +1,5 @@
 package com.raden93.veganlife.init;
 
-import com.raden93.veganlife.base.EnderRiftTileEntity;
-
 import net.minecraft.block.Block;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.client.renderer.ItemMeshDefinition;
@@ -14,7 +12,6 @@ import net.minecraft.item.ItemStack;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
-import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class VeganLifeModels {
 	
