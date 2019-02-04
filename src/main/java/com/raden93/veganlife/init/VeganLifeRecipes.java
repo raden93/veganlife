@@ -1,12 +1,14 @@
 package com.raden93.veganlife.init;
 
 import net.minecraft.init.Items;
+import net.minecraft.item.EnumDyeColor;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.crafting.Ingredient;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.fluids.FluidStack;
 import net.minecraftforge.fluids.FluidUtil;
 import net.minecraftforge.fml.common.registry.GameRegistry;
+import net.minecraftforge.oredict.OreDictionary;
 
 public class VeganLifeRecipes {
 	
@@ -40,6 +42,8 @@ public class VeganLifeRecipes {
 				Ingredient.fromStacks(new ItemStack(VeganLifeItems.frozen_bubble_item))};
 		
 		addRecipe("enderperl", new ItemStack(Items.ENDER_PEARL), ingredientsEnderperl);
+		
+		addKapokColorRecipes();
 	}
 	
 	private static void addRecipe(String name, ItemStack output, Ingredient[] input)
@@ -47,6 +51,17 @@ public class VeganLifeRecipes {
 		ResourceLocation locName  = new ResourceLocation("veganlife:" + name);
 		ResourceLocation group = null;
 		GameRegistry.addShapelessRecipe(locName, group, output, input);
+	}
+	
+	private static void addKapokColorRecipes() {
+		for (EnumDyeColor color : EnumDyeColor.values()) {
+			Ingredient[] ingredientsKapok;
+			ingredientsKapok =  new Ingredient[]{ 
+					Ingredient.fromStacks(new ItemStack(VeganLifeBlocks.kapok_block,1, OreDictionary.WILDCARD_VALUE)),
+					Ingredient.fromStacks(new ItemStack(Items.DYE,1,color.getMetadata()))};
+			
+			addRecipe("kapok" + color.getDyeColorName(), new ItemStack(VeganLifeBlocks.kapok_block, 1, 15 - color.getMetadata()), ingredientsKapok);
+		}
 	}
 
 }

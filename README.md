@@ -24,7 +24,20 @@ Short descriptions for all veganL life items:
  
  Nothing at the moment :-)
 
-## Current State
+
+
+## Changelog
+
+### 1.0.1
+
+#### Bugs
+- [x] Kapok can be colorized with dye correctly
+- [x] Encrusted Obsidian is in the Creation Mode Tab
+
+#### Pam's Harvestcraft Integration
+- [x] HarvestCraft Jute can be use instead of Jute Stalk
+
+### 1.0.0
 
 #### Jute
 
