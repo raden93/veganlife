@@ -1,6 +1,7 @@
 # Creative Tab
 itemGroup.veganlifetab=Vegan Life
 
+# hwyla
 veganlife.waila.format=%1$s : %2$s
 veganlife.waila.context.growth.title=Growth
 veganlife.waila.context.growth.value=%1$d%%

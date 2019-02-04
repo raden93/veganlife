@@ -6,6 +6,7 @@ import com.raden93.veganlife.init.VeganLifeModels;
 import com.raden93.veganlife.integration.waila.Waila;
 
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.fml.common.Loader;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
@@ -16,7 +17,10 @@ public class ClientProxy extends CommonProxy {
 		super.preinit(event);
 		
 		MinecraftForge.EVENT_BUS.register(VeganLifeModels.class);
-		Waila.init();
+		
+		if(Loader.isModLoaded("waila")) {
+			Waila.init();
+		}
 	}
 
 	public void init(FMLInitializationEvent event) {
