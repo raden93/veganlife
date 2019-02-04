@@ -37,6 +37,11 @@ Short descriptions for all veganL life items:
 - [x] HarvestCraft Jute can be use instead of Jute Stalk
 - [x] Vegetable Oil can be used instead of sesam oil
 
+#### Hwyla (waila)
+
+- [x] Added Hwyla support for jute crop
+- [ ] Added Hwyla support for retting bale of jute
+
 #### Bugs
 
 - [x] Kapok can be colorized with dye correctly

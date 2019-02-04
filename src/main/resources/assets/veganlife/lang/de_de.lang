@@ -1,6 +1,8 @@
 # Creative Tab
 itemGroup.veganlifetab=Vegan Life
 
+veganlife.waila.format=%1$s : %2$s
+
 #Jute
 item.jutestalk.name=Jutestangen
 item.jutefibre.name=Jutefasern

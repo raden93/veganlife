@@ -100,6 +100,13 @@ public class JuteCropBlock extends BlockBush implements IGrowable {
 		}
 	}
 	
+	public float getCurrentStateInProcent(World world, BlockPos pos, IBlockState state) {
+		if(this.isBiggerThanOneBlock(state)) {
+			return getCurrentStateInProcent(world, pos.up(), world.getBlockState(pos.up()));
+		}
+		return ((float)this.getCurrentAge(state)) / NUM_MAX_AGE;
+	}
+	
 	private void growCrop(World world, BlockPos pos, IBlockState state, int steps) {	
 		int currentAge = this.getCurrentAge(state);
 		int newAge = currentAge + steps;

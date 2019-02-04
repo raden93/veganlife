@@ -1,6 +1,10 @@
 # Creative Tab
 itemGroup.veganlifetab=Vegan Life
 
+veganlife.waila.format=%1$s : %2$s
+veganlife.waila.context.growth.title=Growth
+veganlife.waila.context.growth.value=%1$d%%
+
 #Jute
 item.jutestalk.name=Jute Stalk
 item.jutefibre.name=Jute Fibre

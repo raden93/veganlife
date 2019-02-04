@@ -3,6 +3,7 @@ package com.raden93.veganlife.proxy;
 
 import com.raden93.veganlife.init.VeganLifeColorHandlers;
 import com.raden93.veganlife.init.VeganLifeModels;
+import com.raden93.veganlife.integration.waila.Waila;
 
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
@@ -15,6 +16,7 @@ public class ClientProxy extends CommonProxy {
 		super.preinit(event);
 		
 		MinecraftForge.EVENT_BUS.register(VeganLifeModels.class);
+		Waila.init();
 	}
 
 	public void init(FMLInitializationEvent event) {
