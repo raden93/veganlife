@@ -1,31 +1,13 @@
 package com.raden93.veganlife.init;
 
 import com.raden93.veganlife.VeganLifeConstants;
-import com.raden93.veganlife.item.bioplastic.BioplasticItem;
-import com.raden93.veganlife.item.bioplastic.PlasticRodItem;
-import com.raden93.veganlife.item.bioplastic.PotatoStarchItem;
-import com.raden93.veganlife.item.enderperl.FrozenBubbleItem;
-import com.raden93.veganlife.item.enderperl.SoapItem;
-import com.raden93.veganlife.item.enderperl.SoapSolutionItem;
-import com.raden93.veganlife.item.jute.BurlapItem;
-import com.raden93.veganlife.item.jute.JuteFibreItem;
-import com.raden93.veganlife.item.jute.JuteSeedsItem;
-import com.raden93.veganlife.item.jute.JuteStalkItem;
-import com.raden93.veganlife.item.mining.SaltpeterItem;
-import com.raden93.veganlife.item.mining.SulfurItem;
-import com.raden93.veganlife.item.mobitems.DollsEyeItem;
-import com.raden93.veganlife.item.mobitems.FalseMorelItem;
-import com.raden93.veganlife.item.mobitems.FauxFeatherItem;
-import com.raden93.veganlife.item.mobitems.FragmentOfSufferingItem;
-import com.raden93.veganlife.item.mobitems.ProofOfSufferinggItem;
-import com.raden93.veganlife.item.oil.SunflowerSeedsItem;
-import com.raden93.veganlife.item.oil.VegetableOilInkItem;
-import com.raden93.veganlife.item.oil.VegetableOilItem;
-import com.raden93.veganlife.item.oil.VegetableWaxItem;
-import com.raden93.veganlife.item.slimeballs.ResinItem;
-import com.raden93.veganlife.item.slimeballs.RosinItem;
-import com.raden93.veganlife.item.wool.KapokTuftItem;
+import com.raden93.veganlife.item.BaseVeganItem;
+import com.raden93.veganlife.item.ContainerVeganItem;
+import com.raden93.veganlife.item.InkVeganItem;
+import com.raden93.veganlife.item.SeedsVeganItem;
+import com.raden93.veganlife.item.SoapVeganItem;
 
+import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.event.RegistryEvent;
@@ -35,44 +17,44 @@ import net.minecraftforge.registries.IForgeRegistry;
 public class VeganLifeItems {
 
 	// Jute
-	public static final JuteStalkItem jute_stalk_item = new JuteStalkItem();
-	public static final JuteFibreItem jute_fibre_item = new JuteFibreItem();
-	public static final JuteSeedsItem jute_seeds_item = new JuteSeedsItem();
-	public static final BurlapItem burlap_item = new BurlapItem();
+	public static final BaseVeganItem jute_stalk_item = new BaseVeganItem();
+	public static final BaseVeganItem jute_fibre_item = new BaseVeganItem();
+	public static final BaseVeganItem burlap_item = new BaseVeganItem();
+	public static final SeedsVeganItem jute_seeds_item = new SeedsVeganItem(VeganLifeBlocks.jute_crop_block);
 
 	// Bioplastic
-	public static final PotatoStarchItem potato_starch_item = new PotatoStarchItem();
-	public static final PlasticRodItem plastic_rod_item = new PlasticRodItem();
-	public static final BioplasticItem bioplastic_item = new BioplasticItem();
+	public static final BaseVeganItem potato_starch_item = new BaseVeganItem();
+	public static final BaseVeganItem plastic_rod_item = new BaseVeganItem();
+	public static final BaseVeganItem bioplastic_item = new BaseVeganItem();
 	
 	// Wool
-	public static final KapokTuftItem kapok_tuft_item = new KapokTuftItem();
+	public static final BaseVeganItem kapok_tuft_item = new BaseVeganItem();
 	
 	// Slimeballs
-	public static final ResinItem resin_item = new ResinItem();
-	public static final RosinItem rosin_item = new RosinItem();
+	public static final BaseVeganItem resin_item = new BaseVeganItem();
+	public static final BaseVeganItem rosin_item = new BaseVeganItem();
 	
 	// Mining Drops
-	public static final SaltpeterItem saltpeter_item = new SaltpeterItem();
-	public static final SulfurItem sulfur_item = new SulfurItem();
+	public static final BaseVeganItem saltpeter_item = new BaseVeganItem();
+	public static final BaseVeganItem sulfur_item = new BaseVeganItem();
 	
 	// mob items
-	public static final DollsEyeItem dolls_eye_item = new DollsEyeItem();
-	public static final FragmentOfSufferingItem fragment_of_suffering_item = new FragmentOfSufferingItem();
-	public static final ProofOfSufferinggItem proof_of_suffering_item = new ProofOfSufferinggItem();
-	public static final FauxFeatherItem faux_feather_item = new FauxFeatherItem();
-	public static final FalseMorelItem flase_morel_item = new FalseMorelItem();
+	public static final BaseVeganItem dolls_eye_item = new BaseVeganItem();
+	public static final BaseVeganItem fragment_of_suffering_item = new BaseVeganItem();
+	public static final BaseVeganItem proof_of_suffering_item = new BaseVeganItem();
+	public static final BaseVeganItem faux_feather_item = new BaseVeganItem();
+	public static final BaseVeganItem flase_morel_item = new BaseVeganItem();
 	
 	// vegetable oil
-	public static final SunflowerSeedsItem sunflower_seeds_item = new SunflowerSeedsItem();
-	public static final VegetableOilItem vegetable_oil_item = new VegetableOilItem();
-	public static final VegetableWaxItem vegetable_wax_item = new VegetableWaxItem();
-	public static final VegetableOilInkItem vegetable_oil_ink_item = new VegetableOilInkItem();
+	public static final BaseVeganItem sunflower_seeds_item = new BaseVeganItem();
+	public static final BaseVeganItem vegetable_wax_item = new BaseVeganItem();
+	public static final InkVeganItem vegetable_oil_ink_item = new InkVeganItem();
+	public static final ContainerVeganItem vegetable_oil_item = new ContainerVeganItem(Items.GLASS_BOTTLE);
 	
-	//enderperl
-	public static final SoapItem soap_item = new SoapItem();
-	public static final SoapSolutionItem soap_solution_item = new SoapSolutionItem();
-	public static final FrozenBubbleItem frozen_bubble_item = new FrozenBubbleItem();
+	// enderperl
+	public static final BaseVeganItem frozen_bubble_item = new BaseVeganItem();
+	public static final ContainerVeganItem soap_solution_item = new ContainerVeganItem(Items.GLASS_BOTTLE);
+	public static final SoapVeganItem soap_item = new SoapVeganItem();
 	
 	public static void init() {
 		setName(jute_stalk_item, "jutestalk");

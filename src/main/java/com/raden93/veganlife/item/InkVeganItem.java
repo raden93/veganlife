@@ -1,4 +1,4 @@
-package com.raden93.veganlife.item.oil;
+package com.raden93.veganlife.item;
 
 import com.raden93.veganlife.init.VeganLifeTabs;
 
@@ -7,9 +7,9 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.NonNullList;
 
-public class VegetableOilInkItem extends Item {
+public class InkVeganItem extends Item {
 	
-	public VegetableOilInkItem() {
+	public InkVeganItem() {
 		this.setHasSubtypes(true);
 		setCreativeTab(VeganLifeTabs.veganLifeTab);
 	}

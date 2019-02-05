@@ -1,15 +1,11 @@
-package com.raden93.veganlife.item.enderperl;
+package com.raden93.veganlife.item;
 
-import com.raden93.veganlife.init.VeganLifeTabs;
-
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 
-public class SoapItem extends Item  {
+public class SoapVeganItem extends BaseVeganItem  {
 	
-	public SoapItem() {
-		setCreativeTab(VeganLifeTabs.veganLifeTab);
-		setMaxStackSize(1);
+	public SoapVeganItem() {
+		super(1);
 		setMaxDamage(3);
 		setNoRepair();
 	}
