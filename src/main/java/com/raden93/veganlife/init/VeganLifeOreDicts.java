@@ -31,6 +31,13 @@ public class VeganLifeOreDicts {
 		OreDictionary.registerOre("dyeWhite", new ItemStack(VeganLifeItems.vegetable_oil_ink_item,1,1));
 		OreDictionary.registerOre("dyeBlack", new ItemStack(VeganLifeItems.vegetable_oil_ink_item,1,0));
 		
+		// Mining
+		OreDictionary.registerOre("dustSulfur", new ItemStack(VeganLifeItems.sulfur_item));
+		OreDictionary.registerOre("dustSulphur", new ItemStack(VeganLifeItems.sulfur_item));
+		OreDictionary.registerOre("dustSaltpeter", new ItemStack(VeganLifeItems.saltpeter_item));
+		OreDictionary.registerOre("dustNiter", new ItemStack(VeganLifeItems.saltpeter_item));
+		OreDictionary.registerOre("dustNitre", new ItemStack(VeganLifeItems.saltpeter_item));
+		
 		// Mob Items
 		OreDictionary.registerOre("leather", VeganLifeItems.burlap_item);
 		OreDictionary.registerOre("slimeball", new ItemStack(VeganLifeItems.resin_item));

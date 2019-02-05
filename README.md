@@ -44,8 +44,8 @@ Short descriptions for all veganL life items:
 
 ##### Other Integration 
 
-- [ ] Sulfur get ore dicts "dustSulfur" and "dustSulphur"
-- [ ] Saltpeter get ore dicts "dustNiter", "dustNitre" and "dustSaltpeter"
+- [x] Sulfur get ore dicts "dustSulfur" and "dustSulphur" ( "dustSulfur" is used for gunpowder recipe )
+- [x] Saltpeter get ore dicts "dustNiter", "dustNitre" and "dustSaltpeter" ( "dustSaltpeter" is used for gunpowder recipe )
 - [ ] Resin drops from coniferous woods
 - [ ] Kapok Tuft drops from other jungle trees
 
