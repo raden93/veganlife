@@ -53,7 +53,7 @@ public class BaleOfJuteBlock extends BlockRotatedPillar {
 	@Override
 	public void updateTick(World world, BlockPos pos, IBlockState state, Random random) {
 		super.updateTick(world, pos, state, random);
-		int rettingValue = this.getRettedValue(world, pos);
+		int rettingValue = getRettedValue(world, pos);
 		if (rettingValue < MAX_RETTING_VALUE && BlockUtil.isBlockInOrAdjacentMaterial(world, pos, Material.WATER)) {
 			IBlockState newState = world.getBlockState(pos).withProperty(RETTING, rettingValue + 1);
 			world.setBlockState(pos, newState);

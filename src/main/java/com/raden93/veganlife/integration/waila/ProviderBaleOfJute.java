@@ -16,7 +16,6 @@ public class ProviderBaleOfJute extends WailaProvider {
 	@Override
 	public List<String> getWailaBody(ItemStack itemStack, List<String> toolTip, IWailaDataAccessor accessor,
 			IWailaConfigHandler config) {
-		BaleOfJuteBlock blockRettable = (BaleOfJuteBlock) accessor.getBlock();
 		float rettingPercent = BaleOfJuteBlock.getRettingStatus(accessor.getWorld(), accessor.getPosition());
 		if (rettingPercent >= 1)
 			toolTip.add(I18n.format("veganlife.waila.info.retting.finish"));
