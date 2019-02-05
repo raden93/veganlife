@@ -1,15 +1,17 @@
 {
-  "type": "minecraft:crafting_shapeless",
+  "type": "forge:ore_shapeless",
   "ingredients":[
     {
       "item": "minecraft:emerald"
     },
     {
-      "item": "minecraft:obsidian"
-    },
+      "type": "forge:ore_dict",
+      "ore": "obsidian"
+    }, 
     {
-      "item": "minecraft:obsidian"
-    },
+      "type": "forge:ore_dict",
+      "ore": "obsidian"
+    }, 
     {
       "item": "minecraft:diamond"
     }

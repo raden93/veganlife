@@ -79,7 +79,7 @@ public class VeganLifeOreDicts {
 
 		// Pam's Harvestcraft
 		OreDictionary.registerOre("cropJute", new ItemStack(VeganLifeItems.jute_stalk_item));
-		OreDictionary.registerOre("foodSesameoil", new ItemStack(VeganLifeItems.vegetable_oil_item));
+		OreDictionary.registerOre("foodOliveoil", new ItemStack(VeganLifeItems.vegetable_oil_item));
 		
 		changeVanillaRecips();
 	}
