@@ -26,6 +26,33 @@ Short descriptions for all veganL life items:
 
 ## Changelog
 
+### 1.2.0
+
+#### Features
+
+- [x] Encrusted Obsidian recipe use forge obsidian ore dict
+- [x] Wool ore dicts renamed to correct convension: blackWool, redWool ...
+
+##### Pam's Harvestcraft Integration
+
+- [x] Vegetable Oil use now foodOliveoil ore dict
+- [ ] Sunflower seeds was added to the ore dict
+
+##### Forestry 
+
+- [ ] Vegetable Wax get ore dict "itemWax"
+
+##### Other Integration 
+
+- [ ] Sulfur get ore dicts "dustSulfur" and "dustSulphur"
+- [ ] Saltpeter get ore dicts "dustNiter", "dustNitre" and "dustSaltpeter"
+- [ ] Resin drops from coniferous woods
+- [ ] Kapok Tuft drops from other jungle trees
+
+#### Bugs
+
+- [x] Vegetable oil recipe use now correct ingredients  
+
 ### 1.1.0
 
 #### Features
