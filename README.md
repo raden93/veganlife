@@ -36,7 +36,7 @@ Short descriptions for all veganL life items:
 ##### Pam's Harvestcraft Integration
 
 - [x] Vegetable Oil use now foodOliveoil ore dict
-- [ ] Sunflower seeds was added to the ore dict
+- [x] Sunflower seeds was added to the ore dict
 
 ##### Forestry 
 
