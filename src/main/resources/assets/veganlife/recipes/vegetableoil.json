@@ -1,13 +1,9 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "pattern": [
-    "p",
-    "#"
-  ],
+  "type": "forge:ore_shapeless",
   "ingredients":[
     {
-      "item": "veganlife:sunflowerseeds",
-      "data": 0
+      "type": "forge:ore_dict",
+      "ore": "cropSunflower"
     },
     {
       "item": "minecraft:piston",

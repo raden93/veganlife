@@ -39,6 +39,7 @@ public class VeganLifeOreDicts {
 		OreDictionary.registerOre("dustNitre", new ItemStack(VeganLifeItems.saltpeter_item));
 		
 		// Oil
+		OreDictionary.registerOre("cropSunflower", new ItemStack(VeganLifeItems.sunflower_seeds_item));
 		OreDictionary.registerOre("itemWax", new ItemStack(VeganLifeItems.vegetable_wax_item));
 		
 		// Mob Items
