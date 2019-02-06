@@ -6,7 +6,8 @@
       "ore": "foodOliveoil"
     },
     {
-      "item": "veganlife:vegetablewax"
+      "type": "forge:ore_dict",
+      "ore": "itemWax"
     },
     {
       "item": "veganlife:rosin"
