@@ -9,6 +9,7 @@ import net.minecraftforge.fluids.FluidStack;
 import net.minecraftforge.fluids.FluidUtil;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.oredict.OreDictionary;
+import net.minecraftforge.oredict.OreIngredient;
 
 public class VeganLifeRecipes {
 	
@@ -29,10 +30,9 @@ public class VeganLifeRecipes {
 		addRecipe("woodashlye", FluidUtil.getFilledBucket(new FluidStack(VeganLifeBlocks.wood_ash_lye_fluid, 1)), ingredients);
 		
 		// ------------ recipe: Wood Ash Lye + Vegetable Oil + Rosin => Soap
-		//TODO: use foodOliveoil oredict instead of vegetable oil
 		Ingredient[] ingredientsSoap =  new Ingredient[]{ 
 				Ingredient.fromStacks(FluidUtil.getFilledBucket(new FluidStack(VeganLifeBlocks.wood_ash_lye_fluid, 1))),
-				Ingredient.fromStacks(new ItemStack(VeganLifeItems.vegetable_oil_item)),
+				new OreIngredient("foodOliveoil"),
 				Ingredient.fromStacks(new ItemStack(VeganLifeItems.rosin_item))};
 		
 		addRecipe("soap", new ItemStack(VeganLifeItems.soap_item), ingredientsSoap);
