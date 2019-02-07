@@ -47,6 +47,7 @@ Short descriptions for all veganL life items:
 
 - [x] Sulfur get ore dicts "dustSulfur" and "dustSulphur" ( "dustSulfur" is used for gunpowder recipe )
 - [x] Saltpeter get ore dicts "dustNiter", "dustNitre" and "dustSaltpeter" ( "dustSaltpeter" is used for gunpowder recipe )
+- [x] Rosin get ore dicts "rosin", "materialRosin" and "globRosin"
 
 #### Bugs
 

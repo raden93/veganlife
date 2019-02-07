@@ -24,6 +24,10 @@ public class VeganLifeOreDicts {
 	
 	public static void init() {
 		
+		//Drops
+		OreDictionary.registerOre("rosin", VeganLifeItems.rosin_item);
+		OreDictionary.registerOre("materialRosin", VeganLifeItems.rosin_item);
+		
 		OreDictionary.registerOre("sheetPlastic", VeganLifeItems.bioplastic_item);
 		OreDictionary.registerOre("stickPlastic", VeganLifeItems.plastic_rod_item);
 		
@@ -58,6 +62,9 @@ public class VeganLifeOreDicts {
 		// Pam's Harvestcraft
 		OreDictionary.registerOre("cropJute", new ItemStack(VeganLifeItems.jute_stalk_item));
 		OreDictionary.registerOre("foodOliveoil", new ItemStack(VeganLifeItems.vegetable_oil_item));
+		
+		// ThermalFoundation
+		OreDictionary.registerOre("globRosin", new ItemStack(VeganLifeItems.rosin_item));
 		
 		changeVanillaRecips();
 	}
@@ -99,8 +106,7 @@ public class VeganLifeOreDicts {
         for(IRecipe obj : CraftingManager.REGISTRY)
         {
         	String name = obj.getRegistryName().toString();
-        	// Not contain wool is a workaround, that white kapok can create all wool items AND colonized kapok
-            if((obj.getClass() == ShapedRecipes.class || obj.getClass() == ShapelessRecipes.class) && !name.contains("wool") )
+            if((obj.getClass() == ShapedRecipes.class || obj.getClass() == ShapelessRecipes.class))
             {
        
                 ItemStack output = obj.getRecipeOutput();
@@ -133,7 +139,7 @@ public class VeganLifeOreDicts {
                                 		oreName = parentValue;
                                 	}
                                 	else {
-                                		FMLLog.log.info("Invalid recipe \"" + obj.getRegistryName() + 
+                                		FMLLog.log.info("Invalid recipe \"" + name + 
                                 				"\" found with multiple oredict ingredients in the same ingredient... ");
                                         skip = true;
                                         break;
@@ -148,8 +154,6 @@ public class VeganLifeOreDicts {
                         }
                         if (!matches && oreName != null)
                         {
-                            //TODO: Properly fix this, Broken recipe example: Beds
-                            //FMLLog.info("Invalid recipe found with ingredient that partially matches ore entries..."); //TODO: Write a dumper?
                             skip = true;
                         }
                         if (skip)
