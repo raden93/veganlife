@@ -52,41 +52,8 @@ public class VeganLifeOreDicts {
 		OreDictionary.registerOre("ghastTear", new ItemStack(Items.GHAST_TEAR));
 		OreDictionary.registerOre("ghastTear", new ItemStack(VeganLifeItems.proof_of_suffering_item));
 		
-		// Wool ( work for everything except painting recipe )
-		OreDictionary.registerOre("wool", new ItemStack(Blocks.WOOL));
-		OreDictionary.registerOre("wool", new ItemStack(VeganLifeBlocks.kapok_block, 1, 0));
-		OreDictionary.registerOre("woolWhite", new ItemStack(Blocks.WOOL, 1, 0));
-		OreDictionary.registerOre("woolWhite", new ItemStack(VeganLifeBlocks.kapok_block, 1 ,0));
-		OreDictionary.registerOre("woolOrange", new ItemStack(Blocks.WOOL, 1, 1));
-		OreDictionary.registerOre("woolOrange", new ItemStack(VeganLifeBlocks.kapok_block, 1 ,1));
-		OreDictionary.registerOre("woolMagenta", new ItemStack(Blocks.WOOL, 1 ,2));
-		OreDictionary.registerOre("woolMagenta", new ItemStack(VeganLifeBlocks.kapok_block, 1 ,2));
-		OreDictionary.registerOre("woolLight_blue", new ItemStack(Blocks.WOOL, 1 ,3));
-		OreDictionary.registerOre("woolLight_blue", new ItemStack(VeganLifeBlocks.kapok_block, 1 ,3));
-		OreDictionary.registerOre("woolYellow", new ItemStack(Blocks.WOOL, 1 ,4));
-		OreDictionary.registerOre("woolYellow", new ItemStack(VeganLifeBlocks.kapok_block, 1 ,4));
-		OreDictionary.registerOre("woolLime", new ItemStack(Blocks.WOOL, 1 ,5));
-		OreDictionary.registerOre("woolLime", new ItemStack(VeganLifeBlocks.kapok_block, 1 ,5));
-		OreDictionary.registerOre("woolPink", new ItemStack(Blocks.WOOL, 1 ,6));
-		OreDictionary.registerOre("woolPink", new ItemStack(VeganLifeBlocks.kapok_block, 1 ,6));
-		OreDictionary.registerOre("woolGray", new ItemStack(Blocks.WOOL, 1 ,7));
-		OreDictionary.registerOre("woolGray", new ItemStack(VeganLifeBlocks.kapok_block, 1 ,7));
-		OreDictionary.registerOre("woolSilver", new ItemStack(Blocks.WOOL, 1 ,8));
-		OreDictionary.registerOre("woolSilver", new ItemStack(VeganLifeBlocks.kapok_block, 1 ,8));
-		OreDictionary.registerOre("woolCyan", new ItemStack(Blocks.WOOL, 1 ,9));
-		OreDictionary.registerOre("woolCyan", new ItemStack(VeganLifeBlocks.kapok_block, 1 ,9));
-		OreDictionary.registerOre("woolPurple", new ItemStack(Blocks.WOOL, 1 ,10));
-		OreDictionary.registerOre("woolPurple", new ItemStack(VeganLifeBlocks.kapok_block, 1 ,10));
-		OreDictionary.registerOre("woolBlue", new ItemStack(Blocks.WOOL, 1 ,11));
-		OreDictionary.registerOre("woolBlue", new ItemStack(VeganLifeBlocks.kapok_block, 1 ,11));
-		OreDictionary.registerOre("woolBrown", new ItemStack(Blocks.WOOL, 1 ,12));
-		OreDictionary.registerOre("woolBrown", new ItemStack(VeganLifeBlocks.kapok_block, 1 ,12));
-		OreDictionary.registerOre("woolGreen", new ItemStack(Blocks.WOOL, 1 ,13));
-		OreDictionary.registerOre("woolGreen", new ItemStack(VeganLifeBlocks.kapok_block, 1 ,13));
-		OreDictionary.registerOre("woolRed", new ItemStack(Blocks.WOOL, 1 ,14));
-		OreDictionary.registerOre("woolRed", new ItemStack(VeganLifeBlocks.kapok_block, 1 ,14));
-		OreDictionary.registerOre("woolBlack", new ItemStack(Blocks.WOOL, 1 ,15));
-		OreDictionary.registerOre("woolBlack", new ItemStack(VeganLifeBlocks.kapok_block, 1 ,15));
+		// Wool
+		registerOreDicsWoolForKapok();
 
 		// Pam's Harvestcraft
 		OreDictionary.registerOre("cropJute", new ItemStack(VeganLifeItems.jute_stalk_item));
@@ -95,24 +62,32 @@ public class VeganLifeOreDicts {
 		changeVanillaRecips();
 	}
 	
-	/* TODO: Fix Problem that wool oredict the color oredict override
+	/**
+	 * Register every wool and kapok item for his color oredict and the parent oredict "wool"
+	 */
 	private static void registerOreDicsWoolForKapok() {
+		String[] oreDicNames = { "woolWhite", "woolOrange", "woolMagenta", "woolLight_blue", "woolYellow", "woolLime","woolPink", 
+				"woolGray", "woolSilver", "woolCyan", "woolPurple", "woolBlue", "woolBrown", "woolGreen", "woolRed", "woolBlack" };
 		for( int i = 0; i <= 15; i++) {
 			OreDictionary.registerOre("wool", new ItemStack(VeganLifeBlocks.kapok_block,1,i));
+			OreDictionary.registerOre("wool", new ItemStack(Blocks.WOOL, 1, i));
+			
+			OreDictionary.registerOre(oreDicNames[i], new ItemStack(VeganLifeBlocks.kapok_block,1,i));
+			OreDictionary.registerOre(oreDicNames[i], new ItemStack(Blocks.WOOL, 1, i));
 		}
 	}
-	*/
 	
 	private static void changeVanillaRecips() {
 		 // Build our list of items to replace with ore tags
         Map<ItemStack, String> replacements = new HashMap<ItemStack, String>();
-
+        Map<ItemStack, String> parent = new HashMap<ItemStack, String>();
 
         replacements.put(new ItemStack(Items.SPIDER_EYE), "spiderEye");
         replacements.put(new ItemStack(Items.GHAST_TEAR), "ghastTear");
-        replacements.put(new ItemStack(Blocks.WOOL), "wool");
         for (EnumDyeColor color : EnumDyeColor.values()) {
-        	replacements.put(new ItemStack(Blocks.WOOL,1,color.getMetadata()), "wool" + color.getName().substring(0, 1).toUpperCase() + color.getName().substring(1));
+        	ItemStack woolDye = new ItemStack(Blocks.WOOL,1,color.getMetadata());
+        	replacements.put(woolDye, "wool" + color.getName().substring(0, 1).toUpperCase() + color.getName().substring(1));
+        	parent.put(woolDye, "wool");
 		}
 
         // Ignore recipes for the following items
@@ -152,9 +127,17 @@ public class VeganLifeOreDicts {
                                 matches = true;
                                 if (oreName != null && !oreName.equals(ent.getValue()))
                                 {
-                                    FMLLog.log.info("Invalid recipe found with multiple oredict ingredients in the same ingredient... "); //TODO: Write a dumper?
-                                    skip = true;
-                                    break;
+                                	// For minecraft recipes like painting. They have multi values for one ingredient with different metadata.
+                                	String parentValue = parent.get(ent.getKey());
+                                	if(parentValue != null && !parentValue.equals("")) {
+                                		oreName = parentValue;
+                                	}
+                                	else {
+                                		FMLLog.log.info("Invalid recipe \"" + obj.getRegistryName() + 
+                                				"\" found with multiple oredict ingredients in the same ingredient... ");
+                                        skip = true;
+                                        break;
+                                	} 
                                 }
                                 else if (oreName == null)
                                 {

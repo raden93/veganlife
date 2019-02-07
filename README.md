@@ -32,6 +32,7 @@ Short descriptions for all veganL life items:
 
 - [x] Encrusted Obsidian recipe use forge obsidian ore dict
 - [x] Wool ore dicts renamed to correct convension: blackWool, redWool ...
+- [x] Minecraft Wool recipes works now correctly with kapok, also for painting 
 
 ##### Pam's Harvestcraft Integration
 
