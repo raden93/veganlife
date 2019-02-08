@@ -44,6 +44,7 @@ public class VeganLifeItems {
 	public static final BaseVeganItem proof_of_suffering_item = new BaseVeganItem();
 	public static final BaseVeganItem faux_feather_item = new BaseVeganItem();
 	public static final BaseVeganItem flase_morel_item = new BaseVeganItem();
+	public static final BaseVeganItem faux_rabbit_foot_item = new BaseVeganItem();
 	
 	// vegetable oil
 	public static final BaseVeganItem sunflower_seeds_item = new BaseVeganItem();
@@ -81,6 +82,7 @@ public class VeganLifeItems {
 		setName(soap_solution_item, "soapsolution");
 		setName(frozen_bubble_item, "frozenbubble");
 		setName(flase_morel_item, "falsemorel");
+		setName(faux_rabbit_foot_item, "fauxrabbitfoot");
 	}
 	
 	@SubscribeEvent
@@ -110,6 +112,7 @@ public class VeganLifeItems {
 		registry.register(soap_solution_item);
 		registry.register(frozen_bubble_item);
 		registry.register(flase_morel_item);
+		registry.register(faux_rabbit_foot_item);
 	}
 	
 	public static void setName(Item item, String name) {

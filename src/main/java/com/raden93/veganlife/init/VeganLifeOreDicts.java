@@ -55,6 +55,8 @@ public class VeganLifeOreDicts {
 		OreDictionary.registerOre("spiderEye", new ItemStack(VeganLifeItems.flase_morel_item));
 		OreDictionary.registerOre("ghastTear", new ItemStack(Items.GHAST_TEAR));
 		OreDictionary.registerOre("ghastTear", new ItemStack(VeganLifeItems.proof_of_suffering_item));
+		OreDictionary.registerOre("rabbitFoot", new ItemStack(Items.RABBIT_FOOT));
+		OreDictionary.registerOre("rabbitFoot", new ItemStack(VeganLifeItems.faux_rabbit_foot_item));
 		
 		// Wool
 		registerOreDicsWoolForKapok();
@@ -91,6 +93,7 @@ public class VeganLifeOreDicts {
 
         replacements.put(new ItemStack(Items.SPIDER_EYE), "spiderEye");
         replacements.put(new ItemStack(Items.GHAST_TEAR), "ghastTear");
+        replacements.put(new ItemStack(Items.RABBIT_FOOT), "rabbitFoot");
         for (EnumDyeColor color : EnumDyeColor.values()) {
         	ItemStack woolDye = new ItemStack(Blocks.WOOL,1,color.getMetadata());
         	replacements.put(woolDye, "wool" + color.getName().substring(0, 1).toUpperCase() + color.getName().substring(1));

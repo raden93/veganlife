@@ -25,6 +25,15 @@ Short descriptions for all veganL life items:
 
 ## Changelog
 
+### 1.3.0
+
+#### Features
+
+- [ ] Rabbit's Foot
+	- [x] Create Faux Rabbit's Food Item
+	- [x] Create Recipe for Faux Rabbit's Food Item
+	- [ ] Faux Rabbit's Food Item can be used instead of Rabbit's Foot
+
 ### 1.2.0
 
 #### Features

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    "#x#",
+    "# #"
+  ],
+  "key": {
+    "#": {
+        "item":"veganlife:burlap"
+      },
+    "x": {
+    	"item":"veganlife:plasticrod"
+    }
+  },
+  "result": {
+    "item": "veganlife:fauxrabbitfoot"
+  }
+}

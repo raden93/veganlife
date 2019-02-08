@@ -49,6 +49,7 @@ public class VeganLifeModels {
 		register(VeganLifeItems.proof_of_suffering_item);
 		register(VeganLifeItems.faux_feather_item);
 		register(VeganLifeItems.flase_morel_item);
+		register(VeganLifeItems.faux_rabbit_foot_item);
 		
 		// Vegetable oil
 		register(VeganLifeItems.sunflower_seeds_item);

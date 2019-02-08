@@ -19,19 +19,18 @@ tile.baleofjute.name=Juteballen
 tile.jutecrop.name=Jutepflanze
 
 #bioplastic
-item.potatostarch.name=Kartoffelst‰rke
 item.plasticrod.name=Plastikstange
 item.bioplastic.name=Bioplastik
 
 #kapoktuft
 item.kapoktuft.name=Kapokfaser
 tile.kapok.name=Kapok Block
-tile.kapok.white.name=Weiﬂer Kapok Block
+tile.kapok.white.name=Wei√üer Kapok Block
 tile.kapok.orange.name=Oranger Kapok Block
 tile.kapok.magenta.name=Magenta Kapok Block
 tile.kapok.lightBlue.name=Heller Blue Kapok Block
 tile.kapok.yellow.name=Gelber Kapok Block
-tile.kapok.lime.name=Limegr¸mer Kapok Block
+tile.kapok.lime.name=Limegr√ºner Kapok Block
 tile.kapok.pink.name=Pinker Kapok Block
 tile.kapok.gray.name=Grauer Kapok Block
 tile.kapok.silver.name=Hellgrauer Kapok Block
@@ -39,7 +38,7 @@ tile.kapok.cyan.name=Cyaner Kapok Block
 tile.kapok.purple.name=Purple Kapok Block
 tile.kapok.blue.name=Blauer Kapok Block
 tile.kapok.brown.name=Brauner Kapok Block
-tile.kapok.green.name=Gr¸ner Kapok Block
+tile.kapok.green.name=Gr√ºner Kapok Block
 tile.kapok.red.name=Roter Kapok Block
 tile.kapok.black.name=Schwarzer Kapok Block
 
@@ -54,21 +53,22 @@ item.saltpeter.name=Saltpeter
 #mob drops
 item.dollseye.name=Puppenauge
 item.fragmentofsuffering.name=Fragment des Leidens
-item.proofofsuffering.name=Tr‰ne des Leidens
-item.fauxfeather.name=Gef‰lschte Feder
-item.falsemorel.name=Gef‰lschte Morchel
+item.proofofsuffering.name=Tr√§ne des Leidens
+item.fauxfeather.name=Gef√§lschte Feder
+item.falsemorel.name=Gef√§lschte Morchel
+item.fauxrabbitfoot.name=Gef√§lschter Hasenfu√ü
 
 #vegetable oil
 item.sunflowerseeds.name=Sonnenblumensamen
-item.vegetableoil.name=Veganes ÷l
+item.vegetableoil.name=Veganes √ñl
 item.vegetablewax.name=Veganes Wax
 item.vegetableoilink_black.name=Vegane schwarze Farbe
-item.vegetableoilink_white.name=vegane weiﬂe Farbe
+item.vegetableoilink_white.name=vegane wei√üe Farbe
 
 #enderperl
 item.frozenbubble.name=Gefrohrene Seifenblase
 item.soap.name=Seife
-item.soapsolution.name=Seifenlˆsung
+item.soapsolution.name=Seifenl√∂sung
 fluid.rawender=Reines Ender
 tile.rawender.name=Reines Ender
 fluid.woodashlye=Holzesche Lauge
