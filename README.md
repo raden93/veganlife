@@ -52,6 +52,7 @@ Short descriptions for all veganL life items:
 
 #### Bugs
 
+- [x] fix that mod crash server ( NoSuchMethodError: net.minecraft.item.EnumDyeColor.func )
 - [x] Vegetable oil recipe use now correct ingredients  
 
 ### 1.1.0
