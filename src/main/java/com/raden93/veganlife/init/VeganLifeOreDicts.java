@@ -106,7 +106,8 @@ public class VeganLifeOreDicts {
         for(IRecipe obj : CraftingManager.REGISTRY)
         {
         	String name = obj.getRegistryName().toString();
-            if((obj.getClass() == ShapedRecipes.class || obj.getClass() == ShapelessRecipes.class))
+        	// Not contain wool is a workaround, that white kapok can create all wool items AND colonized kapok
+            if((obj.getClass() == ShapedRecipes.class || obj.getClass() == ShapelessRecipes.class) && !name.contains("wool"))
             {
        
                 ItemStack output = obj.getRecipeOutput();

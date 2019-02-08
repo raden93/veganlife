@@ -1,7 +1,6 @@
 package com.raden93.veganlife.init;
 
 import net.minecraft.init.Items;
-import net.minecraft.item.EnumDyeColor;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.crafting.Ingredient;
 import net.minecraft.util.ResourceLocation;
@@ -48,20 +47,20 @@ public class VeganLifeRecipes {
 	}
 	
 	private static void addRecipe(String name, ItemStack output, Ingredient[] input)
-	{
+	{	
 		ResourceLocation locName  = new ResourceLocation("veganlife:" + name);
 		ResourceLocation group = null;
 		GameRegistry.addShapelessRecipe(locName, group, output, input);
 	}
 	
 	private static void addKapokColorRecipes() {
-		for (EnumDyeColor color : EnumDyeColor.values()) {
+		for (int i = 0; i <= 15; i++) {
 			Ingredient[] ingredientsKapok;
 			ingredientsKapok =  new Ingredient[]{ 
 					Ingredient.fromStacks(new ItemStack(VeganLifeBlocks.kapok_block,1, OreDictionary.WILDCARD_VALUE)),
-					Ingredient.fromStacks(new ItemStack(Items.DYE,1,color.getMetadata()))};
+					Ingredient.fromStacks(new ItemStack(Items.DYE,1, i))};
 			
-			addRecipe("kapok" + color.getDyeColorName(), new ItemStack(VeganLifeBlocks.kapok_block, 1, 15 - color.getMetadata()), ingredientsKapok);
+			addRecipe("kapok" + i, new ItemStack(VeganLifeBlocks.kapok_block, 1, 15 - i), ingredientsKapok);
 		}
 	}
 
