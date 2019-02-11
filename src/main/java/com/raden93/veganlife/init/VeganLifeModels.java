@@ -68,6 +68,7 @@ public class VeganLifeModels {
 		register(Item.getItemFromBlock(VeganLifeBlocks.wood_ash_lye_block));
 		register(Item.getItemFromBlock(VeganLifeBlocks.encrusted_obsidian_block));
 		register(Item.getItemFromBlock(VeganLifeBlocks.ender_rift_block));
+		register(Item.getItemFromBlock(VeganLifeBlocks.fly_end_block));
 	}
 	
 	private static void register(Item item) {

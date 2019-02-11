@@ -4,6 +4,7 @@ import com.raden93.veganlife.VeganLifeConstants;
 import com.raden93.veganlife.base.EnderRiftTileEntity;
 import com.raden93.veganlife.block.enderperl.EncrustedObsidianBlock;
 import com.raden93.veganlife.block.enderperl.EnderRiftBlock;
+import com.raden93.veganlife.block.enderperl.FlyingEndBlock;
 import com.raden93.veganlife.block.enderperl.RawEnderBlock;
 import com.raden93.veganlife.block.enderperl.RawEnderFluid;
 import com.raden93.veganlife.block.enderperl.WoodAshLyeBlock;
@@ -37,6 +38,7 @@ public class VeganLifeBlocks {
 	public static WoodAshLyeBlock wood_ash_lye_block;
 	public static final EncrustedObsidianBlock encrusted_obsidian_block = new EncrustedObsidianBlock();
 	public static final EnderRiftBlock ender_rift_block = new EnderRiftBlock();
+	public static final FlyingEndBlock fly_end_block = new FlyingEndBlock();
 	
 	
 	public static void init() {
@@ -58,6 +60,7 @@ public class VeganLifeBlocks {
 		setName(wood_ash_lye_block, "woodashlye");
 		setName(encrusted_obsidian_block, "encurstedobsidian");
 		setName(ender_rift_block, "enderrift");
+		setName(fly_end_block, "flyingend");
 	}
 	
 	private static void setName(Block block, String name) {
@@ -76,7 +79,7 @@ public class VeganLifeBlocks {
 		registry.register(wood_ash_lye_block);
 		registry.register(encrusted_obsidian_block);
 		registry.register(ender_rift_block);
-		
+		registry.register(fly_end_block);
 		GameRegistry.registerTileEntity(EnderRiftTileEntity.class, "veganlife:enderrift");
 	}
 	
@@ -90,6 +93,7 @@ public class VeganLifeBlocks {
 		registry.register(new ItemBlock(wood_ash_lye_block).setRegistryName(wood_ash_lye_block.getRegistryName()));
 		registry.register(new ItemBlock(encrusted_obsidian_block).setRegistryName(encrusted_obsidian_block.getRegistryName()));
 		registry.register(new ItemBlock(ender_rift_block).setRegistryName(ender_rift_block.getRegistryName()));
+		registry.register(new ItemBlock(fly_end_block).setRegistryName(fly_end_block.getRegistryName()));
 	}
 	
 	
