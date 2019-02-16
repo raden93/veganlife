@@ -19,6 +19,8 @@ Short descriptions for all veganL life items:
  - [Gunpowder](dokumentation/gunpowder.md)
  - [Spider Eye](dokumentation/spidereye.md)
  - [Proof of Suffering](dokumentation/suffering.md)
+ - [Rabbit's Foot](dokumentation/rabbitsfoot.md)
+ - [Shulker Shell](dokumentation/shulker_shell.md)
 
 ## Known Bugs:
  
