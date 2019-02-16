@@ -1,7 +1,10 @@
 {
     "forge_marker": 1,
     "defaults": {
-  		"model": "forge:fluid"
+  		"model": "forge:fluid",
+  		"textures": {
+  		    "fluid": "veganlife:blocks/rawender_still"
+  		}
  	},
  	"variants": {
   		"normal": [
