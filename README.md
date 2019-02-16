@@ -30,9 +30,15 @@ Short descriptions for all veganL life items:
 #### Features
 
 - [x] Rabbit's Foot
-	- [x] Create Faux Rabbit's Food Item
-	- [x] Create Recipe for Faux Rabbit's Food Item
-	- [x] Faux Rabbit's Food Item can be used instead of Rabbit's Foot
+	- [x] Create Faux Rabbit's Foot Item
+	- [x] Create Recipe for Faux Rabbit's Foot Item
+	- [x] Faux Rabbit's Foot Item can be used instead of Rabbit's Foot
+	
+- [x] Shulker Shell
+    - [x] Create Flying Endblock
+    - [x] Flying Endblock can be craft with 4 Endblocks, 4 Chorus Flowers and a Soap Solution
+    - [x] Flying Endblock fly when they was add to the world
+    - [x] Flying Endblocks drops Shulker Shells with a little chance, dependents how long it flying 
 
 ### 1.2.0
 
