@@ -1,6 +1,6 @@
 # Vegan Life
 
-This should be an remastered version of [vegan option](https://github.com/backuporg/VeganOption) for the Minecraft Version 1.12.2. It isn't contain every feature from Vegan Option and some recipes have change.
+This should be an remastered version of [vegan option](https://github.com/squeek502/VeganOption) for the Minecraft Version 1.12.2. It isn't contain every feature from Vegan Option and some recipes have change.
 
 When you have some more ideas, or want to implements some more features from Vegan Option, make a Pull-Request. I'm happy for improvements! 
 
