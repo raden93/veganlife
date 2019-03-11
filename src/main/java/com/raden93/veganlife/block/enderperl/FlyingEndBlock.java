@@ -3,7 +3,6 @@ package com.raden93.veganlife.block.enderperl;
 import java.util.List;
 import java.util.Random;
 
-import com.raden93.veganlife.init.VeganLifeItems;
 import com.raden93.veganlife.init.VeganLifeTabs;
 
 import net.minecraft.block.Block;
@@ -16,7 +15,6 @@ import net.minecraft.entity.MoverType;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
-import net.minecraft.util.EnumFacing;
 import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;

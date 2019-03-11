@@ -57,6 +57,9 @@ public class VeganLifeItems {
 	public static final ContainerVeganItem soap_solution_item = new ContainerVeganItem(Items.GLASS_BOTTLE);
 	public static final SoapVeganItem soap_item = new SoapVeganItem();
 	
+	//mob-head
+	public static final BaseVeganItem paper_mache = new BaseVeganItem();
+	
 	public static void init() {
 		setName(jute_stalk_item, "jutestalk");
 		setName(jute_fibre_item, "jutefibre");
@@ -83,6 +86,7 @@ public class VeganLifeItems {
 		setName(frozen_bubble_item, "frozenbubble");
 		setName(flase_morel_item, "falsemorel");
 		setName(faux_rabbit_foot_item, "fauxrabbitfoot");
+		setName(paper_mache, "papermache");
 	}
 	
 	@SubscribeEvent
@@ -113,6 +117,7 @@ public class VeganLifeItems {
 		registry.register(frozen_bubble_item);
 		registry.register(flase_morel_item);
 		registry.register(faux_rabbit_foot_item);
+		registry.register(paper_mache);
 	}
 	
 	public static void setName(Item item, String name) {
