@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "#x#",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "veganlife:papermache"
+    },
+    "x": {
+      "item": "minecraft:melon_block"
+    }
+  },
+  "result": {
+    "item": "veganlife:blankmobhead"
+  }
+}

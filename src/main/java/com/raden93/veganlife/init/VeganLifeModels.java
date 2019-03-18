@@ -72,6 +72,7 @@ public class VeganLifeModels {
 		
 		//mobhead
 		register(VeganLifeItems.paper_mache);
+		register(VeganLifeItems.blank_mob_head);
 	}
 	
 	private static void register(Item item) {

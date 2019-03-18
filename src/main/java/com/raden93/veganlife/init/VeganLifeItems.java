@@ -59,6 +59,7 @@ public class VeganLifeItems {
 	
 	//mob-head
 	public static final BaseVeganItem paper_mache = new BaseVeganItem();
+	public static final BaseVeganItem blank_mob_head = new BaseVeganItem(1);
 	
 	public static void init() {
 		setName(jute_stalk_item, "jutestalk");
@@ -87,6 +88,7 @@ public class VeganLifeItems {
 		setName(flase_morel_item, "falsemorel");
 		setName(faux_rabbit_foot_item, "fauxrabbitfoot");
 		setName(paper_mache, "papermache");
+		setName(blank_mob_head, "blankmobhead");
 	}
 	
 	@SubscribeEvent
@@ -118,6 +120,7 @@ public class VeganLifeItems {
 		registry.register(flase_morel_item);
 		registry.register(faux_rabbit_foot_item);
 		registry.register(paper_mache);
+		registry.register(blank_mob_head);
 	}
 	
 	public static void setName(Item item, String name) {
