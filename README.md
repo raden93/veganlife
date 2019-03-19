@@ -24,10 +24,22 @@ Short descriptions for all veganL life items:
 
 ## Known Bugs:
  
+ Nothing :-)
 
 ## Changelog
 
-### 1.3.0
+
+### 1.4.0
+
+#### Features
+
+- [x] Skull recipes
+	- [x] Create Papermache item
+	- [x] Create Blank Mob Head item
+	- [x] Create recipes for skeleton, wither, zombie, steve, creeper and dragon skull
+	
+- [x] Blaze Rod
+    - [x] Create recipe to create a Blaze Rod
 
 #### Features
 
