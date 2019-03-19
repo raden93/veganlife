@@ -1,0 +1,21 @@
+{
+  "type": "forge:ore_shaped",
+  "pattern": [
+    "###",
+    "#x#",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "type": "forge:ore_dict",
+      "ore": "dyeBrown"
+    },
+    "x": {
+      "item": "veganlife:blankmobhead"
+    }
+  },
+  "result": {
+    "item": "minecraft:skull",
+    "data": 3
+  }
+}
