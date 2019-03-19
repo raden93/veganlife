@@ -1,17 +1,17 @@
 {
   "type": "forge:ore_shaped",
   "pattern": [
-    "##"
+    "###",
+    "###",
+    "###"
   ],
   "key": {
     "#": {
       "type": "forge:ore_dict",
-      "ore": "sheetPlastic",
-      "data": 0
+      "ore": "cropJute"
     }
   },
   "result": {
-    "item": "veganlife:plasticrod",
-    "count": 4
+    "item": "veganlife:baleofjute"
   }
 }
