@@ -41,6 +41,8 @@ Short descriptions for all veganL life items:
 - [x] Blaze Rod
     - [x] Create recipe to create a Blaze Rod
 
+### 1.3.0
+
 #### Features
 
 - [x] Rabbit's Foot
