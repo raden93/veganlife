@@ -56,7 +56,6 @@ public class BaleOfJuteBlock extends BlockRotatedPillar {
 		super.updateTick(world, pos, state, random);
 		int rettingValue = getRettedValue(world, pos);
 		if (rettingValue < MAX_RETTING_STAGE && BlockUtil.isBlockInOrAdjacentMaterial(world, pos, Material.WATER)) {
-			System.out.println(rettingValue + "," + getMaxRettingValue());
 			int newValue = rettingValue + 1;
 			if(newValue >= getMaxRettingValue()) {
 				newValue = MAX_RETTING_STAGE;
