@@ -14,7 +14,7 @@ public class BaleOfJuteColorHandler implements IBlockColor, IItemColor {
 
 	@Override
 	public int colorMultiplier(IBlockState state, IBlockAccess worldIn, BlockPos pos, int tintIndex) {
-		if(state.getValue(BaleOfJuteBlock.RETTING) >= BaleOfJuteBlock.MAX_RETTING_VALUE) {
+		if(state.getValue(BaleOfJuteBlock.RETTING) >= BaleOfJuteBlock.MAX_RETTING_STAGE) {
 			return rettedColor;
 		}
 		return baseColor;

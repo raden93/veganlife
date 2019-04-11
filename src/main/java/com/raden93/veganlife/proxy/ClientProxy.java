@@ -1,6 +1,7 @@
 package com.raden93.veganlife.proxy;
 
 
+import com.raden93.veganlife.VeganConfig;
 import com.raden93.veganlife.init.VeganLifeColorHandlers;
 import com.raden93.veganlife.init.VeganLifeModels;
 import com.raden93.veganlife.integration.waila.Waila;
@@ -17,6 +18,7 @@ public class ClientProxy extends CommonProxy {
 		super.preinit(event);
 		
 		MinecraftForge.EVENT_BUS.register(VeganLifeModels.class);
+		MinecraftForge.EVENT_BUS.register(VeganConfig.class);
 		
 		if(Loader.isModLoaded("waila")) {
 			Waila.init();

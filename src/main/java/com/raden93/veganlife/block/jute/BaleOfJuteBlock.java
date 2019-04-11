@@ -2,6 +2,7 @@ package com.raden93.veganlife.block.jute;
 
 import java.util.Random;
 
+import com.raden93.veganlife.VeganConfig;
 import com.raden93.veganlife.init.VeganLifeItems;
 import com.raden93.veganlife.init.VeganLifeTabs;
 import com.raden93.veganlife.util.BlockUtil;
@@ -19,9 +20,9 @@ import net.minecraft.world.World;
 
 public class BaleOfJuteBlock extends BlockRotatedPillar {
 	
-	public static final int MAX_RETTING_VALUE = 3;
+	public static final int MAX_RETTING_STAGE = 3;
 	public static final int MIN_RETTING_VALUE = 0;
-	public static final PropertyInteger RETTING = PropertyInteger.create("retting", MIN_RETTING_VALUE, MAX_RETTING_VALUE);
+	public static final PropertyInteger RETTING = PropertyInteger.create("retting", MIN_RETTING_VALUE, MAX_RETTING_STAGE);
 	
 	public BaleOfJuteBlock() {
 		super(Material.GROUND);
@@ -54,8 +55,13 @@ public class BaleOfJuteBlock extends BlockRotatedPillar {
 	public void updateTick(World world, BlockPos pos, IBlockState state, Random random) {
 		super.updateTick(world, pos, state, random);
 		int rettingValue = getRettedValue(world, pos);
-		if (rettingValue < MAX_RETTING_VALUE && BlockUtil.isBlockInOrAdjacentMaterial(world, pos, Material.WATER)) {
-			IBlockState newState = world.getBlockState(pos).withProperty(RETTING, rettingValue + 1);
+		if (rettingValue < MAX_RETTING_STAGE && BlockUtil.isBlockInOrAdjacentMaterial(world, pos, Material.WATER)) {
+			System.out.println(rettingValue + "," + getMaxRettingValue());
+			int newValue = rettingValue + 1;
+			if(newValue >= getMaxRettingValue()) {
+				newValue = MAX_RETTING_STAGE;
+			}
+			IBlockState newState = world.getBlockState(pos).withProperty(RETTING, newValue);
 			world.setBlockState(pos, newState);
 		}
 	}
@@ -63,7 +69,7 @@ public class BaleOfJuteBlock extends BlockRotatedPillar {
 	@Override
 	public int quantityDropped(IBlockState state, int fortune, Random random)
 	{
-		if (state.getValue(RETTING) >= MAX_RETTING_VALUE )
+		if (state.getValue(RETTING) >= getMaxRettingValue() )
 			// return 8 - 15 drops
 			return random.nextInt(8) + 8;
 		return 1;
@@ -71,18 +77,22 @@ public class BaleOfJuteBlock extends BlockRotatedPillar {
 	
 	@Override
 	public Item getItemDropped(IBlockState state, Random random, int fortune){
-		if (state.getValue(RETTING) >= MAX_RETTING_VALUE )
+		if (state.getValue(RETTING) >= getMaxRettingValue() )
 			return VeganLifeItems.jute_fibre_item;
 		else
 			return super.getItemDropped(state, random, fortune);
 	}
 	
 	public static float getRettingStatus(World world, BlockPos pos) {
-		return ((float)getRettedValue(world, pos)) / MAX_RETTING_VALUE;
+		return ((float)getRettedValue(world, pos)) / getMaxRettingValue();
 	}
 	
 	private static int getRettedValue(World world, BlockPos pos) {
 		return world.getBlockState(pos).getValue(RETTING);
+	}
+	
+	private static int getMaxRettingValue() {
+		return VeganConfig.constants.jute_bale_retting_stages;
 	}
 }
 
