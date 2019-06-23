@@ -2,7 +2,7 @@ package com.raden93.veganlife.block.jute;
 
 import java.util.Random;
 
-import com.raden93.veganlife.VeganConfig;
+import com.raden93.veganlife.config.VeganConfig;
 import com.raden93.veganlife.init.VeganLifeItems;
 import com.raden93.veganlife.init.VeganLifeTabs;
 import com.raden93.veganlife.util.BlockUtil;
@@ -72,12 +72,12 @@ public class BaleOfJuteBlock extends BlockRotatedPillar {
 	{
 		if (state.getValue(RETTING) >= getMaxRettingValue() ) {
 			// random.nextInt(0) will produce an error
-			if(VeganConfig.constants.jute_fiber_random_drops == 0) {
-				return VeganConfig.constants.jute_fiber_base_drops;
+			if(VeganConfig.JUTE_CONSTANTS.JUTE_FIBER_RANDOM_DROPS == 0) {
+				return VeganConfig.JUTE_CONSTANTS.JUTE_FIBER_BASE_DROPS;
 			}
 			// return 8 - 15 drops in the default configuration. 
-			return random.nextInt(VeganConfig.constants.jute_fiber_random_drops) 
-					+ VeganConfig.constants.jute_fiber_base_drops;
+			return random.nextInt(VeganConfig.JUTE_CONSTANTS.JUTE_FIBER_RANDOM_DROPS) 
+					+ VeganConfig.JUTE_CONSTANTS.JUTE_FIBER_BASE_DROPS;
 		}
 		return 1;
 	}
@@ -99,11 +99,11 @@ public class BaleOfJuteBlock extends BlockRotatedPillar {
 	}
 	
 	private static int getMaxRettingValue() {
-		return VeganConfig.constants.jute_bale_retting_stages;
+		return VeganConfig.JUTE_CONSTANTS.JUTE_BALE_RETTING_STAGES;
 	}
 	
 	private static boolean isHardMode() {
-		return VeganConfig.constants.jute_bale_retting_hardmode;
+		return VeganConfig.JUTE_CONSTANTS.JUTE_BALE_RETTING_HARDMODE;
 	}
 }
 

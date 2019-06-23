@@ -1,7 +1,7 @@
 package com.raden93.veganlife.proxy;
 
 
-import com.raden93.veganlife.VeganConfig;
+import com.raden93.veganlife.config.VeganConfig;
 import com.raden93.veganlife.init.VeganLifeColorHandlers;
 import com.raden93.veganlife.init.VeganLifeModels;
 import com.raden93.veganlife.integration.waila.Waila;
