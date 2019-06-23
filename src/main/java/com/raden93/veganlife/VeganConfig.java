@@ -22,6 +22,10 @@ public class VeganConfig {
 		@RangeInt(min = 1, max = 3)
 		@Comment("Stages before the jute bale is retted. More stages need more time")
 		public int jute_bale_retting_stages = 3;
+		
+		@Name("Bale of jute hard mode")
+		@Comment("The stages of bale of jute change only with a chance of 50%")
+		public boolean jute_bale_retting_hardmode = false;
 	}
 	
 	@SubscribeEvent

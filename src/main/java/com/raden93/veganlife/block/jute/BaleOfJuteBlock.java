@@ -56,12 +56,16 @@ public class BaleOfJuteBlock extends BlockRotatedPillar {
 		super.updateTick(world, pos, state, random);
 		int rettingValue = getRettedValue(world, pos);
 		if (rettingValue < MAX_RETTING_STAGE && BlockUtil.isBlockInOrAdjacentMaterial(world, pos, Material.WATER)) {
-			int newValue = rettingValue + 1;
-			if(newValue >= getMaxRettingValue()) {
-				newValue = MAX_RETTING_STAGE;
+			System.out.println("Update");
+			if(!this.isHardMode() || random.nextFloat() < 0.5) {
+				System.out.println("Stage change");
+				int newValue = rettingValue + 1;
+				if(newValue >= getMaxRettingValue()) {
+					newValue = MAX_RETTING_STAGE;
+				}
+				IBlockState newState = world.getBlockState(pos).withProperty(RETTING, newValue);
+				world.setBlockState(pos, newState);
 			}
-			IBlockState newState = world.getBlockState(pos).withProperty(RETTING, newValue);
-			world.setBlockState(pos, newState);
 		}
 	}
 	
@@ -92,6 +96,10 @@ public class BaleOfJuteBlock extends BlockRotatedPillar {
 	
 	private static int getMaxRettingValue() {
 		return VeganConfig.constants.jute_bale_retting_stages;
+	}
+	
+	private static boolean isHardMode() {
+		return VeganConfig.constants.jute_bale_retting_hardmode;
 	}
 }
 
