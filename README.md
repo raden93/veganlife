@@ -28,6 +28,15 @@ Short descriptions for all veganL life items:
 
 ## Changelog
 
+### 1.5.0
+
+- [x] Configuration of Vegan Life
+    - [x] All drop chances can be configured
+    - [x] Jute retting stages can be configured
+    - [x] Jute retting has a hardmode ( stages change only with a change of 50% )
+    - [x] Drop rates of jute stalk can be configured ( base and random part )
+    - [x] Drop rates of jute fiber can be configured ( base and random part )
+
 
 ### 1.4.0
 
