@@ -4,6 +4,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Random;
 
+import com.raden93.veganlife.VeganConfig;
+
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockDoublePlant;
 import net.minecraft.block.BlockOldLeaf;
@@ -87,7 +89,10 @@ public class VeganLifeDropChanger {
 	 */
 	private void dropJuteFromFerns(Block block, IBlockState state, Random random, List<ItemStack> drops) {
 		if(block == Blocks.DOUBLE_PLANT && state.getValue(BlockDoublePlant.VARIANT) == BlockDoublePlant.EnumPlantType.FERN) {
-			drops.add(new ItemStack(VeganLifeItems.jute_stalk_item, random.nextInt(2)+1));
+			// Random value 0 will produce an error.
+			int randomValue = VeganConfig.constants.jute_stalk_random_drops > 0 ? 
+					random.nextInt(VeganConfig.constants.jute_stalk_random_drops) : 0;
+			drops.add(new ItemStack(VeganLifeItems.jute_stalk_item, randomValue + VeganConfig.constants.jute_stalk_base_drops));
 		}
 	}
 	
