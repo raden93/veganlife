@@ -26,6 +26,16 @@ public class VeganConfig {
 		@Name("Bale of jute hard mode")
 		@Comment("The stages of bale of jute change only with a chance of 50%")
 		public boolean jute_bale_retting_hardmode = false;
+		
+		@Name("Droprate: Jute Fiber Base")
+		@RangeInt(min = 0, max = 16)
+		@Comment("Number of Jute Fiber that will surely drop everytime.")
+		public int jute_fiber_base_drops = 8;
+		
+		@Name("Droprate: Jute Fiber Random")
+		@RangeInt(min = 0, max = 16)
+		@Comment("Number of Jute Fiber that will maybe drop. The range is between 0 and your configuration.")
+		public int jute_fiber_random_drops = 8;
 	}
 	
 	@SubscribeEvent

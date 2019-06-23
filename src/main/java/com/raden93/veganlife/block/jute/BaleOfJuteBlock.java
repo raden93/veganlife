@@ -56,9 +56,7 @@ public class BaleOfJuteBlock extends BlockRotatedPillar {
 		super.updateTick(world, pos, state, random);
 		int rettingValue = getRettedValue(world, pos);
 		if (rettingValue < MAX_RETTING_STAGE && BlockUtil.isBlockInOrAdjacentMaterial(world, pos, Material.WATER)) {
-			System.out.println("Update");
 			if(!this.isHardMode() || random.nextFloat() < 0.5) {
-				System.out.println("Stage change");
 				int newValue = rettingValue + 1;
 				if(newValue >= getMaxRettingValue()) {
 					newValue = MAX_RETTING_STAGE;
@@ -72,9 +70,15 @@ public class BaleOfJuteBlock extends BlockRotatedPillar {
 	@Override
 	public int quantityDropped(IBlockState state, int fortune, Random random)
 	{
-		if (state.getValue(RETTING) >= getMaxRettingValue() )
-			// return 8 - 15 drops
-			return random.nextInt(8) + 8;
+		if (state.getValue(RETTING) >= getMaxRettingValue() ) {
+			// random.nextInt(0) will produce an error
+			if(VeganConfig.constants.jute_fiber_random_drops == 0) {
+				return VeganConfig.constants.jute_fiber_base_drops;
+			}
+			// return 8 - 15 drops in the default configuration. 
+			return random.nextInt(VeganConfig.constants.jute_fiber_random_drops) 
+					+ VeganConfig.constants.jute_fiber_base_drops;
+		}
 		return 1;
 	}
 	
