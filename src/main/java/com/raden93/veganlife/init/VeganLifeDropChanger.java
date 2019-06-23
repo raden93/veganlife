@@ -29,17 +29,17 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 public class VeganLifeDropChanger {
 	
 	private HashMap<Item, ItemStack> newDropsPerBlock = new HashMap<Item, ItemStack>();
-	private HashMap<ItemStack, Float > dropRatePerItem = new HashMap<ItemStack, Float>();
+	private HashMap<ItemStack, Double > dropRatePerItem = new HashMap<ItemStack, Double>();
 	private HashMap<ItemStack, Integer> dropsPerItem = new HashMap<ItemStack, Integer>();
 	
-	public static final float KAPOK_TUFT_DROP_RATE = 0.07f;
-	public static final float RESIN_DROP_RATE = 0.1f;
-	public static final float SULFUR_DROP_RATE = 0.02f;
-	public static final float SALTPETER_DROP_RATE = 0.02f;
+	public static final double KAPOK_TUFT_DROP_RATE = VeganConfig.OTHER_CONSTANTS.DROPCHANCE_KAPOK_FROM_JUNGLE;
+	public static final double RESIN_DROP_RATE = VeganConfig.OTHER_CONSTANTS.DROPCHANCE_RESIN_FROM_SPRUCE;
+	public static final double SULFUR_DROP_RATE = VeganConfig.OTHER_CONSTANTS.DROPCHANCE_SULFUR_FROM_NEATHERRACK;
+	public static final double SALTPETER_DROP_RATE = VeganConfig.OTHER_CONSTANTS.DROPCHANCE_SALTPETER_FROM_SANDSTONE;
 	public static final double BONES_DROP_RATE = VeganConfig.OTHER_CONSTANTS.DROPCHANCE_BONE_FROM_STONE;
-	public static final float FRAGMENT_OF_SUFFERING_DROP_RATE = 0.05f;
-	public static final float FALSE_MOREL_DROP_RATE = 0.15f;
-	public static final float DOLLS_EYE_DROP_RATE = 0.01f;
+	public static final double FRAGMENT_OF_SUFFERING_DROP_RATE = VeganConfig.OTHER_CONSTANTS.DROPCHANCE_FRAGMENT_FROM_SOULSAND;
+	public static final double FALSE_MOREL_DROP_RATE = VeganConfig.OTHER_CONSTANTS.DROPCHANCE_FALSE_MOREL_FROM_MYCELIUM;
+	public static final double DOLLS_EYE_DROP_RATE = VeganConfig.OTHER_CONSTANTS.DROPCHANCE_DOLLS_EYE_FROM_GRAS;
 	
 	public VeganLifeDropChanger() {
 		// Add drop Sulfur from Netherrack
@@ -59,7 +59,7 @@ public class VeganLifeDropChanger {
 				FALSE_MOREL_DROP_RATE, 1);
 	}
 	
-	private void addNewDrops(ItemStack newDrop, ItemStack dropsFrom, float dropRate, int dropsRange) {
+	private void addNewDrops(ItemStack newDrop, ItemStack dropsFrom, double dropRate, int dropsRange) {
 		this.newDropsPerBlock.put(dropsFrom.getItem(), newDrop);
 		this.dropRatePerItem.put(newDrop, dropRate);
 		this.dropsPerItem.put(newDrop, dropsRange);
@@ -101,7 +101,7 @@ public class VeganLifeDropChanger {
 	 */
 	private void dropKapokFromJungle(Block block, IBlockState state, Random random, List<ItemStack> drops) {
 		if(block == Blocks.LEAVES && state.getValue(BlockOldLeaf.VARIANT) == BlockPlanks.EnumType.JUNGLE) {
-			if(random.nextFloat() < KAPOK_TUFT_DROP_RATE) {
+			if(random.nextDouble() < KAPOK_TUFT_DROP_RATE) {
 				drops.add(new ItemStack(VeganLifeItems.kapok_tuft_item, 1));
 			}
 		}
@@ -112,7 +112,7 @@ public class VeganLifeDropChanger {
 	 */
 	private void dropsResinFromSpruceWood(Block block, IBlockState state, Random random, List<ItemStack> drops) {
 		if(block == Blocks.LOG && state.getValue(BlockOldLog.VARIANT) == BlockPlanks.EnumType.SPRUCE) {
-			if(random.nextFloat() < RESIN_DROP_RATE) {
+			if(random.nextDouble() < RESIN_DROP_RATE) {
 				drops.add(new ItemStack(VeganLifeItems.resin_item));
 			}
 		}
@@ -132,7 +132,7 @@ public class VeganLifeDropChanger {
 	
 	private void addDropForItem(Block block, Random random, List<ItemStack> drops) {
 		ItemStack dropedItem = newDropsPerBlock.get(new ItemStack(block).getItem());
-		if(dropedItem != null && random.nextFloat() < dropRatePerItem.get(dropedItem)) {
+		if(dropedItem != null && random.nextDouble() < dropRatePerItem.get(dropedItem)) {
 			dropedItem.setCount(random.nextInt(dropsPerItem.get(dropedItem)) + 1);
 			drops.add(dropedItem);
 		}
@@ -144,7 +144,7 @@ public class VeganLifeDropChanger {
 			if(BiomeDictionary.hasType(biome, BiomeDictionary.Type.FOREST) 
 					&& !BiomeDictionary.hasType(biome, BiomeDictionary.Type.CONIFEROUS)
 					&& !BiomeDictionary.hasType(biome, BiomeDictionary.Type.JUNGLE)) {
-				if(random.nextFloat() < DOLLS_EYE_DROP_RATE)
+				if(random.nextDouble() < DOLLS_EYE_DROP_RATE)
 					drops.add(new ItemStack(VeganLifeItems.dolls_eye_item, 1));
 			}
 		}
