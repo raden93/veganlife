@@ -5,7 +5,9 @@ import net.minecraftforge.common.config.ConfigManager;
 import net.minecraftforge.common.config.Config.Comment;
 import net.minecraftforge.common.config.Config.LangKey;
 import net.minecraftforge.common.config.Config.Name;
+import net.minecraftforge.common.config.Config.RangeDouble;
 import net.minecraftforge.common.config.Config.RangeInt;
+import net.minecraftforge.common.config.Config.RequiresMcRestart;
 import net.minecraftforge.fml.client.event.ConfigChangedEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
@@ -16,6 +18,10 @@ public class VeganConfig {
 	@Name("jute settings")
 	@Comment("Customize some settings for your jute planting")
 	public static final Constants constants = new Constants();
+	
+	@Name("other drops settings")
+	@Comment("Customize some settings for other drops")
+	public static final OtherConstants OTHER_CONSTANTS = new OtherConstants();
 	
 	public static class Constants {
 		@Name("Bale of jute stages")
@@ -46,7 +52,14 @@ public class VeganConfig {
 		@RangeInt(min = 0, max = 5)
 		@Comment("Number of Jute Stalk that will maybe drop. The range is between 0 and your configuration.")
 		public int jute_stalk_random_drops = 2;
-		
+	}
+	
+	public static class OtherConstants {
+		@Name("Dropchance: Bones from Stone")
+		@RangeDouble(min = 0, max = 1)
+		@Comment("Chance a bone drop from a stone. 1 is 100%, 0 is 0%")
+		@RequiresMcRestart
+		public double DROPCHANCE_BONE_FROM_STONE = 0.02d;
 	}
 	
 	@SubscribeEvent

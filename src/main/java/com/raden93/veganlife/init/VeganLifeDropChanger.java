@@ -36,7 +36,7 @@ public class VeganLifeDropChanger {
 	public static final float RESIN_DROP_RATE = 0.1f;
 	public static final float SULFUR_DROP_RATE = 0.02f;
 	public static final float SALTPETER_DROP_RATE = 0.02f;
-	public static final float BONES_DROP_RATE = 0.01f;
+	public static final double BONES_DROP_RATE = VeganConfig.OTHER_CONSTANTS.DROPCHANCE_BONE_FROM_STONE;
 	public static final float FRAGMENT_OF_SUFFERING_DROP_RATE = 0.05f;
 	public static final float FALSE_MOREL_DROP_RATE = 0.15f;
 	public static final float DOLLS_EYE_DROP_RATE = 0.01f;
@@ -124,7 +124,7 @@ public class VeganLifeDropChanger {
 	 */
 	private void dropsBonesFromStone(Block block, IBlockState state, Random random, List<ItemStack> drops) {
 		if(block == Blocks.STONE && state.getValue(BlockStone.VARIANT) == BlockStone.EnumType.STONE) {
-			if(random.nextFloat() < BONES_DROP_RATE) {
+			if(random.nextDouble() < BONES_DROP_RATE) {
 				drops.add(new ItemStack(Items.BONE));
 			}
 		}
