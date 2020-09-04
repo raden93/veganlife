@@ -1,0 +1,19 @@
+{
+  "type": "forge:ore_shapeless",
+  "ingredients":[
+    {
+      "type": "forge:ore_dict",
+      "ore": "cropSunflower"
+    },
+    {
+      "item": "minecraft:piston",
+      "data": 0
+    },
+    {
+   	  "item":"minecraft:glass_bottle"
+    }
+  ],
+  "result": {
+    "item": "veganlife:vegetableoil"
+  }
+}

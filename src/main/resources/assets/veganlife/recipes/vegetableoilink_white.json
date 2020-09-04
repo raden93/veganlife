@@ -1,0 +1,23 @@
+{
+  "type": "forge:ore_shapeless",
+  "ingredients":[
+    {
+      "type": "forge:ore_dict",
+      "ore": "foodOliveoil"
+    },
+    {
+      "type": "forge:ore_dict",
+      "ore": "itemWax"
+    },
+    {
+      "item": "veganlife:rosin"
+    },
+    {
+      "item": "minecraft:quartz"
+    }
+  ],
+  "result": {
+    "item": "veganlife:vegetableoilink",
+    "data":1
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "type": "forge:ore_shapeless",
+  "ingredients":[
+    {
+      "item": "minecraft:coal",
+      "data": 1
+    },
+    {
+        "type": "forge:ore_dict",
+        "ore": "dustSulfur"
+    },
+    {
+        "type": "forge:ore_dict",
+        "ore": "dustSaltpeter"
+    }
+  ],
+  "result": {
+    "item": "minecraft:gunpowder"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients":[
+    {
+      "item": "veganlife:soap",
+      "data": 32767
+    },
+    {
+      "item": "minecraft:sugar"
+    },
+    {
+      "item": "minecraft:water_bucket"
+    },
+    {
+   	  "item":"minecraft:glass_bottle"
+    }
+  ],
+  "result": {
+    "item": "veganlife:soapsolution"
+  }
+}

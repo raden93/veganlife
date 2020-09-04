@@ -1,0 +1,16 @@
+[
+{
+  "modid": "veganlife",
+  "name": "Vegan Life",
+  "description": "A mod to life in Minecraft in a vegan way",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "https://github.com/raden93/veganlife",
+  "updateUrl": "",
+  "authorList": ["raden93"],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

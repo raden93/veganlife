@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#x#",
+    "#y#"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:paper"
+    },
+    "x": {
+      "item": "veganlife:potatostarch"
+    },
+    "y": {
+      "item": "minecraft:water_bucket"
+    }
+  },
+  "result": {
+    "item": "veganlife:papermache"
+  }
+}
