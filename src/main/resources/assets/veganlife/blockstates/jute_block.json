@@ -1,0 +1,43 @@
+{
+	"multipart": [
+		{ "when": 
+			{ "OR": [
+				{ "axis": "y", "retting": 0 },
+				{ "axis": "y", "retting": 1 },
+				{ "axis": "y", "retting": 2 },
+				{ "axis": "y", "retting": 3 }
+			]},
+		  "apply":
+		  	{
+		  		"model": "veganlife:block/jute_block"
+		  	}
+		},
+		{ "when": 
+			{ "OR": [
+				{ "axis": "z", "retting": 0 },
+				{ "axis": "z", "retting": 1 },
+				{ "axis": "z", "retting": 2 },
+				{ "axis": "z", "retting": 3 }
+			]},
+		  "apply":
+		  	{
+		  		"model": "veganlife:block/jute_block",
+		  		"x": 90 
+		  	}
+		},
+		{ "when": 
+			{ "OR": [
+				{ "axis": "x", "retting": 0 },
+				{ "axis": "x", "retting": 1 },
+				{ "axis": "x", "retting": 2 },
+				{ "axis": "x", "retting": 3 }
+			]},
+		  "apply":
+		  	{
+		  		"model": "veganlife:block/jute_block",
+		  		"x": 90, 
+		  		"y": 90 
+		  	}
+		}		
+	]
+}

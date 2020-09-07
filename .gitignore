@@ -21,6 +21,5 @@ build
 eclipse
 run
 
-crash-reports/
-eula.txt
-logs/
+# Files from Forge MDK
+forge*changelog.txt
